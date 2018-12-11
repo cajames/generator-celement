@@ -71,7 +71,7 @@ const indexContent = render(INDEX_TEMPLATE, {
     name: componentName,
     package: packageName
 });
-const indexPath = path.join(PACKAGES_FOLDER, packageName) + '/index.ts'
+const indexPath = path.join(PACKAGES_FOLDER, packageName) + '/index.js'
 fs.writeFileSync(indexPath, indexContent);
 
 // Create vue.
