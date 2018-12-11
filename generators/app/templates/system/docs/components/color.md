@@ -36,20 +36,20 @@ Neutral colors are for text, background and border colors. You can use different
 
 <<%= sysAbb %>-row :gutter="12">
   <<%= sysAbb %>-col :span="6" :xs="{span: 12}">
-    <div class="demo-color-box-group">
-    <div class="demo-color-box bg-text-primary">Primary Text<div class="value">#303133</div></div>
-    <div class="demo-color-box bg-text-regular">Regular Text<div class="value">#606266</div></div>
-    <div class="demo-color-box bg-text-secondary">Secondary Text<div class="value">#909399</div></div>
-    <div class="demo-color-box bg-text-placeholder">Placeholder Text<div class="value">#C0C4CC</div></div>
+  <div class="demo-color-box-group">
+  <div class="demo-color-box bg-text-primary">Primary Text<div class="value">#303133</div></div>
+  <div class="demo-color-box bg-text-regular">Regular Text<div class="value">#606266</div></div>
+  <div class="demo-color-box bg-text-secondary">Secondary Text<div class="value">#909399</div></div>
+  <div class="demo-color-box bg-text-placeholder">Placeholder Text<div class="value">#C0C4CC</div></div>
     </div>
   </<%= sysAbb %>-col>
   <<%= sysAbb %>-col :span="6" :xs="{span: 12}">
-    <div class="demo-color-box-group">
-    <div class="demo-color-box bg-border-base">Base Border<div class="value">#DCDFE6</div></div>
-    <div class="demo-color-box bg-border-light">Light Border<div class="value">#E4E7ED</div></div>
-    <div class="demo-color-box bg-border-lighter">Lighter Border<div class="value">#EBEEF5</div></div>
-    <div class="demo-color-box bg-border-extra-light">Extra Light Border<div class="value">#F2F6FC</div></div>
-    </div>
+  <div class="demo-color-box-group">
+  <div class="demo-color-box bg-border-base">Base Border<div class="value">#DCDFE6</div></div>
+  <div class="demo-color-box bg-border-light">Light Border<div class="value">#E4E7ED</div></div>
+  <div class="demo-color-box bg-border-lighter">Lighter Border<div class="value">#EBEEF5</div></div>
+  <div class="demo-color-box bg-border-extra-light">Extra Light Border<div class="value">#F2F6FC</div></div>
+  </div>
   </<%= sysAbb %>-col>
 </<%= sysAbb %>-row>
 

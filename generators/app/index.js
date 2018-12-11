@@ -45,7 +45,7 @@ module.exports = class extends Generator {
         type: "input",
         name: "primaryColor",
         message: "What is your brand primary color",
-        default: "#f14a00"
+        default: "#409EFF"
       }
     ];
 

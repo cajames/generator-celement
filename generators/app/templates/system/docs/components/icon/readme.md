@@ -11,24 +11,25 @@
 </script>
 
 <style lang="scss">
-  .demo-icon .source > i {
-    color: #606266;
+  .demo-block > .source > i {
+    color: #8492a6;
     margin: 0 20px;
     font-size: 1.5em;
     vertical-align: middle;
   }
 
-  .demo-icon .source > button {
+  .demo-block .source > button {
     margin: 0 20px;
   }
 
-  .page-component .content > ul.icon-list {
+  .icon-list {
     overflow: hidden;
     list-style: none;
     padding: 0;
     border: solid 1px #eaeefb;
     border-radius: 4px;
   }
+
   .icon-list li {
     float: left;
     width: 16.66%;
@@ -53,17 +54,12 @@
       font-family: 'Helvetica Neue',Helvetica,'PingFang SC','Hiragino Sans GB','Microsoft YaHei',SimSun,sans-serif;
       color: #99a9bf;
     }
+
     i {
       display: block;
-      font-size: 32px;
+      font-size: 24px;
       margin-bottom: 15px;
-      color: #606266;
-    }
-    .icon-name {
-      display: inline-block;
-      padding: 0 3px;
-      height: 1em;
-      color: #606266;
+      color: #8492a6;
     }
     &:hover {
       color: rgb(92, 182, 255);

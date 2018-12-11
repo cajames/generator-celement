@@ -25,7 +25,7 @@ yo celement
 
 ## License
 
-MIT © [Chris James]()
+MIT © [Chris James](https://webglowit.net)
 
 
 [npm-image]: https://badge.fury.io/js/generator-celement.svg
