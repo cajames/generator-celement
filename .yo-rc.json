@@ -1,0 +1,9 @@
+{
+  "generator-node": {
+    "promptValues": {
+      "authorName": "Chris James",
+      "authorEmail": "chris@webglowit.net",
+      "authorUrl": ""
+    }
+  }
+}
