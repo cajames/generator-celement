@@ -22,11 +22,11 @@ In main.js:
 
 ```javascript
 import Vue from 'vue';
-import ElementUI from 'element-ui';
-import 'element-ui/lib/theme-chalk/index.css';
+import Library from '<%= libNpmName %>';
+import '<%= libNpmName %>/lib/css/index.css';
 import App from './App.vue';
 
-Vue.use(ElementUI);
+Vue.use(Library);
 
 new Vue({
   el: '#app',
@@ -34,7 +34,7 @@ new Vue({
 });
 ```
 
-The above imports Element entirely. Note that CSS file needs to be imported separately.
+The above imports the library entirely. Note that CSS file needs to be imported separately.
 
 #### On demand
 
