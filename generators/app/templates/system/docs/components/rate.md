@@ -50,14 +50,14 @@ Used for rating
 ``` html
 <div class="block">
   <span class="demonstration">Default</span>
-  <sm-rate v-model="value1"></sm-rate>
+  <<%= sysAbb %>-rate v-model="value1"></<%= sysAbb %>-rate>
 </div>
 <div class="block">
   <span class="demonstration">Color for different levels</span>
-  <sm-rate
+  <<%= sysAbb %>-rate
     v-model="value2"
     :colors="['#99A9BF', '#F7BA2A', '#FF9900']">
-  </sm-rate>
+  </<%= sysAbb %>-rate>
 </div>
 
 <script>
@@ -80,11 +80,11 @@ Using text to indicate rating score
 :::demo Add attribute `show-text` to display text at the right of Rate. You can assign texts for different scores using `texts`. `texts` is an array whose length should be equal to the max score `max`.
 
 ``` html
-<sm-rate
+<<%= sysAbb %>-rate
   v-model="value3"
   :texts="['oops', 'disappointed', 'normal', 'good', 'great']"
   show-text>
-</sm-rate>
+</<%= sysAbb %>-rate>
 
 <script>
   export default {
@@ -105,12 +105,12 @@ You can use different icons to distinguish different rate components.
 :::demo You can customize icons for three different levels using `icon-classes`. In this example, we also use `void-icon-class` to set the icon if it is unselected.
 
 ``` html
-<sm-rate
+<<%= sysAbb %>-rate
   v-model="value4"
   :icon-classes="['icon-rate-face-1', 'icon-rate-face-2', 'icon-rate-face-3']"
   void-icon-class="icon-rate-face-off"
   :colors="['#99A9BF', '#F7BA2A', '#FF9900']">
-</sm-rate>
+</<%= sysAbb %>-rate>
 
 <script>
   export default {
@@ -131,13 +131,13 @@ Read-only Rate is for displaying rating score. Half star is supported.
 :::demo Use attribute `disabled` to make the component read-only. Add `show-score` to display the rating score at the right side. Additionally, you can use attribute `score-template` to provide a score template. It must contain `{value}`, and `{value}` will be replaced with the rating score.
 
 ``` html
-<sm-rate
+<<%= sysAbb %>-rate
   v-model="value5"
   disabled
   show-score
   text-color="#ff9900"
   score-template="{value} points">
-</sm-rate>
+</<%= sysAbb %>-rate>
 
 <script>
   export default {

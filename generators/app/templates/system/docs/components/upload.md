@@ -125,7 +125,7 @@ Upload files by clicking or drag-and-drop
 
 :::demo Customize upload button type and text using `slot`. Set `limit` and `on-exceed` to limit the maximum number of uploads allowed and specify method when the limit is exceeded. Plus, you can abort removing a file in the `before-remove` hook.
 ```html
-<sm-upload
+<<%= sysAbb %>-upload
   class="upload-demo"
   action="https://jsonplaceholder.typicode.com/posts/"
   :on-preview="handlePreview"
@@ -135,9 +135,9 @@ Upload files by clicking or drag-and-drop
   :limit="3"
   :on-exceed="handleExceed"
   :file-list="fileList">
-  <sm-button size="small" type="primary">Click to upload</sm-button>
+  <<%= sysAbb %>-button size="small" type="primary">Click to upload</<%= sysAbb %>-button>
   <div slot="tip" class="el-upload__tip">jpg/png files with a size less than 500kb</div>
-</sm-upload>
+</<%= sysAbb %>-upload>
 <script>
   export default {
     data() {
@@ -170,7 +170,7 @@ Use `before-upload` hook to limit the upload file format and size.
 
 :::demo
 ```html
-<sm-upload
+<<%= sysAbb %>-upload
   class="avatar-uploader"
   action="https://jsonplaceholder.typicode.com/posts/"
   :show-file-list="false"
@@ -178,7 +178,7 @@ Use `before-upload` hook to limit the upload file format and size.
   :before-upload="beforeAvatarUpload">
   <img v-if="imageUrl" :src="imageUrl" class="avatar">
   <i v-else class="el-icon-plus avatar-uploader-icon"></i>
-</sm-upload>
+</<%= sysAbb %>-upload>
 
 <style>
   .avatar-uploader .el-upload {
@@ -241,16 +241,16 @@ Use `list-type` to change the fileList style.
 
 :::demo
 ```html
-<sm-upload
+<<%= sysAbb %>-upload
   action="https://jsonplaceholder.typicode.com/posts/"
   list-type="picture-card"
   :on-preview="handlePictureCardPreview"
   :on-remove="handleRemove">
   <i class="el-icon-plus"></i>
-</sm-upload>
-<sm-dialog :visible.sync="dialogVisible">
+</<%= sysAbb %>-upload>
+<<%= sysAbb %>-dialog :visible.sync="dialogVisible">
   <img width="100%" :src="dialogImageUrl" alt="">
-</sm-dialog>
+</<%= sysAbb %>-dialog>
 <script>
   export default {
     data() {
@@ -277,16 +277,16 @@ Use `list-type` to change the fileList style.
 
 :::demo
 ```html
-<sm-upload
+<<%= sysAbb %>-upload
   class="upload-demo"
   action="https://jsonplaceholder.typicode.com/posts/"
   :on-preview="handlePreview"
   :on-remove="handleRemove"
   :file-list="fileList2"
   list-type="picture">
-  <sm-button size="small" type="primary">Click to upload</sm-button>
+  <<%= sysAbb %>-button size="small" type="primary">Click to upload</<%= sysAbb %>-button>
   <div slot="tip" class="el-upload__tip">jpg/png files with a size less than 500kb</div>
-</sm-upload>
+</<%= sysAbb %>-upload>
 <script>
   export default {
     data() {
@@ -313,14 +313,14 @@ Use `on-change` hook function to control upload file list
 
 :::demo
 ```html
-<sm-upload
+<<%= sysAbb %>-upload
   class="upload-demo"
   action="https://jsonplaceholder.typicode.com/posts/"
   :on-change="handleChange"
   :file-list="fileList3">
-  <sm-button size="small" type="primary">Click to upload</sm-button>
+  <<%= sysAbb %>-button size="small" type="primary">Click to upload</<%= sysAbb %>-button>
   <div slot="tip" class="el-upload__tip">jpg/png files with a size less than 500kb</div>
-</sm-upload>
+</<%= sysAbb %>-upload>
 <script>
   export default {
     data() {
@@ -350,7 +350,7 @@ You can drag your file to a certain area to upload it.
 
 :::demo
 ```html
-<sm-upload
+<<%= sysAbb %>-upload
   class="upload-demo"
   drag
   action="https://jsonplaceholder.typicode.com/posts/"
@@ -361,7 +361,7 @@ You can drag your file to a certain area to upload it.
   <i class="el-icon-upload"></i>
   <div class="el-upload__text">Drop file here or <em>click to upload</em></div>
   <div class="el-upload__tip" slot="tip">jpg/png files with a size less than 500kb</div>
-</sm-upload>
+</<%= sysAbb %>-upload>
 ```
 :::
 
@@ -369,15 +369,15 @@ You can drag your file to a certain area to upload it.
 
 :::demo
 ```html
-<sm-upload
+<<%= sysAbb %>-upload
   class="upload-demo"
   ref="upload"
   action="https://jsonplaceholder.typicode.com/posts/"
   :auto-upload="false">
-  <sm-button slot="trigger" size="small" type="primary">select file</sm-button>
-  <sm-button style="margin-left: 10px;" size="small" type="success" @click="submitUpload">upload to server</sm-button>
+  <<%= sysAbb %>-button slot="trigger" size="small" type="primary">select file</<%= sysAbb %>-button>
+  <<%= sysAbb %>-button style="margin-left: 10px;" size="small" type="success" @click="submitUpload">upload to server</<%= sysAbb %>-button>
   <div class="el-upload__tip" slot="tip">jpg/png files with a size less than 500kb</div>
-</sm-upload>
+</<%= sysAbb %>-upload>
 <script>
   export default {
     methods: {

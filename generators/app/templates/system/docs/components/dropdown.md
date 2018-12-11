@@ -59,18 +59,18 @@ Hover on the dropdown menu to unfold it for more actions.
 :::demo The triggering element is rendered by the default `slot`, and the dropdown part is rendered by the `slot` named `dropdown`. By default, dropdown list shows when you hover on the triggering element without having to click it.
 
 ```html
-<sm-dropdown>
+<<%= sysAbb %>-dropdown>
   <span class="el-dropdown-link">
     Dropdown List<i class="el-icon-arrow-down el-icon--right"></i>
   </span>
-  <sm-dropdown-menu slot="dropdown">
-    <sm-dropdown-item>Action 1</sm-dropdown-item>
-    <sm-dropdown-item>Action 2</sm-dropdown-item>
-    <sm-dropdown-item>Action 3</sm-dropdown-item>
-    <sm-dropdown-item disabled>Action 4</sm-dropdown-item>
-    <sm-dropdown-item divided>Action 5</sm-dropdown-item>
-  </sm-dropdown-menu>
-</sm-dropdown>
+  <<%= sysAbb %>-dropdown-menu slot="dropdown">
+    <<%= sysAbb %>-dropdown-item>Action 1</<%= sysAbb %>-dropdown-item>
+    <<%= sysAbb %>-dropdown-item>Action 2</<%= sysAbb %>-dropdown-item>
+    <<%= sysAbb %>-dropdown-item>Action 3</<%= sysAbb %>-dropdown-item>
+    <<%= sysAbb %>-dropdown-item disabled>Action 4</<%= sysAbb %>-dropdown-item>
+    <<%= sysAbb %>-dropdown-item divided>Action 5</<%= sysAbb %>-dropdown-item>
+  </<%= sysAbb %>-dropdown-menu>
+</<%= sysAbb %>-dropdown>
 
 <style lang="scss">
   .el-dropdown-link {
@@ -92,28 +92,28 @@ Use the button to trigger the dropdown list.
 
 :::demo Use `split-button` to split the triggering element into a button group with the left button being a normal button and right one the actual triggering target. If you wanna insert a separator line between item three and item four, just add a class `divider` to item four.
 ```html
-<sm-dropdown>
-  <sm-button type="primary">
+<<%= sysAbb %>-dropdown>
+  <<%= sysAbb %>-button type="primary">
     Dropdown List<i class="el-icon-arrow-down el-icon--right"></i>
-  </sm-button>
-  <sm-dropdown-menu slot="dropdown">
-    <sm-dropdown-item>Action 1</sm-dropdown-item>
-    <sm-dropdown-item>Action 2</sm-dropdown-item>
-    <sm-dropdown-item>Action 3</sm-dropdown-item>
-    <sm-dropdown-item>Action 4</sm-dropdown-item>
-    <sm-dropdown-item>Action 5</sm-dropdown-item>
-  </sm-dropdown-menu>
-</sm-dropdown>
-<sm-dropdown split-button type="primary" @click="handleClick">
+  </<%= sysAbb %>-button>
+  <<%= sysAbb %>-dropdown-menu slot="dropdown">
+    <<%= sysAbb %>-dropdown-item>Action 1</<%= sysAbb %>-dropdown-item>
+    <<%= sysAbb %>-dropdown-item>Action 2</<%= sysAbb %>-dropdown-item>
+    <<%= sysAbb %>-dropdown-item>Action 3</<%= sysAbb %>-dropdown-item>
+    <<%= sysAbb %>-dropdown-item>Action 4</<%= sysAbb %>-dropdown-item>
+    <<%= sysAbb %>-dropdown-item>Action 5</<%= sysAbb %>-dropdown-item>
+  </<%= sysAbb %>-dropdown-menu>
+</<%= sysAbb %>-dropdown>
+<<%= sysAbb %>-dropdown split-button type="primary" @click="handleClick">
   Dropdown List
-  <sm-dropdown-menu slot="dropdown">
-    <sm-dropdown-item>Action 1</sm-dropdown-item>
-    <sm-dropdown-item>Action 2</sm-dropdown-item>
-    <sm-dropdown-item>Action 3</sm-dropdown-item>
-    <sm-dropdown-item>Action 4</sm-dropdown-item>
-    <sm-dropdown-item>Action 5</sm-dropdown-item>
-  </sm-dropdown-menu>
-</sm-dropdown>
+  <<%= sysAbb %>-dropdown-menu slot="dropdown">
+    <<%= sysAbb %>-dropdown-item>Action 1</<%= sysAbb %>-dropdown-item>
+    <<%= sysAbb %>-dropdown-item>Action 2</<%= sysAbb %>-dropdown-item>
+    <<%= sysAbb %>-dropdown-item>Action 3</<%= sysAbb %>-dropdown-item>
+    <<%= sysAbb %>-dropdown-item>Action 4</<%= sysAbb %>-dropdown-item>
+    <<%= sysAbb %>-dropdown-item>Action 5</<%= sysAbb %>-dropdown-item>
+  </<%= sysAbb %>-dropdown-menu>
+</<%= sysAbb %>-dropdown>
 
 <style lang="scss">
   .el-dropdown {
@@ -146,38 +146,38 @@ Click the triggering element or hover on it.
 :::demo Use the attribute `trigger`. By default, it is `hover`.
 
 ```html
-<sm-row class="block-col-2">
-  <sm-col :span="12">
+<<%= sysAbb %>-row class="block-col-2">
+  <<%= sysAbb %>-col :span="12">
     <span class="demonstration">hover to trigger</span>
-    <sm-dropdown>
+    <<%= sysAbb %>-dropdown>
       <span class="el-dropdown-link">
         Dropdown List<i class="el-icon-arrow-down el-icon--right"></i>
       </span>
-      <sm-dropdown-menu slot="dropdown">
-        <sm-dropdown-item>Action 1</sm-dropdown-item>
-        <sm-dropdown-item>Action 2</sm-dropdown-item>
-        <sm-dropdown-item>Action 3</sm-dropdown-item>
-        <sm-dropdown-item>Action 4</sm-dropdown-item>
-        <sm-dropdown-item>Action 5</sm-dropdown-item>
-      </sm-dropdown-menu>
-    </sm-dropdown>
-  </sm-col>
-  <sm-col :span="12">
+      <<%= sysAbb %>-dropdown-menu slot="dropdown">
+        <<%= sysAbb %>-dropdown-item>Action 1</<%= sysAbb %>-dropdown-item>
+        <<%= sysAbb %>-dropdown-item>Action 2</<%= sysAbb %>-dropdown-item>
+        <<%= sysAbb %>-dropdown-item>Action 3</<%= sysAbb %>-dropdown-item>
+        <<%= sysAbb %>-dropdown-item>Action 4</<%= sysAbb %>-dropdown-item>
+        <<%= sysAbb %>-dropdown-item>Action 5</<%= sysAbb %>-dropdown-item>
+      </<%= sysAbb %>-dropdown-menu>
+    </<%= sysAbb %>-dropdown>
+  </<%= sysAbb %>-col>
+  <<%= sysAbb %>-col :span="12">
     <span class="demonstration">click to trigger</span>
-    <sm-dropdown trigger="click">
+    <<%= sysAbb %>-dropdown trigger="click">
       <span class="el-dropdown-link">
         Dropdown List<i class="el-icon-arrow-down el-icon--right"></i>
       </span>
-      <sm-dropdown-menu slot="dropdown">
-        <sm-dropdown-item>Action 1</sm-dropdown-item>
-        <sm-dropdown-item>Action 2</sm-dropdown-item>
-        <sm-dropdown-item>Action 3</sm-dropdown-item>
-        <sm-dropdown-item>Action 4</sm-dropdown-item>
-        <sm-dropdown-item>Action 5</sm-dropdown-item>
-      </sm-dropdown-menu>
-    </sm-dropdown>
-  </sm-col>
-</sm-row>
+      <<%= sysAbb %>-dropdown-menu slot="dropdown">
+        <<%= sysAbb %>-dropdown-item>Action 1</<%= sysAbb %>-dropdown-item>
+        <<%= sysAbb %>-dropdown-item>Action 2</<%= sysAbb %>-dropdown-item>
+        <<%= sysAbb %>-dropdown-item>Action 3</<%= sysAbb %>-dropdown-item>
+        <<%= sysAbb %>-dropdown-item>Action 4</<%= sysAbb %>-dropdown-item>
+        <<%= sysAbb %>-dropdown-item>Action 5</<%= sysAbb %>-dropdown-item>
+      </<%= sysAbb %>-dropdown-menu>
+    </<%= sysAbb %>-dropdown>
+  </<%= sysAbb %>-col>
+</<%= sysAbb %>-row>
 
 <style lang="scss">
   .el-dropdown-link {
@@ -203,18 +203,18 @@ Use `hide-on-click` to define if menu closes on clicking.
 
 :::demo By default menu will close when you click on menu items, and it can be turned off by setting hide-on-click to false.
 ```html
-<sm-dropdown :hide-on-click="false">
+<<%= sysAbb %>-dropdown :hide-on-click="false">
   <span class="el-dropdown-link">
     Dropdown List<i class="el-icon-arrow-down el-icon--right"></i>
   </span>
-  <sm-dropdown-menu slot="dropdown">
-    <sm-dropdown-item>Action 1</sm-dropdown-item>
-    <sm-dropdown-item>Action 2</sm-dropdown-item>
-    <sm-dropdown-item>Action 3</sm-dropdown-item>
-    <sm-dropdown-item disabled>Action 4</sm-dropdown-item>
-    <sm-dropdown-item divided>Action 5</sm-dropdown-item>
-  </sm-dropdown-menu>
-</sm-dropdown>
+  <<%= sysAbb %>-dropdown-menu slot="dropdown">
+    <<%= sysAbb %>-dropdown-item>Action 1</<%= sysAbb %>-dropdown-item>
+    <<%= sysAbb %>-dropdown-item>Action 2</<%= sysAbb %>-dropdown-item>
+    <<%= sysAbb %>-dropdown-item>Action 3</<%= sysAbb %>-dropdown-item>
+    <<%= sysAbb %>-dropdown-item disabled>Action 4</<%= sysAbb %>-dropdown-item>
+    <<%= sysAbb %>-dropdown-item divided>Action 5</<%= sysAbb %>-dropdown-item>
+  </<%= sysAbb %>-dropdown-menu>
+</<%= sysAbb %>-dropdown>
 
 <style lang="scss">
   .el-dropdown-link {
@@ -234,18 +234,18 @@ Clicking each dropdown item fires an event whose parameter is assigned by each i
 
 :::demo
 ```html
-<sm-dropdown @command="handleCommand">
+<<%= sysAbb %>-dropdown @command="handleCommand">
   <span class="el-dropdown-link">
     Dropdown List<i class="el-icon-arrow-down el-icon--right"></i>
   </span>
-  <sm-dropdown-menu slot="dropdown">
-    <sm-dropdown-item command="a">Action 1</sm-dropdown-item>
-    <sm-dropdown-item command="b">Action 2</sm-dropdown-item>
-    <sm-dropdown-item command="c">Action 3</sm-dropdown-item>
-    <sm-dropdown-item command="d" disabled>Action 4</sm-dropdown-item>
-    <sm-dropdown-item command="e" divided>Action 5</sm-dropdown-item>
-  </sm-dropdown-menu>
-</sm-dropdown>
+  <<%= sysAbb %>-dropdown-menu slot="dropdown">
+    <<%= sysAbb %>-dropdown-item command="a">Action 1</<%= sysAbb %>-dropdown-item>
+    <<%= sysAbb %>-dropdown-item command="b">Action 2</<%= sysAbb %>-dropdown-item>
+    <<%= sysAbb %>-dropdown-item command="c">Action 3</<%= sysAbb %>-dropdown-item>
+    <<%= sysAbb %>-dropdown-item command="d" disabled>Action 4</<%= sysAbb %>-dropdown-item>
+    <<%= sysAbb %>-dropdown-item command="e" divided>Action 5</<%= sysAbb %>-dropdown-item>
+  </<%= sysAbb %>-dropdown-menu>
+</<%= sysAbb %>-dropdown>
 
 <style lang="scss">
   .el-dropdown-link {
@@ -276,45 +276,45 @@ Besides default size, Dropdown component provides three additional sizes for you
 :::demo Use attribute `size` to set additional sizes with `medium`, `small` or `mini`.
 
 ```html
-<sm-dropdown split-button type="primary">
+<<%= sysAbb %>-dropdown split-button type="primary">
   Default
-  <sm-dropdown-menu slot="dropdown">
-    <sm-dropdown-item>Action 1</sm-dropdown-item>
-    <sm-dropdown-item>Action 2</sm-dropdown-item>
-    <sm-dropdown-item>Action 3</sm-dropdown-item>
-    <sm-dropdown-item>Action 4</sm-dropdown-item>
-  </sm-dropdown-menu>
-</sm-dropdown>
+  <<%= sysAbb %>-dropdown-menu slot="dropdown">
+    <<%= sysAbb %>-dropdown-item>Action 1</<%= sysAbb %>-dropdown-item>
+    <<%= sysAbb %>-dropdown-item>Action 2</<%= sysAbb %>-dropdown-item>
+    <<%= sysAbb %>-dropdown-item>Action 3</<%= sysAbb %>-dropdown-item>
+    <<%= sysAbb %>-dropdown-item>Action 4</<%= sysAbb %>-dropdown-item>
+  </<%= sysAbb %>-dropdown-menu>
+</<%= sysAbb %>-dropdown>
 
-<sm-dropdown size="medium" split-button type="primary">
+<<%= sysAbb %>-dropdown size="medium" split-button type="primary">
   Medium
-  <sm-dropdown-menu slot="dropdown">
-    <sm-dropdown-item>Action 1</sm-dropdown-item>
-    <sm-dropdown-item>Action 2</sm-dropdown-item>
-    <sm-dropdown-item>Action 3</sm-dropdown-item>
-    <sm-dropdown-item>Action 4</sm-dropdown-item>
-  </sm-dropdown-menu>
-</sm-dropdown>
+  <<%= sysAbb %>-dropdown-menu slot="dropdown">
+    <<%= sysAbb %>-dropdown-item>Action 1</<%= sysAbb %>-dropdown-item>
+    <<%= sysAbb %>-dropdown-item>Action 2</<%= sysAbb %>-dropdown-item>
+    <<%= sysAbb %>-dropdown-item>Action 3</<%= sysAbb %>-dropdown-item>
+    <<%= sysAbb %>-dropdown-item>Action 4</<%= sysAbb %>-dropdown-item>
+  </<%= sysAbb %>-dropdown-menu>
+</<%= sysAbb %>-dropdown>
 
-<sm-dropdown size="small" split-button type="primary">
+<<%= sysAbb %>-dropdown size="small" split-button type="primary">
   Small
-  <sm-dropdown-menu slot="dropdown">
-   <sm-dropdown-item>Action 1</sm-dropdown-item>
-   <sm-dropdown-item>Action 2</sm-dropdown-item>
-   <sm-dropdown-item>Action 3</sm-dropdown-item>
-   <sm-dropdown-item>Action 4</sm-dropdown-item>
-  </sm-dropdown-menu>
-</sm-dropdown>
+  <<%= sysAbb %>-dropdown-menu slot="dropdown">
+   <<%= sysAbb %>-dropdown-item>Action 1</<%= sysAbb %>-dropdown-item>
+   <<%= sysAbb %>-dropdown-item>Action 2</<%= sysAbb %>-dropdown-item>
+   <<%= sysAbb %>-dropdown-item>Action 3</<%= sysAbb %>-dropdown-item>
+   <<%= sysAbb %>-dropdown-item>Action 4</<%= sysAbb %>-dropdown-item>
+  </<%= sysAbb %>-dropdown-menu>
+</<%= sysAbb %>-dropdown>
 
-<sm-dropdown size="mini" split-button type="primary">
+<<%= sysAbb %>-dropdown size="mini" split-button type="primary">
   Mini
-  <sm-dropdown-menu slot="dropdown">
-    <sm-dropdown-item>Action 1</sm-dropdown-item>
-    <sm-dropdown-item>Action 2</sm-dropdown-item>
-    <sm-dropdown-item>Action 3</sm-dropdown-item>
-    <sm-dropdown-item>Action 4</sm-dropdown-item>
-  </sm-dropdown-menu>
-</sm-dropdown>
+  <<%= sysAbb %>-dropdown-menu slot="dropdown">
+    <<%= sysAbb %>-dropdown-item>Action 1</<%= sysAbb %>-dropdown-item>
+    <<%= sysAbb %>-dropdown-item>Action 2</<%= sysAbb %>-dropdown-item>
+    <<%= sysAbb %>-dropdown-item>Action 3</<%= sysAbb %>-dropdown-item>
+    <<%= sysAbb %>-dropdown-item>Action 4</<%= sysAbb %>-dropdown-item>
+  </<%= sysAbb %>-dropdown-menu>
+</<%= sysAbb %>-dropdown>
 ```
 :::
 
@@ -336,7 +336,7 @@ Besides default size, Dropdown component provides three additional sizes for you
 | Name | Description |
 |------|--------|
 | — | content of Dropdown. Notice: Must be a valid html dom element (ex. `<span>, <button> etc.`) or `el-component`, to attach the trigger listener  |
-| dropdown | content of the Dropdown Menu, usually a `<sm-dropdown-menu>` element |
+| dropdown | content of the Dropdown Menu, usually a `<<%= sysAbb %>-dropdown-menu>` element |
 
 ### Dropdown Events
 | Event Name | Description | Parameters |

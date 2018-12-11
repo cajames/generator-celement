@@ -25,13 +25,13 @@ Simple step bar.
 :::demo Set `active` attribute with `Number` type, which indicates the index of steps and starts from 0. You can set `space` attribute when the width of the step needs to be fixed which accepts `Boolean` type. The unit of the `space` attribute is `px`. If not set, it is responsive. Setting the `finish-status` attribute can change the state of the steps that have been completed.
 
 ```html
-<sm-steps :active="active" finish-status="success">
-  <sm-step title="Step 1"></sm-step>
-  <sm-step title="Step 2"></sm-step>
-  <sm-step title="Step 3"></sm-step>
-</sm-steps>
+<<%= sysAbb %>-steps :active="active" finish-status="success">
+  <<%= sysAbb %>-step title="Step 1"></<%= sysAbb %>-step>
+  <<%= sysAbb %>-step title="Step 2"></<%= sysAbb %>-step>
+  <<%= sysAbb %>-step title="Step 3"></<%= sysAbb %>-step>
+</<%= sysAbb %>-steps>
 
-<sm-button style="margin-top: 12px;" @click="next">Next step</sm-button>
+<<%= sysAbb %>-button style="margin-top: 12px;" @click="next">Next step</<%= sysAbb %>-button>
 
 <script>
   export default {
@@ -58,11 +58,11 @@ Shows the status of the step for each step.
 :::demo Use `title` attribute to set the name of the step, or override the attribute by using a named `slot`. We have listed all the slot names for you at the end of this page.
 
 ```html
-<sm-steps :space="200" :active="1" finish-status="success">
-  <sm-step title="Done"></sm-step>
-  <sm-step title="Processing"></sm-step>
-  <sm-step title="Step 3"></sm-step>
-</sm-steps>
+<<%= sysAbb %>-steps :space="200" :active="1" finish-status="success">
+  <<%= sysAbb %>-step title="Done"></<%= sysAbb %>-step>
+  <<%= sysAbb %>-step title="Processing"></<%= sysAbb %>-step>
+  <<%= sysAbb %>-step title="Step 3"></<%= sysAbb %>-step>
+</<%= sysAbb %>-steps>
 ```
 :::
 
@@ -72,12 +72,12 @@ Title and desription can be centered.
 
 :::demo
 ```html
-<sm-steps :active="2" align-center>
-  <sm-step title="Step 1" description="Some description"></sm-step>
-  <sm-step title="Step 2" description="Some description"></sm-step>
-  <sm-step title="Step 3" description="Some description"></sm-step>
-  <sm-step title="Step 4" description="Some description"></sm-step>
-</sm-steps>
+<<%= sysAbb %>-steps :active="2" align-center>
+  <<%= sysAbb %>-step title="Step 1" description="Some description"></<%= sysAbb %>-step>
+  <<%= sysAbb %>-step title="Step 2" description="Some description"></<%= sysAbb %>-step>
+  <<%= sysAbb %>-step title="Step 3" description="Some description"></<%= sysAbb %>-step>
+  <<%= sysAbb %>-step title="Step 4" description="Some description"></<%= sysAbb %>-step>
+</<%= sysAbb %>-steps>
 ```
 :::
 
@@ -87,11 +87,11 @@ There is description for each step.
 
 :::demo
 ```html
-<sm-steps :active="1">
-  <sm-step title="Step 1" description="Some description"></sm-step>
-  <sm-step title="Step 2" description="Some description"></sm-step>
-  <sm-step title="Step 3" description="Some description"></sm-step>
-</sm-steps>
+<<%= sysAbb %>-steps :active="1">
+  <<%= sysAbb %>-step title="Step 1" description="Some description"></<%= sysAbb %>-step>
+  <<%= sysAbb %>-step title="Step 2" description="Some description"></<%= sysAbb %>-step>
+  <<%= sysAbb %>-step title="Step 3" description="Some description"></<%= sysAbb %>-step>
+</<%= sysAbb %>-steps>
 ```
 :::
 
@@ -102,11 +102,11 @@ A variety of custom icons can be used in the step bar.
 :::demo The icon is set by the `icon` property. The types of icons can be found in the document for the Icon component. In addition, you can customize the icon through a named `slot`.
 
 ```html
-<sm-steps :active="1">
-  <sm-step title="Step 1" icon="el-icon-edit"></sm-step>
-  <sm-step title="Step 2" icon="el-icon-upload"></sm-step>
-  <sm-step title="Step 3" icon="el-icon-picture"></sm-step>
-</sm-steps>
+<<%= sysAbb %>-steps :active="1">
+  <<%= sysAbb %>-step title="Step 1" icon="el-icon-edit"></<%= sysAbb %>-step>
+  <<%= sysAbb %>-step title="Step 2" icon="el-icon-upload"></<%= sysAbb %>-step>
+  <<%= sysAbb %>-step title="Step 3" icon="el-icon-picture"></<%= sysAbb %>-step>
+</<%= sysAbb %>-steps>
 ```
 :::
 
@@ -118,11 +118,11 @@ Vertical step bars.
 
 ```html
 <div style="height: 300px;">
-  <sm-steps direction="vertical" :active="1">
-    <sm-step title="Step 1"></sm-step>
-    <sm-step title="Step 2"></sm-step>
-    <sm-step title="Step 3"></sm-step>
-  </sm-steps>
+  <<%= sysAbb %>-steps direction="vertical" :active="1">
+    <<%= sysAbb %>-step title="Step 1"></<%= sysAbb %>-step>
+    <<%= sysAbb %>-step title="Step 2"></<%= sysAbb %>-step>
+    <<%= sysAbb %>-step title="Step 3"></<%= sysAbb %>-step>
+  </<%= sysAbb %>-steps>
 </div>
 ```
 :::
@@ -133,17 +133,17 @@ Simple step bars, where `align-center`, `description`, `direction` and `space` w
 :::demo
 ```html
 
-<sm-steps :space="200" :active="1" simple>
-  <sm-step title="Step 1" icon="el-icon-edit"></sm-step>
-  <sm-step title="Step 2" icon="el-icon-upload"></sm-step>
-  <sm-step title="Step 3" icon="el-icon-picture"></sm-step>
-</sm-steps>
+<<%= sysAbb %>-steps :space="200" :active="1" simple>
+  <<%= sysAbb %>-step title="Step 1" icon="el-icon-edit"></<%= sysAbb %>-step>
+  <<%= sysAbb %>-step title="Step 2" icon="el-icon-upload"></<%= sysAbb %>-step>
+  <<%= sysAbb %>-step title="Step 3" icon="el-icon-picture"></<%= sysAbb %>-step>
+</<%= sysAbb %>-steps>
 
-<sm-steps :active="1" finish-status="success" simple style="margin-top: 20px">
-  <sm-step title="Step 1" ></sm-step>
-  <sm-step title="Step 2" ></sm-step>
-  <sm-step title="Step 3" ></sm-step>
-</sm-steps>
+<<%= sysAbb %>-steps :active="1" finish-status="success" simple style="margin-top: 20px">
+  <<%= sysAbb %>-step title="Step 1" ></<%= sysAbb %>-step>
+  <<%= sysAbb %>-step title="Step 2" ></<%= sysAbb %>-step>
+  <<%= sysAbb %>-step title="Step 3" ></<%= sysAbb %>-step>
+</<%= sysAbb %>-steps>
 ```
 :::
 

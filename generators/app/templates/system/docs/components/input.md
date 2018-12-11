@@ -152,7 +152,7 @@ Input data using mouse or keyboard.
 :::demo
 
 ```html
-<sm-input placeholder="Please input" v-model="input"></sm-input>
+<<%= sysAbb %>-input placeholder="Please input" v-model="input"></<%= sysAbb %>-input>
 
 <script>
 export default {
@@ -171,11 +171,11 @@ export default {
 :::demo Disable the Input with the `disabled` attribute.
 
 ```html
-<sm-input
+<<%= sysAbb %>-input
   placeholder="Please input"
   v-model="input1"
   :disabled="true">
-</sm-input>
+</<%= sysAbb %>-input>
 
 <script>
 export default {
@@ -194,11 +194,11 @@ export default {
 :::demo Make the Input clearable with the `clearable` attribute.
 
 ```html
-<sm-input
+<<%= sysAbb %>-input
   placeholder="Please input"
   v-model="input10"
   clearable>
-</sm-input>
+</<%= sysAbb %>-input>
 
 <script>
 export default {
@@ -220,29 +220,29 @@ Add an icon to indicate input type.
 ```html
 <div class="demo-input-suffix">
   <span class="demo-input-label">Using attributes</span>
-  <sm-input
+  <<%= sysAbb %>-input
     placeholder="Pick a date"
     suffix-icon="el-icon-date"
     v-model="input2">
-  </sm-input>
-  <sm-input
+  </<%= sysAbb %>-input>
+  <<%= sysAbb %>-input
     placeholder="Type something"
     prefix-icon="el-icon-search"
     v-model="input21">
-  </sm-input>
+  </<%= sysAbb %>-input>
 </div>
 <div class="demo-input-suffix">
   <span class="demo-input-label">Using slots</span>
-  <sm-input
+  <<%= sysAbb %>-input
     placeholder="Pick a date"
     v-model="input22">
     <i slot="suffix" class="el-input__icon el-icon-date"></i>
-  </sm-input>
-  <sm-input
+  </<%= sysAbb %>-input>
+  <<%= sysAbb %>-input
     placeholder="Type something"
     v-model="input23">
     <i slot="prefix" class="el-input__icon el-icon-search"></i>
-  </sm-input>
+  </<%= sysAbb %>-input>
 </div>
 
 <style>
@@ -274,12 +274,12 @@ Resizable for entering multiple lines of text information. Add attribute `type="
 :::demo Control the height by setting the `rows` prop.
 
 ```html
-<sm-input
+<<%= sysAbb %>-input
   type="textarea"
   :rows="2"
   placeholder="Please input"
   v-model="textarea">
-</sm-input>
+</<%= sysAbb %>-input>
 
 <script>
 export default {
@@ -300,19 +300,19 @@ Setting the `autosize` prop for a textarea type of Input makes the height to aut
 :::demo
 
 ```html
-<sm-input
+<<%= sysAbb %>-input
   type="textarea"
   autosize
   placeholder="Please input"
   v-model="textarea2">
-</sm-input>
+</<%= sysAbb %>-input>
 <div style="margin: 20px 0;"></div>
-<sm-input
+<<%= sysAbb %>-input
   type="textarea"
   :autosize="{ minRows: 2, maxRows: 4}"
   placeholder="Please input"
   v-model="textarea3">
-</sm-input>
+</<%= sysAbb %>-input>
 
 <script>
 export default {
@@ -335,24 +335,24 @@ Prepend or append an element, generally a label or a button.
 
 ```html
 <div>
-  <sm-input placeholder="Please input" v-model="input3">
+  <<%= sysAbb %>-input placeholder="Please input" v-model="input3">
     <template slot="prepend">Http://</template>
-  </sm-input>
+  </<%= sysAbb %>-input>
 </div>
 <div style="margin-top: 15px;">
-  <sm-input placeholder="Please input" v-model="input4">
+  <<%= sysAbb %>-input placeholder="Please input" v-model="input4">
     <template slot="append">.com</template>
-  </sm-input>
+  </<%= sysAbb %>-input>
 </div>
 <div style="margin-top: 15px;">
-  <sm-input placeholder="Please input" v-model="input5" class="input-with-select">
-    <sm-select v-model="select" slot="prepend" placeholder="Select">
-      <sm-option label="Restaurant" value="1"></sm-option>
-      <sm-option label="Order No." value="2"></sm-option>
-      <sm-option label="Tel" value="3"></sm-option>
-    </sm-select>
-    <sm-button slot="append" icon="el-icon-search"></sm-button>
-  </sm-input>
+  <<%= sysAbb %>-input placeholder="Please input" v-model="input5" class="input-with-select">
+    <<%= sysAbb %>-select v-model="select" slot="prepend" placeholder="Select">
+      <<%= sysAbb %>-option label="Restaurant" value="1"></<%= sysAbb %>-option>
+      <<%= sysAbb %>-option label="Order No." value="2"></<%= sysAbb %>-option>
+      <<%= sysAbb %>-option label="Tel" value="3"></<%= sysAbb %>-option>
+    </<%= sysAbb %>-select>
+    <<%= sysAbb %>-button slot="append" icon="el-icon-search"></<%= sysAbb %>-button>
+  </<%= sysAbb %>-input>
 </div>
 
 <style>
@@ -383,25 +383,25 @@ export default {
 :::demo Add `size` attribute to change the size of Input. In addition to the default size, there are three other options: `large`, `small` and `mini`.
 ```html
 <div class="demo-input-size">
-  <sm-input
+  <<%= sysAbb %>-input
     placeholder="Please Input"
     v-model="input6">
-  </sm-input>
-  <sm-input
+  </<%= sysAbb %>-input>
+  <<%= sysAbb %>-input
     size="medium"
     placeholder="Please Input"
     v-model="input7">
-  </sm-input>
-  <sm-input
+  </<%= sysAbb %>-input>
+  <<%= sysAbb %>-input
     size="small"
     placeholder="Please Input"
     v-model="input8">
-  </sm-input>
-  <sm-input
+  </<%= sysAbb %>-input>
+  <<%= sysAbb %>-input
     size="mini"
     placeholder="Please Input"
     v-model="input9">
-  </sm-input>
+  </<%= sysAbb %>-input>
 </div>
 
 <script>
@@ -425,29 +425,29 @@ You can get some recommended tips based on the current input.
 
 :::demo Autocomplete component provides input suggestions. The `fetch-suggestions` attribute is a method that returns suggested input. In this example, `querySearch(queryString, cb)` returns suggestions to Autocomplete via `cb(data)` when suggestions are ready.
 ```html
-<sm-row class="demo-autocomplete">
-  <sm-col :span="12">
+<<%= sysAbb %>-row class="demo-autocomplete">
+  <<%= sysAbb %>-col :span="12">
     <div class="sub-title">list suggestions when activated</div>
-    <sm-autocomplete
+    <<%= sysAbb %>-autocomplete
       class="inline-input"
       v-model="state1"
       :fetch-suggestions="querySearch"
       placeholder="Please Input"
       @select="handleSelect"
-    ></sm-autocomplete>
-  </sm-col>
-  <sm-col :span="12">
+    ></<%= sysAbb %>-autocomplete>
+  </<%= sysAbb %>-col>
+  <<%= sysAbb %>-col :span="12">
     <div class="sub-title">list suggestions on input</div>
-    <sm-autocomplete
+    <<%= sysAbb %>-autocomplete
       class="inline-input"
       v-model="state2"
       :fetch-suggestions="querySearch"
       placeholder="Please Input"
       :trigger-on-focus="false"
       @select="handleSelect"
-    ></sm-autocomplete>
-  </sm-col>
-</sm-row>
+    ></<%= sysAbb %>-autocomplete>
+  </<%= sysAbb %>-col>
+</<%= sysAbb %>-row>
 <script>
   export default {
     data() {
@@ -498,7 +498,7 @@ Customize how suggestions are displayed.
 
 :::demo Use `scoped slot` to customize suggestion items. In the scope, you can access the suggestion object via the `item` key.
 ```html
-<sm-autocomplete
+<<%= sysAbb %>-autocomplete
   popper-class="my-autocomplete"
   v-model="state3"
   :fetch-suggestions="querySearch"
@@ -513,7 +513,7 @@ Customize how suggestions are displayed.
     <div class="value">{{ item.value }}</div>
     <span class="link">{{ item.link }}</span>
   </template>
-</sm-autocomplete>
+</<%= sysAbb %>-autocomplete>
 
 <style>
   .my-autocomplete {
@@ -585,12 +585,12 @@ Search data from server-side.
 
 :::demo
 ```html
-<sm-autocomplete
+<<%= sysAbb %>-autocomplete
   v-model="state4"
   :fetch-suggestions="querySearchAsync"
   placeholder="Please input"
   @select="handleSelect"
-></sm-autocomplete>
+></<%= sysAbb %>-autocomplete>
 <script>
   export default {
     data() {

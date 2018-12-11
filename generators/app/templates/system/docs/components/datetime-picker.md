@@ -103,29 +103,29 @@ DateTimePicker is derived from DatePicker and TimePicker. For a more detailed ex
 <template>
   <div class="block">
     <span class="demonstration">Default</span>
-    <sm-date-picker
+    <<%= sysAbb %>-date-picker
       v-model="value1"
       type="datetime"
       placeholder="Select date and time">
-    </sm-date-picker>
+    </<%= sysAbb %>-date-picker>
   </div>
   <div class="block">
     <span class="demonstration">With shortcuts</span>
-    <sm-date-picker
+    <<%= sysAbb %>-date-picker
       v-model="value2"
       type="datetime"
       placeholder="Select date and time"
       :picker-options="pickerOptions1">
-    </sm-date-picker>
+    </<%= sysAbb %>-date-picker>
   </div>
   <div class="block">
     <span class="demonstration">With default time</span>
-    <sm-date-picker
+    <<%= sysAbb %>-date-picker
       v-model="value3"
       type="datetime"
       placeholder="Select date and time"
       default-time="12:00:00">
-    </sm-date-picker>
+    </<%= sysAbb %>-date-picker>
   </div>
 </template>
 
@@ -173,17 +173,17 @@ DateTimePicker is derived from DatePicker and TimePicker. For a more detailed ex
 <template>
   <div class="block">
     <span class="demonstration">Default</span>
-    <sm-date-picker
+    <<%= sysAbb %>-date-picker
       v-model="value4"
       type="datetimerange"
       range-separator="To"
       start-placeholder="Start date"
       end-placeholder="End date">
-    </sm-date-picker>
+    </<%= sysAbb %>-date-picker>
   </div>
   <div class="block">
     <span class="demonstration">With shortcuts</span>
-    <sm-date-picker
+    <<%= sysAbb %>-date-picker
       v-model="value5"
       type="datetimerange"
       :picker-options="pickerOptions2"
@@ -191,7 +191,7 @@ DateTimePicker is derived from DatePicker and TimePicker. For a more detailed ex
       start-placeholder="Start date"
       end-placeholder="End date"
       align="right">
-    </sm-date-picker>
+    </<%= sysAbb %>-date-picker>
   </div>
 </template>
 
@@ -242,24 +242,24 @@ DateTimePicker is derived from DatePicker and TimePicker. For a more detailed ex
 <template>
   <div class="block">
     <span class="demonstration">Start date time 12:00:00</span>
-    <sm-date-picker
+    <<%= sysAbb %>-date-picker
       v-model="value6"
       type="datetimerange"
       start-placeholder="Start Date"
       end-placeholder="End Date"
       :default-time="['12:00:00']">
-    </sm-date-picker>
+    </<%= sysAbb %>-date-picker>
   </div>
   <div class="block">
     <span class="demonstration">Start date time 12:00:00, end date time 08:00:00</span>
-    <sm-date-picker
+    <<%= sysAbb %>-date-picker
       v-model="value7"
       type="datetimerange"
       align="right"
       start-placeholder="Start Date"
       end-placeholder="End Date"
       :default-time="['12:00:00', '08:00:00']">
-    </sm-date-picker>
+    </<%= sysAbb %>-date-picker>
   </div>
 </template>
 

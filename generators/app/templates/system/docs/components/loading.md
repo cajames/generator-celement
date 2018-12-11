@@ -61,25 +61,25 @@ Displays animation in a container (such as a table) while loading data.
 
 ```html
 <template>
-  <sm-table
+  <<%= sysAbb %>-table
     v-loading="loading"
     :data="tableData"
     style="width: 100%">
-    <sm-table-column
+    <<%= sysAbb %>-table-column
       prop="date"
       label="Date"
       width="180">
-    </sm-table-column>
-    <sm-table-column
+    </<%= sysAbb %>-table-column>
+    <<%= sysAbb %>-table-column
       prop="name"
       label="Name"
       width="180">
-    </sm-table-column>
-    <sm-table-column
+    </<%= sysAbb %>-table-column>
+    <<%= sysAbb %>-table-column
       prop="address"
       label="Address">
-    </sm-table-column>
-  </sm-table>
+    </<%= sysAbb %>-table-column>
+  </<%= sysAbb %>-table>
 </template>
 
 <style lang="scss">
@@ -120,28 +120,28 @@ You can customize loading text, loading spinner and background color.
 :::demo Add attribute `element-loading-text` to the element on which `v-loading` is bound, and its value will be displayed under the spinner. Similarly, `element-loading-spinner` and `element-loading-background` are for customizing loading spinner class name and background color.
 ```html
 <template>
-  <sm-table
+  <<%= sysAbb %>-table
     v-loading="loading2"
     element-loading-text="Loading..."
     element-loading-spinner="el-icon-loading"
     element-loading-background="rgba(0, 0, 0, 0.8)"
     :data="tableData"
     style="width: 100%">
-    <sm-table-column
+    <<%= sysAbb %>-table-column
       prop="date"
       label="Date"
       width="180">
-    </sm-table-column>
-    <sm-table-column
+    </<%= sysAbb %>-table-column>
+    <<%= sysAbb %>-table-column
       prop="name"
       label="Name"
       width="180">
-    </sm-table-column>
-    <sm-table-column
+    </<%= sysAbb %>-table-column>
+    <<%= sysAbb %>-table-column
       prop="address"
       label="Address">
-    </sm-table-column>
-  </sm-table>
+    </<%= sysAbb %>-table-column>
+  </<%= sysAbb %>-table>
 </template>
 
 <script>
@@ -177,17 +177,17 @@ Show a full screen animation while loading data.
 
 ```html
 <template>
-  <sm-button
+  <<%= sysAbb %>-button
     type="primary"
     @click="openFullScreen"
     v-loading.fullscreen.lock="fullscreenLoading">
     As a directive
-  </sm-button>
-  <sm-button
+  </<%= sysAbb %>-button>
+  <<%= sysAbb %>-button
     type="primary"
     @click="openFullScreen2">
     As a service
-  </sm-button>
+  </<%= sysAbb %>-button>
 </template>
 
 <script>

@@ -11,7 +11,7 @@ Checkbox can be used alone to switch between two states.
 ```html
 <template>
   <!-- `checked` should be true or false -->
-  <sm-checkbox v-model="checked">Option</sm-checkbox>
+  <<%= sysAbb %>-checkbox v-model="checked">Option</<%= sysAbb %>-checkbox>
 </template>
 <script>
   export default {
@@ -33,8 +33,8 @@ Disabled state for checkbox.
 
 ```html
 <template>
-  <sm-checkbox v-model="checked1" disabled>Option</sm-checkbox>
-  <sm-checkbox v-model="checked2" disabled>Option</sm-checkbox>
+  <<%= sysAbb %>-checkbox v-model="checked1" disabled>Option</<%= sysAbb %>-checkbox>
+  <<%= sysAbb %>-checkbox v-model="checked2" disabled>Option</<%= sysAbb %>-checkbox>
 </template>
 <script>
   export default {
@@ -57,13 +57,13 @@ It is used for multiple checkboxes which are bound in one group, and indicates w
 
 ```html
 <template>
-  <sm-checkbox-group v-model="checkList">
-    <sm-checkbox label="Option A"></sm-checkbox>
-    <sm-checkbox label="Option B"></sm-checkbox>
-    <sm-checkbox label="Option C"></sm-checkbox>
-    <sm-checkbox label="disabled" disabled></sm-checkbox>
-    <sm-checkbox label="selected and disabled" disabled></sm-checkbox>
-  </sm-checkbox-group>
+  <<%= sysAbb %>-checkbox-group v-model="checkList">
+    <<%= sysAbb %>-checkbox label="Option A"></<%= sysAbb %>-checkbox>
+    <<%= sysAbb %>-checkbox label="Option B"></<%= sysAbb %>-checkbox>
+    <<%= sysAbb %>-checkbox label="Option C"></<%= sysAbb %>-checkbox>
+    <<%= sysAbb %>-checkbox label="disabled" disabled></<%= sysAbb %>-checkbox>
+    <<%= sysAbb %>-checkbox label="selected and disabled" disabled></<%= sysAbb %>-checkbox>
+  </<%= sysAbb %>-checkbox-group>
 </template>
 
 <script>
@@ -86,11 +86,11 @@ The `indeterminate` property can help you to achieve a 'check all' effect.
 
 ```html
 <template>
-  <sm-checkbox :indeterminate="isIndeterminate" v-model="checkAll" @change="handleCheckAllChange">Check all</sm-checkbox>
+  <<%= sysAbb %>-checkbox :indeterminate="isIndeterminate" v-model="checkAll" @change="handleCheckAllChange">Check all</<%= sysAbb %>-checkbox>
   <div style="margin: 15px 0;"></div>
-  <sm-checkbox-group v-model="checkedCities" @change="handleCheckedCitiesChange">
-    <sm-checkbox v-for="city in cities" :label="city" :key="city">{{city}}</sm-checkbox>
-  </sm-checkbox-group>
+  <<%= sysAbb %>-checkbox-group v-model="checkedCities" @change="handleCheckedCitiesChange">
+    <<%= sysAbb %>-checkbox v-for="city in cities" :label="city" :key="city">{{city}}</<%= sysAbb %>-checkbox>
+  </<%= sysAbb %>-checkbox-group>
 </template>
 <script>
   const cityOptions = ['Shanghai', 'Beijing', 'Guangzhou', 'Shenzhen'];
@@ -127,12 +127,12 @@ The `min` and `max` properties can help you to limit the number of checked items
 
 ```html
 <template>
-  <sm-checkbox-group 
+  <<%= sysAbb %>-checkbox-group 
     v-model="checkedCities1"
     :min="1"
     :max="2">
-    <sm-checkbox v-for="city in cities" :label="city" :key="city">{{city}}</sm-checkbox>
-  </sm-checkbox-group>
+    <<%= sysAbb %>-checkbox v-for="city in cities" :label="city" :key="city">{{city}}</<%= sysAbb %>-checkbox>
+  </<%= sysAbb %>-checkbox-group>
 </template>
 <script>
   const cityOptions = ['Shanghai', 'Beijing', 'Guangzhou', 'Shenzhen'];
@@ -156,24 +156,24 @@ Checkbox with button styles.
 ```html
 <template>
   <div>
-    <sm-checkbox-group v-model="checkboxGroup1">
-      <sm-checkbox-button v-for="city in cities" :label="city" :key="city">{{city}}</sm-checkbox-button>
-    </sm-checkbox-group>
+    <<%= sysAbb %>-checkbox-group v-model="checkboxGroup1">
+      <<%= sysAbb %>-checkbox-button v-for="city in cities" :label="city" :key="city">{{city}}</<%= sysAbb %>-checkbox-button>
+    </<%= sysAbb %>-checkbox-group>
   </div>
   <div style="margin-top: 20px">
-    <sm-checkbox-group v-model="checkboxGroup2" size="medium">
-      <sm-checkbox-button v-for="city in cities" :label="city" :key="city">{{city}}</sm-checkbox-button>
-    </sm-checkbox-group>
+    <<%= sysAbb %>-checkbox-group v-model="checkboxGroup2" size="medium">
+      <<%= sysAbb %>-checkbox-button v-for="city in cities" :label="city" :key="city">{{city}}</<%= sysAbb %>-checkbox-button>
+    </<%= sysAbb %>-checkbox-group>
   </div>
   <div style="margin-top: 20px">
-    <sm-checkbox-group v-model="checkboxGroup3" size="small">
-      <sm-checkbox-button v-for="city in cities" :label="city" :disabled="city === 'Beijing'" :key="city">{{city}}</sm-checkbox-button>
-    </sm-checkbox-group>
+    <<%= sysAbb %>-checkbox-group v-model="checkboxGroup3" size="small">
+      <<%= sysAbb %>-checkbox-button v-for="city in cities" :label="city" :disabled="city === 'Beijing'" :key="city">{{city}}</<%= sysAbb %>-checkbox-button>
+    </<%= sysAbb %>-checkbox-group>
   </div>
   <div style="margin-top: 20px">
-    <sm-checkbox-group v-model="checkboxGroup4" size="mini" disabled>
-      <sm-checkbox-button v-for="city in cities" :label="city" :key="city">{{city}}</sm-checkbox-button>
-    </sm-checkbox-group>
+    <<%= sysAbb %>-checkbox-group v-model="checkboxGroup4" size="mini" disabled>
+      <<%= sysAbb %>-checkbox-button v-for="city in cities" :label="city" :key="city">{{city}}</<%= sysAbb %>-checkbox-button>
+    </<%= sysAbb %>-checkbox-group>
   </div>
 </template>
 <script>
@@ -200,24 +200,24 @@ Checkbox with button styles.
 ```html
 <template>
   <div>
-    <sm-checkbox v-model="checked3" label="Option1" border></sm-checkbox>
-    <sm-checkbox v-model="checked4" label="Option2" border></sm-checkbox>
+    <<%= sysAbb %>-checkbox v-model="checked3" label="Option1" border></<%= sysAbb %>-checkbox>
+    <<%= sysAbb %>-checkbox v-model="checked4" label="Option2" border></<%= sysAbb %>-checkbox>
   </div>
   <div style="margin-top: 20px">
-    <sm-checkbox v-model="checked5" label="Option1" border size="medium"></sm-checkbox>
-    <sm-checkbox v-model="checked6" label="Option2" border size="medium"></sm-checkbox>
+    <<%= sysAbb %>-checkbox v-model="checked5" label="Option1" border size="medium"></<%= sysAbb %>-checkbox>
+    <<%= sysAbb %>-checkbox v-model="checked6" label="Option2" border size="medium"></<%= sysAbb %>-checkbox>
   </div>
   <div style="margin-top: 20px">
-    <sm-checkbox-group v-model="checkboxGroup5" size="small">
-      <sm-checkbox label="Option1" border></sm-checkbox>
-      <sm-checkbox label="Option2" border disabled></sm-checkbox>
-    </sm-checkbox-group>
+    <<%= sysAbb %>-checkbox-group v-model="checkboxGroup5" size="small">
+      <<%= sysAbb %>-checkbox label="Option1" border></<%= sysAbb %>-checkbox>
+      <<%= sysAbb %>-checkbox label="Option2" border disabled></<%= sysAbb %>-checkbox>
+    </<%= sysAbb %>-checkbox-group>
   </div>
   <div style="margin-top: 20px">
-    <sm-checkbox-group v-model="checkboxGroup6" size="mini" disabled>
-      <sm-checkbox label="Option1" border></sm-checkbox>
-      <sm-checkbox label="Option2" border></sm-checkbox>
-    </sm-checkbox-group>
+    <<%= sysAbb %>-checkbox-group v-model="checkboxGroup6" size="mini" disabled>
+      <<%= sysAbb %>-checkbox label="Option1" border></<%= sysAbb %>-checkbox>
+      <<%= sysAbb %>-checkbox label="Option2" border></<%= sysAbb %>-checkbox>
+    </<%= sysAbb %>-checkbox-group>
   </div>
 </template>
 

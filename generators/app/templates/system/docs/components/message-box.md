@@ -158,7 +158,7 @@ Alert interrupts user operation until the user confirms.
 
 ```html
 <template>
-  <sm-button type="text" @click="open">Click to open the Message Box</sm-button>
+  <<%= sysAbb %>-button type="text" @click="open">Click to open the Message Box</<%= sysAbb %>-button>
 </template>
 
 <script>
@@ -189,7 +189,7 @@ Confirm is used to ask users' confirmation.
 
 ```html
 <template>
-  <sm-button type="text" @click="open2">Click to open the Message Box</sm-button>
+  <<%= sysAbb %>-button type="text" @click="open2">Click to open the Message Box</<%= sysAbb %>-button>
 </template>
 
 <script>
@@ -227,7 +227,7 @@ Prompt is used when user input is required.
 
 ```html
 <template>
-  <sm-button type="text" @click="open3">Click to open Message Box</sm-button>
+  <<%= sysAbb %>-button type="text" @click="open3">Click to open Message Box</<%= sysAbb %>-button>
 </template>
 
 <script>
@@ -265,7 +265,7 @@ Can be customized to show various content.
 
 ```html
 <template>
-  <sm-button type="text" @click="open4">Click to open Message Box</sm-button>
+  <<%= sysAbb %>-button type="text" @click="open4">Click to open Message Box</<%= sysAbb %>-button>
 </template>
 
 <script>
@@ -321,7 +321,7 @@ The content of MessageBox can be `VNode`, allowing us to pass custom components.
 
 ```html
 <template>
-  <sm-button type="text" @click="open5">Click to open Message Box</sm-button>
+  <<%= sysAbb %>-button type="text" @click="open5">Click to open Message Box</<%= sysAbb %>-button>
 </template>
 
 <script>
@@ -350,7 +350,7 @@ In some cases, clicking the cancel button and close button may have different me
 
 ```html
 <template>
-  <sm-button type="text" @click="open6">Click to open Message Box</sm-button>
+  <<%= sysAbb %>-button type="text" @click="open6">Click to open Message Box</<%= sysAbb %>-button>
 </template>
 
 <script>
@@ -390,7 +390,7 @@ Content of MessageBox can be centered.
 
 ```html
 <template>
-  <sm-button type="text" @click="open7">Click to open Message Box</sm-button>
+  <<%= sysAbb %>-button type="text" @click="open7">Click to open Message Box</<%= sysAbb %>-button>
 </template>
 
 <script>

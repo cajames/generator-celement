@@ -9,19 +9,19 @@ Loop a series of images or texts in a limited space
 <template>
   <div class="block">
     <span class="demonstration">Switch when indicator is hovered (default)</span>
-    <sm-carousel height="150px">
-      <sm-carousel-item v-for="item in 4" :key="item">
+    <<%= sysAbb %>-carousel height="150px">
+      <<%= sysAbb %>-carousel-item v-for="item in 4" :key="item">
         <h3>{{ item }}</h3>
-      </sm-carousel-item>
-    </sm-carousel>
+      </<%= sysAbb %>-carousel-item>
+    </<%= sysAbb %>-carousel>
   </div>
   <div class="block">
     <span class="demonstration">Switch when indicator is clicked</span>
-    <sm-carousel trigger="click" height="150px">
-      <sm-carousel-item v-for="item in 4" :key="item">
+    <<%= sysAbb %>-carousel trigger="click" height="150px">
+      <<%= sysAbb %>-carousel-item v-for="item in 4" :key="item">
         <h3>{{ item }}</h3>
-      </sm-carousel-item>
-    </sm-carousel>
+      </<%= sysAbb %>-carousel-item>
+    </<%= sysAbb %>-carousel>
   </div>
 </template>
 
@@ -52,11 +52,11 @@ Indicators can be displayed outside the carousel
 :::demo The `indicator-position` attribute determines where the indicators are located. By default they are inside the carousel, and setting `indicator-position` to `outside` moves them outside; setting `indicator-position` to `none` hides the indicators.
 ```html
 <template>
-  <sm-carousel indicator-position="outside">
-    <sm-carousel-item v-for="item in 4" :key="item">
+  <<%= sysAbb %>-carousel indicator-position="outside">
+    <<%= sysAbb %>-carousel-item v-for="item in 4" :key="item">
       <h3>{{ item }}</h3>
-    </sm-carousel-item>
-  </sm-carousel>
+    </<%= sysAbb %>-carousel-item>
+  </<%= sysAbb %>-carousel>
 </template>
 
 <style lang="scss">
@@ -86,11 +86,11 @@ You can define when arrows are displayed
 :::demo The `arrow` attribute determines when arrows are displayed. By default they appear when mouse hovers over the carousel. Setting `arrow` to `always` or `never` shows/hides the arrows permanently.
 ```html
 <template>
-  <sm-carousel :interval="5000" arrow="always">
-    <sm-carousel-item v-for="item in 4" :key="item">
+  <<%= sysAbb %>-carousel :interval="5000" arrow="always">
+    <<%= sysAbb %>-carousel-item v-for="item in 4" :key="item">
       <h3>{{ item }}</h3>
-    </sm-carousel-item>
-  </sm-carousel>
+    </<%= sysAbb %>-carousel-item>
+  </<%= sysAbb %>-carousel>
 </template>
 
 <style lang="scss">
@@ -120,11 +120,11 @@ When a page is wide enough but has limited height, you can activate card mode fo
 :::demo Setting `type` to `card` activates the card mode. Apart from the appearance, the biggest difference between card mode and common mode is that clicking the slides at both sides directly switches the carousel in card mode.
 ```html
 <template>
-  <sm-carousel :interval="4000" type="card" height="200px">
-    <sm-carousel-item v-for="item in 6" :key="item">
+  <<%= sysAbb %>-carousel :interval="4000" type="card" height="200px">
+    <<%= sysAbb %>-carousel-item v-for="item in 6" :key="item">
       <h3>{{ item }}</h3>
-    </sm-carousel-item>
-  </sm-carousel>
+    </<%= sysAbb %>-carousel-item>
+  </<%= sysAbb %>-carousel>
 </template>
 
 <style lang="scss">

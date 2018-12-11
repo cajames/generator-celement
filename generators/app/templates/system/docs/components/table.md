@@ -379,24 +379,24 @@ Basic table is just for data display.
 
 ```html
   <template>
-    <sm-table
+    <<%= sysAbb %>-table
       :data="tableData"
       style="width: 100%">
-      <sm-table-column
+      <<%= sysAbb %>-table-column
         prop="date"
         label="Date"
         width="180">
-      </sm-table-column>
-      <sm-table-column
+      </<%= sysAbb %>-table-column>
+      <<%= sysAbb %>-table-column
         prop="name"
         label="Name"
         width="180">
-      </sm-table-column>
-      <sm-table-column
+      </<%= sysAbb %>-table-column>
+      <<%= sysAbb %>-table-column
         prop="address"
         label="Address">
-      </sm-table-column>
-    </sm-table>
+      </<%= sysAbb %>-table-column>
+    </<%= sysAbb %>-table>
   </template>
 
   <script>
@@ -434,25 +434,25 @@ Striped table makes it easier to distinguish different rows.
 :::demo Attribute `stripe` accepts a `Boolean`. If `true`, table will be striped.
 ```html
 <template>
-  <sm-table
+  <<%= sysAbb %>-table
     :data="tableData"
     stripe
     style="width: 100%">
-    <sm-table-column
+    <<%= sysAbb %>-table-column
       prop="date"
       label="Date"
       width="180">
-    </sm-table-column>
-    <sm-table-column
+    </<%= sysAbb %>-table-column>
+    <<%= sysAbb %>-table-column
       prop="name"
       label="Name"
       width="180">
-    </sm-table-column>
-    <sm-table-column
+    </<%= sysAbb %>-table-column>
+    <<%= sysAbb %>-table-column
       prop="address"
       label="Address">
-    </sm-table-column>
-  </sm-table>
+    </<%= sysAbb %>-table-column>
+  </<%= sysAbb %>-table>
 </template>
 
 <script>
@@ -489,25 +489,25 @@ Striped table makes it easier to distinguish different rows.
 
 ```html
 <template>
-  <sm-table
+  <<%= sysAbb %>-table
     :data="tableData"
     border
     style="width: 100%">
-    <sm-table-column
+    <<%= sysAbb %>-table-column
       prop="date"
       label="Date"
       width="180">
-    </sm-table-column>
-    <sm-table-column
+    </<%= sysAbb %>-table-column>
+    <<%= sysAbb %>-table-column
       prop="name"
       label="Name"
       width="180">
-    </sm-table-column>
-    <sm-table-column
+    </<%= sysAbb %>-table-column>
+    <<%= sysAbb %>-table-column
       prop="address"
       label="Address">
-    </sm-table-column>
-  </sm-table>
+    </<%= sysAbb %>-table-column>
+  </<%= sysAbb %>-table>
 </template>
 
 <script>
@@ -545,25 +545,25 @@ You can highlight your table content to distinguish between "success, informatio
 :::demo Use `row-class-name` in `el-table` to add custom classes to a certain row. Then you can style it with custom classes.
 ```html
 <template>
-  <sm-table
+  <<%= sysAbb %>-table
     :data="tableData2"
     style="width: 100%"
     :row-class-name="tableRowClassName">
-    <sm-table-column
+    <<%= sysAbb %>-table-column
       prop="date"
       label="Date"
       width="180">
-    </sm-table-column>
-    <sm-table-column
+    </<%= sysAbb %>-table-column>
+    <<%= sysAbb %>-table-column
       prop="name"
       label="Name"
       width="180">
-    </sm-table-column>
-    <sm-table-column
+    </<%= sysAbb %>-table-column>
+    <<%= sysAbb %>-table-column
       prop="address"
       label="Address">
-    </sm-table-column>
-  </sm-table>
+    </<%= sysAbb %>-table-column>
+  </<%= sysAbb %>-table>
 </template>
 
 <style>
@@ -621,25 +621,25 @@ When there are too many rows, you can use a fixed header.
 :::demo By setting the attribute `height` of `el-table`, you can fix the table header without any other codes.
 ```html
 <template>
-  <sm-table
+  <<%= sysAbb %>-table
     :data="tableData3"
     height="250"
     style="width: 100%">
-    <sm-table-column
+    <<%= sysAbb %>-table-column
       prop="date"
       label="Date"
       width="180">
-    </sm-table-column>
-    <sm-table-column
+    </<%= sysAbb %>-table-column>
+    <<%= sysAbb %>-table-column
       prop="name"
       label="Name"
       width="180">
-    </sm-table-column>
-    <sm-table-column
+    </<%= sysAbb %>-table-column>
+    <<%= sysAbb %>-table-column
       prop="address"
       label="Address">
-    </sm-table-column>
-  </sm-table>
+    </<%= sysAbb %>-table-column>
+  </<%= sysAbb %>-table>
 </template>
 
 <script>
@@ -689,50 +689,50 @@ When there are too many columns, you can fix some of them.
 :::demo Attribute `fixed` is used in `el-table-column`, it accepts a `Boolean`. If `true`, the column will be fixed at left. It also accepts two string literals: 'left' and 'right', both indicating that the column will be fixed at corresponding direction.
 ```html
 <template>
-  <sm-table
+  <<%= sysAbb %>-table
     :data="tableData"
     style="width: 100%">
-    <sm-table-column
+    <<%= sysAbb %>-table-column
       fixed
       prop="date"
       label="Date"
       width="150">
-    </sm-table-column>
-    <sm-table-column
+    </<%= sysAbb %>-table-column>
+    <<%= sysAbb %>-table-column
       prop="name"
       label="Name"
       width="120">
-    </sm-table-column>
-    <sm-table-column
+    </<%= sysAbb %>-table-column>
+    <<%= sysAbb %>-table-column
       prop="state"
       label="State"
       width="120">
-    </sm-table-column>
-    <sm-table-column
+    </<%= sysAbb %>-table-column>
+    <<%= sysAbb %>-table-column
       prop="city"
       label="City"
       width="120">
-    </sm-table-column>
-    <sm-table-column
+    </<%= sysAbb %>-table-column>
+    <<%= sysAbb %>-table-column
       prop="address"
       label="Address"
       width="300">
-    </sm-table-column>
-    <sm-table-column
+    </<%= sysAbb %>-table-column>
+    <<%= sysAbb %>-table-column
       prop="zip"
       label="Zip"
       width="120">
-    </sm-table-column>
-    <sm-table-column
+    </<%= sysAbb %>-table-column>
+    <<%= sysAbb %>-table-column
       fixed="right"
       label="Operations"
       width="120">
       <template slot-scope="scope">
-        <sm-button @click="handleClick" type="text" size="small">Detail</sm-button>
-        <sm-button type="text" size="small">Edit</sm-button>
+        <<%= sysAbb %>-button @click="handleClick" type="text" size="small">Detail</<%= sysAbb %>-button>
+        <<%= sysAbb %>-button type="text" size="small">Edit</<%= sysAbb %>-button>
       </template>
-    </sm-table-column>
-  </sm-table>
+    </<%= sysAbb %>-table-column>
+  </<%= sysAbb %>-table>
 </template>
 
 <script>
@@ -791,42 +791,42 @@ When you have huge chunks of data to put in a table, you can fix the header and 
 :::demo  Fix columns and header at the same time by combining the above two examples.
 ```html
 <template>
-  <sm-table
+  <<%= sysAbb %>-table
     :data="tableData3"
     style="width: 100%"
     height="250">
-    <sm-table-column
+    <<%= sysAbb %>-table-column
       fixed
       prop="date"
       label="Date"
       width="150">
-    </sm-table-column>
-    <sm-table-column
+    </<%= sysAbb %>-table-column>
+    <<%= sysAbb %>-table-column
       prop="name"
       label="Name"
       width="120">
-    </sm-table-column>
-    <sm-table-column
+    </<%= sysAbb %>-table-column>
+    <<%= sysAbb %>-table-column
       prop="state"
       label="State"
       width="120">
-    </sm-table-column>
-    <sm-table-column
+    </<%= sysAbb %>-table-column>
+    <<%= sysAbb %>-table-column
       prop="city"
       label="City"
       width="120">
-    </sm-table-column>
-    <sm-table-column
+    </<%= sysAbb %>-table-column>
+    <<%= sysAbb %>-table-column
       prop="address"
       label="Address"
       width="300">
-    </sm-table-column>
-    <sm-table-column
+    </<%= sysAbb %>-table-column>
+    <<%= sysAbb %>-table-column
       prop="zip"
       label="Zip"
       width="120">
-    </sm-table-column>
-  </sm-table>
+    </<%= sysAbb %>-table-column>
+  </<%= sysAbb %>-table>
 </template>
 
 <script>
@@ -897,55 +897,55 @@ When the the data is dynamically changed, you might want the table to have a max
 :::demo  By setting the attribute `max-height` of `el-table`, you can fix the table header. The table body scrolls only if the height of the rows exceeds the max height value.
 ```html
 <template>
-  <sm-table
+  <<%= sysAbb %>-table
     :data="tableData4"
     style="width: 100%"
     max-height="250">
-    <sm-table-column
+    <<%= sysAbb %>-table-column
       fixed
       prop="date"
       label="Date"
       width="150">
-    </sm-table-column>
-    <sm-table-column
+    </<%= sysAbb %>-table-column>
+    <<%= sysAbb %>-table-column
       prop="name"
       label="Name"
       width="120">
-    </sm-table-column>
-    <sm-table-column
+    </<%= sysAbb %>-table-column>
+    <<%= sysAbb %>-table-column
       prop="state"
       label="State"
       width="120">
-    </sm-table-column>
-    <sm-table-column
+    </<%= sysAbb %>-table-column>
+    <<%= sysAbb %>-table-column
       prop="city"
       label="City"
       width="120">
-    </sm-table-column>
-    <sm-table-column
+    </<%= sysAbb %>-table-column>
+    <<%= sysAbb %>-table-column
       prop="address"
       label="Address"
       width="300">
-    </sm-table-column>
-    <sm-table-column
+    </<%= sysAbb %>-table-column>
+    <<%= sysAbb %>-table-column
       prop="zip"
       label="Zip"
       width="120">
-    </sm-table-column>
-    <sm-table-column
+    </<%= sysAbb %>-table-column>
+    <<%= sysAbb %>-table-column
       fixed="right"
       label="Operations"
       width="120">
       <template slot-scope="scope">
-        <sm-button
+        <<%= sysAbb %>-button
           @click.native.prevent="deleteRow(scope.$index, tableData4)"
           type="text"
           size="small">
           Remove
-        </sm-button>
+        </<%= sysAbb %>-button>
       </template>
-    </sm-table-column>
-  </sm-table>
+    </<%= sysAbb %>-table-column>
+  </<%= sysAbb %>-table>
 </template>
 
 <script>
@@ -1021,44 +1021,44 @@ When the data structure is complex, you can use group header to show the data hi
 :::demo Only need to place el-table-column inside a el-table-column, you can achieve group header.
 ```html
 <template>
-  <sm-table
+  <<%= sysAbb %>-table
     :data="tableData3"
     style="width: 100%">
-    <sm-table-column
+    <<%= sysAbb %>-table-column
       prop="date"
       label="Date"
       width="150">
-    </sm-table-column>
-    <sm-table-column label="Delivery Info">
-      <sm-table-column
+    </<%= sysAbb %>-table-column>
+    <<%= sysAbb %>-table-column label="Delivery Info">
+      <<%= sysAbb %>-table-column
         prop="name"
         label="Name"
         width="120">
-      </sm-table-column>
-      <sm-table-column label="Address Info">
-        <sm-table-column
+      </<%= sysAbb %>-table-column>
+      <<%= sysAbb %>-table-column label="Address Info">
+        <<%= sysAbb %>-table-column
           prop="state"
           label="State"
           width="120">
-        </sm-table-column>
-        <sm-table-column
+        </<%= sysAbb %>-table-column>
+        <<%= sysAbb %>-table-column
           prop="city"
           label="City"
           width="120">
-        </sm-table-column>
-        <sm-table-column
+        </<%= sysAbb %>-table-column>
+        <<%= sysAbb %>-table-column
           prop="address"
           label="Address"
           width="300">
-        </sm-table-column>
-        <sm-table-column
+        </<%= sysAbb %>-table-column>
+        <<%= sysAbb %>-table-column
           prop="zip"
           label="Zip"
           width="120">
-        </sm-table-column>
-      </sm-table-column>
-    </sm-table-column>
-  </sm-table>
+        </<%= sysAbb %>-table-column>
+      </<%= sysAbb %>-table-column>
+    </<%= sysAbb %>-table-column>
+  </<%= sysAbb %>-table>
 </template>
 
 <script>
@@ -1129,34 +1129,34 @@ Single row selection is supported.
 :::demo Table supports single row selection. You can activate it by adding the `highlight-current-row` attribute. An event called `current-change` will be triggered when row selection changes, and its parameters are the rows after and before this change: `currentRow` and `oldCurrentRow`. If you need to display row index, you can add a new `el-table-column` with its `type` attribute assigned to `index`, and you will see the index starting from 1.
 ```html
 <template>
-  <sm-table
+  <<%= sysAbb %>-table
     ref="singleTable"
     :data="tableData"
     highlight-current-row
     @current-change="handleCurrentChange"
     style="width: 100%">
-    <sm-table-column
+    <<%= sysAbb %>-table-column
       type="index"
       width="50">
-    </sm-table-column>
-    <sm-table-column
+    </<%= sysAbb %>-table-column>
+    <<%= sysAbb %>-table-column
       property="date"
       label="Date"
       width="120">
-    </sm-table-column>
-    <sm-table-column
+    </<%= sysAbb %>-table-column>
+    <<%= sysAbb %>-table-column
       property="name"
       label="Name"
       width="120">
-    </sm-table-column>
-    <sm-table-column
+    </<%= sysAbb %>-table-column>
+    <<%= sysAbb %>-table-column
       property="address"
       label="Address">
-    </sm-table-column>
-  </sm-table>
+    </<%= sysAbb %>-table-column>
+  </<%= sysAbb %>-table>
   <div style="margin-top: 20px">
-    <sm-button @click="setCurrent(tableData[1])">Select second row</sm-button>
-    <sm-button @click="setCurrent()">Clear selection</sm-button>
+    <<%= sysAbb %>-button @click="setCurrent(tableData[1])">Select second row</<%= sysAbb %>-button>
+    <<%= sysAbb %>-button @click="setCurrent()">Clear selection</<%= sysAbb %>-button>
   </div>
 </template>
 
@@ -1205,34 +1205,34 @@ You can also select multiple rows.
 :::demo Activating multiple selection is easy: simply add an `el-table-column` with its `type` set to `selection`. Apart from multiple selection, this example also uses `show-overflow-tooltip`: by default, if the content is too long, it will break into multiple lines. If you want to keep it in one line, use attribute `show-overflow-tooltip`, which accepts a `Boolean` value. When set `true`, the extra content will show in tooltip when hover on the cell.
 ```html
 <template>
-  <sm-table
+  <<%= sysAbb %>-table
     ref="multipleTable"
     :data="tableData3"
     style="width: 100%"
     @selection-change="handleSelectionChange">
-    <sm-table-column
+    <<%= sysAbb %>-table-column
       type="selection"
       width="55">
-    </sm-table-column>
-    <sm-table-column
+    </<%= sysAbb %>-table-column>
+    <<%= sysAbb %>-table-column
       label="Date"
       width="120">
       <template slot-scope="scope">{{ scope.row.date }}</template>
-    </sm-table-column>
-    <sm-table-column
+    </<%= sysAbb %>-table-column>
+    <<%= sysAbb %>-table-column
       property="name"
       label="Name"
       width="120">
-    </sm-table-column>
-    <sm-table-column
+    </<%= sysAbb %>-table-column>
+    <<%= sysAbb %>-table-column
       property="address"
       label="Address"
       show-overflow-tooltip>
-    </sm-table-column>
-  </sm-table>
+    </<%= sysAbb %>-table-column>
+  </<%= sysAbb %>-table>
   <div style="margin-top: 20px">
-    <sm-button @click="toggleSelection([tableData3[1], tableData3[2]])">Toggle selection status of second and third rows</sm-button>
-    <sm-button @click="toggleSelection()">Clear selection</sm-button>
+    <<%= sysAbb %>-button @click="toggleSelection([tableData3[1], tableData3[2]])">Toggle selection status of second and third rows</<%= sysAbb %>-button>
+    <<%= sysAbb %>-button @click="toggleSelection()">Clear selection</<%= sysAbb %>-button>
   </div>
 </template>
 
@@ -1299,27 +1299,27 @@ Sort the data to find or compare data quickly.
 :::demo Set attribute `sortable` in a certain column to sort the data based on this column. It accepts `Boolean` with a default value `false`. Set table attribute `default-sort` to determine default sort column and order. To apply your own sorting rules, use `sort-method` or `sort-by`. If you need remote sorting from backend, set `sortable` to `custom`, and listen to the `sort-change` event on Table. In the event handler, you have access to the sorting column and sorting order so that you can fetch sorted table data from API. In this example we use another attribute named `formatter` to format the value of certain columns. It accepts a function which has two parameters: `row` and `column`. You can handle it according to your own needs.
 ```html
 <template>
-  <sm-table
+  <<%= sysAbb %>-table
     :data="tableData"
     :default-sort = "{prop: 'date', order: 'descending'}"
     style="width: 100%">
-    <sm-table-column
+    <<%= sysAbb %>-table-column
       prop="date"
       label="Date"
       sortable
       width="180">
-    </sm-table-column>
-    <sm-table-column
+    </<%= sysAbb %>-table-column>
+    <<%= sysAbb %>-table-column
       prop="name"
       label="Name"
       width="180">
-    </sm-table-column>
-    <sm-table-column
+    </<%= sysAbb %>-table-column>
+    <<%= sysAbb %>-table-column
       prop="address"
       label="Address"
       :formatter="formatter">
-    </sm-table-column>
-  </sm-table>
+    </<%= sysAbb %>-table-column>
+  </<%= sysAbb %>-table>
 </template>
 
 <script>
@@ -1362,13 +1362,13 @@ Filter the table to find desired data.
 :::demo Set attribute `filters` and `filter-method` in `el-table-column` makes this column filterable. `filters` is an array, and `filter-method` is a function deciding which rows are displayed. It has three parameters: `value`, `row` and `column`.
 ```html
 <template>
-  <sm-button @click="resetDateFilter">reset date filter</sm-button>
-  <sm-button @click="clearFilter">reset all filters</sm-button>
-  <sm-table
+  <<%= sysAbb %>-button @click="resetDateFilter">reset date filter</<%= sysAbb %>-button>
+  <<%= sysAbb %>-button @click="clearFilter">reset all filters</<%= sysAbb %>-button>
+  <<%= sysAbb %>-table
     ref="filterTable"
     :data="tableData"
     style="width: 100%">
-    <sm-table-column
+    <<%= sysAbb %>-table-column
       prop="date"
       label="Date"
       sortable
@@ -1377,18 +1377,18 @@ Filter the table to find desired data.
       :filters="[{text: '2016-05-01', value: '2016-05-01'}, {text: '2016-05-02', value: '2016-05-02'}, {text: '2016-05-03', value: '2016-05-03'}, {text: '2016-05-04', value: '2016-05-04'}]"
       :filter-method="filterHandler"
     >
-    </sm-table-column>
-    <sm-table-column
+    </<%= sysAbb %>-table-column>
+    <<%= sysAbb %>-table-column
       prop="name"
       label="Name"
       width="180">
-    </sm-table-column>
-    <sm-table-column
+    </<%= sysAbb %>-table-column>
+    <<%= sysAbb %>-table-column
       prop="address"
       label="Address"
       :formatter="formatter">
-    </sm-table-column>
-    <sm-table-column
+    </<%= sysAbb %>-table-column>
+    <<%= sysAbb %>-table-column
       prop="tag"
       label="Tag"
       width="100"
@@ -1396,12 +1396,12 @@ Filter the table to find desired data.
       :filter-method="filterTag"
       filter-placement="bottom-end">
       <template slot-scope="scope">
-        <sm-tag
+        <<%= sysAbb %>-tag
           :type="scope.row.tag === 'Home' ? 'primary' : 'success'"
-          disable-transitions>{{scope.row.tag}}</sm-tag>
+          disable-transitions>{{scope.row.tag}}</<%= sysAbb %>-tag>
       </template>
-    </sm-table-column>
-  </sm-table>
+    </<%= sysAbb %>-table-column>
+  </<%= sysAbb %>-table>
 </template>
 
 <script>
@@ -1460,43 +1460,43 @@ Customize table column so it can be integrated with other components.
 :::demo You have access to the following data: row, column, $index and store (state management of Table) by [Scoped slot](https://vuejs.org/v2/guide/components.html#Scoped-Slots).
 ```html
 <template>
-  <sm-table
+  <<%= sysAbb %>-table
     :data="tableData"
     style="width: 100%">
-    <sm-table-column
+    <<%= sysAbb %>-table-column
       label="Date"
       width="180">
       <template slot-scope="scope">
         <i class="el-icon-time"></i>
         <span style="margin-left: 10px">{{ scope.row.date }}</span>
       </template>
-    </sm-table-column>
-    <sm-table-column
+    </<%= sysAbb %>-table-column>
+    <<%= sysAbb %>-table-column
       label="Name"
       width="180">
       <template slot-scope="scope">
-        <sm-popover trigger="hover" placement="top">
+        <<%= sysAbb %>-popover trigger="hover" placement="top">
           <p>Name: {{ scope.row.name }}</p>
           <p>Addr: {{ scope.row.address }}</p>
           <div slot="reference" class="name-wrapper">
-            <sm-tag size="medium">{{ scope.row.name }}</sm-tag>
+            <<%= sysAbb %>-tag size="medium">{{ scope.row.name }}</<%= sysAbb %>-tag>
           </div>
-        </sm-popover>
+        </<%= sysAbb %>-popover>
       </template>
-    </sm-table-column>
-    <sm-table-column
+    </<%= sysAbb %>-table-column>
+    <<%= sysAbb %>-table-column
       label="Operations">
       <template slot-scope="scope">
-        <sm-button
+        <<%= sysAbb %>-button
           size="mini"
-          @click="handleEdit(scope.$index, scope.row)">Edit</sm-button>
-        <sm-button
+          @click="handleEdit(scope.$index, scope.row)">Edit</<%= sysAbb %>-button>
+        <<%= sysAbb %>-button
           size="mini"
           type="danger"
-          @click="handleDelete(scope.$index, scope.row)">Delete</sm-button>
+          @click="handleDelete(scope.$index, scope.row)">Delete</<%= sysAbb %>-button>
       </template>
-    </sm-table-column>
-  </sm-table>
+    </<%= sysAbb %>-table-column>
+  </<%= sysAbb %>-table>
 </template>
 
 <script>
@@ -1541,36 +1541,36 @@ Customize table header so it can be even more customized.
 :::demo You can customize how the header looks by header [scoped slots](https://vuejs.org/v2/guide/components-slots.html#Scoped-Slots).
 ```html
 <template>
-  <sm-table
+  <<%= sysAbb %>-table
     :data="tableData7.filter(data => !search || data.name.toLowerCase().includes(search.toLowerCase()))"
     style="width: 100%">
-    <sm-table-column
+    <<%= sysAbb %>-table-column
       label="Date"
       prop="date">
-    </sm-table-column>
-    <sm-table-column
+    </<%= sysAbb %>-table-column>
+    <<%= sysAbb %>-table-column
       label="Name"
       prop="name">
-    </sm-table-column>
-    <sm-table-column
+    </<%= sysAbb %>-table-column>
+    <<%= sysAbb %>-table-column
       align="right">
       <template slot="header" slot-scope="scope">
-        <sm-input
+        <<%= sysAbb %>-input
           v-model="search"
           size="mini"
           placeholder="Type to search"/>
       </template>
       <template slot-scope="scope">
-        <sm-button
+        <<%= sysAbb %>-button
           size="mini"
-          @click="handleEdit(scope.$index, scope.row)">Edit</sm-button>
-        <sm-button
+          @click="handleEdit(scope.$index, scope.row)">Edit</<%= sysAbb %>-button>
+        <<%= sysAbb %>-button
           size="mini"
           type="danger"
-          @click="handleDelete(scope.$index, scope.row)">Delete</sm-button>
+          @click="handleDelete(scope.$index, scope.row)">Delete</<%= sysAbb %>-button>
       </template>
-    </sm-table-column>
-  </sm-table>
+    </<%= sysAbb %>-table-column>
+  </<%= sysAbb %>-table>
 </template>
 
 <script>
@@ -1616,26 +1616,26 @@ When the row content is too long and you do not want to display the horizontal s
 :::demo Activate expandable row by adding type="expand" and scoped slot. The template for el-table-column will be rendered as the contents of the expanded row, and you can access the same attributes as when you are using `Scoped slot` in custom column templates.
 ```html
 <template>
-  <sm-table
+  <<%= sysAbb %>-table
     :data="tableData3"
     style="width: 100%">
-    <sm-table-column type="expand">
+    <<%= sysAbb %>-table-column type="expand">
       <template slot-scope="props">
         <p>State: {{ props.row.state }}</p>
         <p>City: {{ props.row.city }}</p>
         <p>Address: {{ props.row.address }}</p>
         <p>Zip: {{ props.row.zip }}</p>
       </template>
-    </sm-table-column>
-    <sm-table-column
+    </<%= sysAbb %>-table-column>
+    <<%= sysAbb %>-table-column
       label="Date"
       prop="date">
-    </sm-table-column>
-    <sm-table-column
+    </<%= sysAbb %>-table-column>
+    <<%= sysAbb %>-table-column
       label="Name"
       prop="name">
-    </sm-table-column>
-  </sm-table>
+    </<%= sysAbb %>-table-column>
+  </<%= sysAbb %>-table>
 </template>
 
 <script>
@@ -1705,66 +1705,66 @@ For table of numbers, you can add an extra row at the table footer displaying ea
 :::demo You can add the summary row by setting `show-summary` to `true`. By default, for the summary row, the first column does not sum anything up but always displays 'Sum' (you can configure the displayed text using `sum-text`), while other columns sum every number in that column up and display them. You can of course define your own sum behaviour. To do so, pass a method to `summary-method`, which returns an array, and each element of the returned array will be displayed in the columns of the summary row. The second table of this example is a detailed demo.
 ```html
 <template>
-  <sm-table
+  <<%= sysAbb %>-table
     :data="tableData6"
     border
     show-summary
     style="width: 100%">
-    <sm-table-column
+    <<%= sysAbb %>-table-column
       prop="id"
       label="ID"
       width="180">
-    </sm-table-column>
-    <sm-table-column
+    </<%= sysAbb %>-table-column>
+    <<%= sysAbb %>-table-column
       prop="name"
       label="Name">
-    </sm-table-column>
-    <sm-table-column
+    </<%= sysAbb %>-table-column>
+    <<%= sysAbb %>-table-column
       prop="amount1"
       sortable
       label="Amount 1">
-    </sm-table-column>
-    <sm-table-column
+    </<%= sysAbb %>-table-column>
+    <<%= sysAbb %>-table-column
       prop="amount2"
       sortable
       label="Amount 2">
-    </sm-table-column>
-    <sm-table-column
+    </<%= sysAbb %>-table-column>
+    <<%= sysAbb %>-table-column
       prop="amount3"
       sortable
       label="Amount 3">
-    </sm-table-column>
-  </sm-table>
+    </<%= sysAbb %>-table-column>
+  </<%= sysAbb %>-table>
 
-  <sm-table
+  <<%= sysAbb %>-table
     :data="tableData6"
     border
     height="200"
     :summary-method="getSummaries"
     show-summary
     style="width: 100%; margin-top: 20px">
-    <sm-table-column
+    <<%= sysAbb %>-table-column
       prop="id"
       label="ID"
       width="180">
-    </sm-table-column>
-    <sm-table-column
+    </<%= sysAbb %>-table-column>
+    <<%= sysAbb %>-table-column
       prop="name"
       label="Name">
-    </sm-table-column>
-    <sm-table-column
+    </<%= sysAbb %>-table-column>
+    <<%= sysAbb %>-table-column
       prop="amount1"
       label="Cost 1 ($)">
-    </sm-table-column>
-    <sm-table-column
+    </<%= sysAbb %>-table-column>
+    <<%= sysAbb %>-table-column
       prop="amount2"
       label="Cost 2 ($)">
-    </sm-table-column>
-    <sm-table-column
+    </<%= sysAbb %>-table-column>
+    <<%= sysAbb %>-table-column
       prop="amount3"
       label="Cost 3 ($)">
-    </sm-table-column>
-  </sm-table>
+    </<%= sysAbb %>-table-column>
+  </<%= sysAbb %>-table>
 </template>
 
 <script>
@@ -1844,64 +1844,64 @@ Configuring rowspan and colspan allows you to merge cells
 ```html
 <template>
   <div>
-    <sm-table
+    <<%= sysAbb %>-table
       :data="tableData6"
       :span-method="arraySpanMethod"
       border
       style="width: 100%">
-      <sm-table-column
+      <<%= sysAbb %>-table-column
         prop="id"
         label="ID"
         width="180">
-      </sm-table-column>
-      <sm-table-column
+      </<%= sysAbb %>-table-column>
+      <<%= sysAbb %>-table-column
         prop="name"
         label="Name">
-      </sm-table-column>
-      <sm-table-column
+      </<%= sysAbb %>-table-column>
+      <<%= sysAbb %>-table-column
         prop="amount1"
         sortable
         label="Amount 1">
-      </sm-table-column>
-      <sm-table-column
+      </<%= sysAbb %>-table-column>
+      <<%= sysAbb %>-table-column
         prop="amount2"
         sortable
         label="Amount 2">
-      </sm-table-column>
-      <sm-table-column
+      </<%= sysAbb %>-table-column>
+      <<%= sysAbb %>-table-column
         prop="amount3"
         sortable
         label="Amount 3">
-      </sm-table-column>
-    </sm-table>
+      </<%= sysAbb %>-table-column>
+    </<%= sysAbb %>-table>
 
-    <sm-table
+    <<%= sysAbb %>-table
       :data="tableData6"
       :span-method="objectSpanMethod"
       border
       style="width: 100%; margin-top: 20px">
-      <sm-table-column
+      <<%= sysAbb %>-table-column
         prop="id"
         label="ID"
         width="180">
-      </sm-table-column>
-      <sm-table-column
+      </<%= sysAbb %>-table-column>
+      <<%= sysAbb %>-table-column
         prop="name"
         label="Name">
-      </sm-table-column>
-      <sm-table-column
+      </<%= sysAbb %>-table-column>
+      <<%= sysAbb %>-table-column
         prop="amount1"
         label="Amount 1">
-      </sm-table-column>
-      <sm-table-column
+      </<%= sysAbb %>-table-column>
+      <<%= sysAbb %>-table-column
         prop="amount2"
         label="Amount 2">
-      </sm-table-column>
-      <sm-table-column
+      </<%= sysAbb %>-table-column>
+      <<%= sysAbb %>-table-column
         prop="amount3"
         label="Amount 3">
-      </sm-table-column>
-    </sm-table>
+      </<%= sysAbb %>-table-column>
+    </<%= sysAbb %>-table>
   </div>
 </template>
 
@@ -1977,32 +1977,32 @@ Configuring rowspan and colspan allows you to merge cells
 ### Custom index
 
 You can customize row index in `type=index` columns.
-:::demo To customize row indices, use `index` attribute on <sm-table-column> with `type=index`. If it is assigned to a number, all indices will have an offset of that number. It also accepts a method with each index (starting from `0`) as parameter, and the returned value will be displayed as index.
+:::demo To customize row indices, use `index` attribute on <<%= sysAbb %>-table-column> with `type=index`. If it is assigned to a number, all indices will have an offset of that number. It also accepts a method with each index (starting from `0`) as parameter, and the returned value will be displayed as index.
 
 ```html
 <template>
-  <sm-table
+  <<%= sysAbb %>-table
     :data="tableData"
     style="width: 100%">
-    <sm-table-column
+    <<%= sysAbb %>-table-column
       type="index"
       :index="indexMethod">
-    </sm-table-column>
-    <sm-table-column
+    </<%= sysAbb %>-table-column>
+    <<%= sysAbb %>-table-column
       prop="date"
       label="Date"
       width="180">
-    </sm-table-column>
-    <sm-table-column
+    </<%= sysAbb %>-table-column>
+    <<%= sysAbb %>-table-column
       prop="name"
       label="Name"
       width="180">
-    </sm-table-column>
-    <sm-table-column
+    </<%= sysAbb %>-table-column>
+    <<%= sysAbb %>-table-column
       prop="address"
       label="Address">
-    </sm-table-column>
-  </sm-table>
+    </<%= sysAbb %>-table-column>
+  </<%= sysAbb %>-table>
 </template>
 
 <script>

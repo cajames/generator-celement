@@ -34,7 +34,7 @@ const PACKAGES_FOLDER = path.join(__dirname, '..', 'src', 'packages')
 const STYLES_FOLDER = path.join(__dirname, '..', '..', 'theme', 'src')
 const INDEX_TEMPLATE = `
 import {{name}} from './src/{{name}}.vue'
-import '@company/baller-theme/src/{{package}}.scss';
+import '<%= themeNpmName %>/src/{{package}}.scss';
 
 {{name}}.install = function(Vue) {
     const name = ( {{name}}.extendOptions ? {{name}}.extendOptions.name : {{name}}.name )
@@ -44,14 +44,9 @@ import '@company/baller-theme/src/{{package}}.scss';
 export default {{name}}
 `
 const VUE_TEMPLATE = `
-<script lang="ts">
-import { Vue, Component, Prop } from 'vue-property-decorator'
-
-//TODO: ChangeHere
-@Component({
-    name: "Sm{{name}}"
-})
-export default class Sm{{name}} extends Vue {
+<script>
+export default {
+    name: "<%= capAbb %>{{name}}"
 }
 </script>
 

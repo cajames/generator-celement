@@ -67,49 +67,49 @@ Tooltip has 9 placements.
 ```html
 <div class="box">
   <div class="top">
-    <sm-tooltip class="item" effect="dark" content="Top Left prompts info" placement="top-start">
-      <sm-button>top-start</sm-button>
-    </sm-tooltip>
-    <sm-tooltip class="item" effect="dark" content="Top Center prompts info" placement="top">
-      <sm-button>top</sm-button>
-    </sm-tooltip>
-    <sm-tooltip class="item" effect="dark" content="Top Right prompts info" placement="top-end">
-      <sm-button>top-end</sm-button>
-    </sm-tooltip>
+    <<%= sysAbb %>-tooltip class="item" effect="dark" content="Top Left prompts info" placement="top-start">
+      <<%= sysAbb %>-button>top-start</<%= sysAbb %>-button>
+    </<%= sysAbb %>-tooltip>
+    <<%= sysAbb %>-tooltip class="item" effect="dark" content="Top Center prompts info" placement="top">
+      <<%= sysAbb %>-button>top</<%= sysAbb %>-button>
+    </<%= sysAbb %>-tooltip>
+    <<%= sysAbb %>-tooltip class="item" effect="dark" content="Top Right prompts info" placement="top-end">
+      <<%= sysAbb %>-button>top-end</<%= sysAbb %>-button>
+    </<%= sysAbb %>-tooltip>
   </div>
   <div class="left">
-    <sm-tooltip class="item" effect="dark" content="Left Top prompts info" placement="left-start">
-      <sm-button>left-start</sm-button>
-    </sm-tooltip>
-    <sm-tooltip class="item" effect="dark" content="Left Center prompts info" placement="left">
-      <sm-button>left</sm-button>
-    </sm-tooltip>
-    <sm-tooltip class="item" effect="dark" content="Left Bottom prompts info" placement="left-end">
-      <sm-button>left-end</sm-button>
-    </sm-tooltip>
+    <<%= sysAbb %>-tooltip class="item" effect="dark" content="Left Top prompts info" placement="left-start">
+      <<%= sysAbb %>-button>left-start</<%= sysAbb %>-button>
+    </<%= sysAbb %>-tooltip>
+    <<%= sysAbb %>-tooltip class="item" effect="dark" content="Left Center prompts info" placement="left">
+      <<%= sysAbb %>-button>left</<%= sysAbb %>-button>
+    </<%= sysAbb %>-tooltip>
+    <<%= sysAbb %>-tooltip class="item" effect="dark" content="Left Bottom prompts info" placement="left-end">
+      <<%= sysAbb %>-button>left-end</<%= sysAbb %>-button>
+    </<%= sysAbb %>-tooltip>
   </div>
 
   <div class="right">
-    <sm-tooltip class="item" effect="dark" content="Right Top prompts info" placement="right-start">
-      <sm-button>right-start</sm-button>
-    </sm-tooltip>
-    <sm-tooltip class="item" effect="dark" content="Right Center prompts info" placement="right">
-      <sm-button>right</sm-button>
-    </sm-tooltip>
-    <sm-tooltip class="item" effect="dark" content="Right Bottom prompts info" placement="right-end">
-      <sm-button>right-end</sm-button>
-    </sm-tooltip>
+    <<%= sysAbb %>-tooltip class="item" effect="dark" content="Right Top prompts info" placement="right-start">
+      <<%= sysAbb %>-button>right-start</<%= sysAbb %>-button>
+    </<%= sysAbb %>-tooltip>
+    <<%= sysAbb %>-tooltip class="item" effect="dark" content="Right Center prompts info" placement="right">
+      <<%= sysAbb %>-button>right</<%= sysAbb %>-button>
+    </<%= sysAbb %>-tooltip>
+    <<%= sysAbb %>-tooltip class="item" effect="dark" content="Right Bottom prompts info" placement="right-end">
+      <<%= sysAbb %>-button>right-end</<%= sysAbb %>-button>
+    </<%= sysAbb %>-tooltip>
   </div>
   <div class="bottom">
-    <sm-tooltip class="item" effect="dark" content="Bottom Left prompts info" placement="bottom-start">
-      <sm-button>bottom-start</sm-button>
-    </sm-tooltip>
-    <sm-tooltip class="item" effect="dark" content="Bottom Center prompts info" placement="bottom">
-      <sm-button>bottom</sm-button>
-    </sm-tooltip>
-    <sm-tooltip class="item" effect="dark" content="Bottom Right prompts info" placement="bottom-end">
-      <sm-button>bottom-end</sm-button>
-    </sm-tooltip>
+    <<%= sysAbb %>-tooltip class="item" effect="dark" content="Bottom Left prompts info" placement="bottom-start">
+      <<%= sysAbb %>-button>bottom-start</<%= sysAbb %>-button>
+    </<%= sysAbb %>-tooltip>
+    <<%= sysAbb %>-tooltip class="item" effect="dark" content="Bottom Center prompts info" placement="bottom">
+      <<%= sysAbb %>-button>bottom</<%= sysAbb %>-button>
+    </<%= sysAbb %>-tooltip>
+    <<%= sysAbb %>-tooltip class="item" effect="dark" content="Bottom Right prompts info" placement="bottom-end">
+      <<%= sysAbb %>-button>bottom-end</<%= sysAbb %>-button>
+    </<%= sysAbb %>-tooltip>
   </div>
 </div>
 
@@ -160,12 +160,12 @@ Tooltip has two themes: `dark` and `light`。
 
 :::demo Set `effect` to modify theme, and the default value is `dark`.
 ```html
-<sm-tooltip content="Top center" placement="top">
-  <sm-button>Dark</sm-button>
-</sm-tooltip>
-<sm-tooltip content="Bottom center" placement="bottom" effect="light">
-  <sm-button>Light</sm-button>
-</sm-tooltip>
+<<%= sysAbb %>-tooltip content="Top center" placement="top">
+  <<%= sysAbb %>-button>Dark</<%= sysAbb %>-button>
+</<%= sysAbb %>-tooltip>
+<<%= sysAbb %>-tooltip content="Bottom center" placement="bottom" effect="light">
+  <<%= sysAbb %>-button>Light</<%= sysAbb %>-button>
+</<%= sysAbb %>-tooltip>
 ```
 :::
 
@@ -175,10 +175,10 @@ Display multiple lines of text and set their format.
 
 :::demo Override attribute `content` of `el-tooltip` by adding a slot named `content`.
 ```html
-<sm-tooltip placement="top">
+<<%= sysAbb %>-tooltip placement="top">
   <div slot="content">multiple lines<br/>second line</div>
-  <sm-button>Top center</sm-button>
-</sm-tooltip>
+  <<%= sysAbb %>-button>Top center</<%= sysAbb %>-button>
+</<%= sysAbb %>-tooltip>
 ```
 :::
 
@@ -195,9 +195,9 @@ In fact, Tooltip is an extension based on [Vue-popper](https://github.com/elemen
 :::demo
 ```html
 <template>
-  <sm-tooltip :disabled="disabled" content="click to close tooltip function" placement="bottom" effect="light">
-    <sm-button @click="disabled = !disabled">click to {{disabled ? 'active' : 'close'}} tooltip function</sm-button>
-  </sm-tooltip>
+  <<%= sysAbb %>-tooltip :disabled="disabled" content="click to close tooltip function" placement="bottom" effect="light">
+    <<%= sysAbb %>-button @click="disabled = !disabled">click to {{disabled ? 'active' : 'close'}} tooltip function</<%= sysAbb %>-button>
+  </<%= sysAbb %>-tooltip>
 </template>
 
 <style lang="scss">

@@ -1,12 +1,11 @@
 {
   "name": "generator-celement",
   "version": "0.0.0",
-  "description": "Generates a design system based on ElementUI",
-  "homepage": "",
+  "description": "Generates a design system based on ElementUI, with VuePress Documentation",
+  "homepage": "https://github.com/cajames/generator-celement",
   "author": {
     "name": "Chris James",
-    "email": "chris@webglowit.net",
-    "url": ""
+    "email": "chris@webglowit.net"
   },
   "files": [
     "generators"

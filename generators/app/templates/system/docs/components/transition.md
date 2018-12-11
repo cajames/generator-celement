@@ -8,7 +8,7 @@ You can use Element's built-in transitions directly. Before that, please read th
 ```html
 <template>
   <div>
-    <sm-button @click="show = !show">Click Me</sm-button>
+    <<%= sysAbb %>-button @click="show = !show">Click Me</<%= sysAbb %>-button>
 
     <div style="display: flex; margin-top: 20px; height: 100px;">
       <transition name="el-fade-in-linear">
@@ -52,7 +52,7 @@ You can use Element's built-in transitions directly. Before that, please read th
 ```html
 <template>
   <div>
-    <sm-button @click="show2 = !show2">Click Me</sm-button>
+    <<%= sysAbb %>-button @click="show2 = !show2">Click Me</<%= sysAbb %>-button>
 
     <div style="display: flex; margin-top: 20px; height: 100px;">
       <transition name="el-zoom-in-center">
@@ -104,15 +104,15 @@ For collapse effect, use the `el-collapse-transition` component.
 ```html
 <template>
   <div>
-    <sm-button @click="show3 = !show3">Click Me</sm-button>
+    <<%= sysAbb %>-button @click="show3 = !show3">Click Me</<%= sysAbb %>-button>
 
     <div style="margin-top: 20px; height: 200px;">
-      <sm-collapse-transition>
+      <<%= sysAbb %>-collapse-transition>
         <div v-show="show3">
           <div class="transition-box">el-collapse-transition</div>
           <div class="transition-box">el-collapse-transition</div>
         </div>
-      </sm-collapse-transition>
+      </<%= sysAbb %>-collapse-transition>
     </div>
   </div>
 </template>

@@ -105,43 +105,43 @@ Similar to Tooltip, Popover is also built with `Vue-popper`. So for some duplica
 
 ```html
 <template>
-  <sm-popover
+  <<%= sysAbb %>-popover
     placement="top-start"
     title="Title"
     width="200"
     trigger="hover"
     content="this is content, this is content, this is content">
-    <sm-button slot="reference">Hover to activate</sm-button>
-  </sm-popover>
+    <<%= sysAbb %>-button slot="reference">Hover to activate</<%= sysAbb %>-button>
+  </<%= sysAbb %>-popover>
 
-  <sm-popover
+  <<%= sysAbb %>-popover
     placement="bottom"
     title="Title"
     width="200"
     trigger="click"
     content="this is content, this is content, this is content">
-    <sm-button slot="reference">Click to activate</sm-button>
-  </sm-popover>
+    <<%= sysAbb %>-button slot="reference">Click to activate</<%= sysAbb %>-button>
+  </<%= sysAbb %>-popover>
 
-  <sm-popover
+  <<%= sysAbb %>-popover
     ref="popover"
     placement="right"
     title="Title"
     width="200"
     trigger="focus"
     content="this is content, this is content, this is content">
-  </sm-popover>
-  <sm-button v-popover:popover>Focus to activate</sm-button>
+  </<%= sysAbb %>-popover>
+  <<%= sysAbb %>-button v-popover:popover>Focus to activate</<%= sysAbb %>-button>
 
-  <sm-popover
+  <<%= sysAbb %>-popover
     placement="bottom"
     title="Title"
     width="200"
     trigger="manual"
     content="this is content, this is content, this is content"
     v-model="visible">
-    <sm-button slot="reference" @click="visible = !visible">Manual to activate</sm-button>
-  </sm-popover>
+    <<%= sysAbb %>-button slot="reference" @click="visible = !visible">Manual to activate</<%= sysAbb %>-button>
+  </<%= sysAbb %>-popover>
 </template>
 
 <script>
@@ -163,17 +163,17 @@ Other components can be nested in popover. Following is an example of nested tab
 :::demo replace the `content` attribute with a default `slot`.
 
 ```html
-<sm-popover
+<<%= sysAbb %>-popover
   placement="right"
   width="400"
   trigger="click">
-  <sm-table :data="gridData">
-    <sm-table-column width="150" property="date" label="date"></sm-table-column>
-    <sm-table-column width="100" property="name" label="name"></sm-table-column>
-    <sm-table-column width="300" property="address" label="address"></sm-table-column>
-  </sm-table>
-  <sm-button slot="reference">Click to activate</sm-button>
-</sm-popover>
+  <<%= sysAbb %>-table :data="gridData">
+    <<%= sysAbb %>-table-column width="150" property="date" label="date"></<%= sysAbb %>-table-column>
+    <<%= sysAbb %>-table-column width="100" property="name" label="name"></<%= sysAbb %>-table-column>
+    <<%= sysAbb %>-table-column width="300" property="address" label="address"></<%= sysAbb %>-table-column>
+  </<%= sysAbb %>-table>
+  <<%= sysAbb %>-button slot="reference">Click to activate</<%= sysAbb %>-button>
+</<%= sysAbb %>-popover>
 
 <script>
   export default {
@@ -209,17 +209,17 @@ Of course, you can nest other operations. It's more light-weight than using a di
 
 :::demo
 ```html
-<sm-popover
+<<%= sysAbb %>-popover
   placement="top"
   width="160"
   v-model="visible2">
   <p>Are you sure to delete this?</p>
   <div style="text-align: right; margin: 0">
-    <sm-button size="mini" type="text" @click="visible2 = false">cancel</sm-button>
-    <sm-button type="primary" size="mini" @click="visible2 = false">confirm</sm-button>
+    <<%= sysAbb %>-button size="mini" type="text" @click="visible2 = false">cancel</<%= sysAbb %>-button>
+    <<%= sysAbb %>-button type="primary" size="mini" @click="visible2 = false">confirm</<%= sysAbb %>-button>
   </div>
-  <sm-button slot="reference">Delete</sm-button>
-</sm-popover>
+  <<%= sysAbb %>-button slot="reference">Delete</<%= sysAbb %>-button>
+</<%= sysAbb %>-popover>
 
 <script>
   export default {

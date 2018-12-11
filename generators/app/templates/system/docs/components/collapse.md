@@ -9,25 +9,25 @@ You can expand multiple panels
 
 :::demo
 ```html
-<sm-collapse v-model="activeNames" @change="handleChange">
-  <sm-collapse-item title="Consistency" name="1">
+<<%= sysAbb %>-collapse v-model="activeNames" @change="handleChange">
+  <<%= sysAbb %>-collapse-item title="Consistency" name="1">
     <div>Consistent with real life: in line with the process and logic of real life, and comply with languages and habits that the users are used to;</div>
     <div>Consistent within interface: all elements should be consistent, such as: design style, icons and texts, position of elements, etc.</div>
-  </sm-collapse-item>
-  <sm-collapse-item title="Feedback" name="2">
+  </<%= sysAbb %>-collapse-item>
+  <<%= sysAbb %>-collapse-item title="Feedback" name="2">
     <div>Operation feedback: enable the users to clearly perceive their operations by style updates and interactive effects;</div>
     <div>Visual feedback: reflect current state by updating or rearranging elements of the page.</div>
-  </sm-collapse-item>
-  <sm-collapse-item title="Efficiency" name="3">
+  </<%= sysAbb %>-collapse-item>
+  <<%= sysAbb %>-collapse-item title="Efficiency" name="3">
     <div>Simplify the process: keep operating process simple and intuitive;</div>
     <div>Definite and clear: enunciate your intentions clearly so that the users can quickly understand and make decisions;</div>
     <div>Easy to identify: the interface should be straightforward, which helps the users to identify and frees them from memorizing and recalling.</div>
-  </sm-collapse-item>
-  <sm-collapse-item title="Controllability" name="4">
+  </<%= sysAbb %>-collapse-item>
+  <<%= sysAbb %>-collapse-item title="Controllability" name="4">
     <div>Decision making: giving advices about operations is acceptable, but do not make decisions for the users;</div>
     <div>Controlled consequences: users should be granted the freedom to operate, including canceling, aborting or terminating current operation.</div>
-  </sm-collapse-item>
-</sm-collapse>
+  </<%= sysAbb %>-collapse-item>
+</<%= sysAbb %>-collapse>
 <script>
   export default {
     data() {
@@ -51,25 +51,25 @@ In accordion mode, only one panel can be expanded at once
 
 :::demo Activate accordion mode using the `accordion` attribute.
 ```html
-<sm-collapse v-model="activeName" accordion>
-  <sm-collapse-item title="Consistency" name="1">
+<<%= sysAbb %>-collapse v-model="activeName" accordion>
+  <<%= sysAbb %>-collapse-item title="Consistency" name="1">
     <div>Consistent with real life: in line with the process and logic of real life, and comply with languages and habits that the users are used to;</div>
     <div>Consistent within interface: all elements should be consistent, such as: design style, icons and texts, position of elements, etc.</div>
-  </sm-collapse-item>
-  <sm-collapse-item title="Feedback" name="2">
+  </<%= sysAbb %>-collapse-item>
+  <<%= sysAbb %>-collapse-item title="Feedback" name="2">
     <div>Operation feedback: enable the users to clearly perceive their operations by style updates and interactive effects;</div>
     <div>Visual feedback: reflect current state by updating or rearranging elements of the page.</div>
-  </sm-collapse-item>
-  <sm-collapse-item title="Efficiency" name="3">
+  </<%= sysAbb %>-collapse-item>
+  <<%= sysAbb %>-collapse-item title="Efficiency" name="3">
     <div>Simplify the process: keep operating process simple and intuitive;</div>
     <div>Definite and clear: enunciate your intentions clearly so that the users can quickly understand and make decisions;</div>
     <div>Easy to identify: the interface should be straightforward, which helps the users to identify and frees them from memorizing and recalling.</div>
-  </sm-collapse-item>
-  <sm-collapse-item title="Controllability" name="4">
+  </<%= sysAbb %>-collapse-item>
+  <<%= sysAbb %>-collapse-item title="Controllability" name="4">
     <div>Decision making: giving advices about operations is acceptable, but do not make decisions for the users;</div>
     <div>Controlled consequences: users should be granted the freedom to operate, including canceling, aborting or terminating current operation.</div>
-  </sm-collapse-item>
-</sm-collapse>
+  </<%= sysAbb %>-collapse-item>
+</<%= sysAbb %>-collapse>
 <script>
   export default {
     data() {
@@ -88,28 +88,28 @@ Besides using the `title` attribute, you can customize panel title with named sl
 
 :::demo
 ```html
-<sm-collapse accordion>
-  <sm-collapse-item name="1">
+<<%= sysAbb %>-collapse accordion>
+  <<%= sysAbb %>-collapse-item name="1">
     <template slot="title">
       Consistency<i class="header-icon el-icon-info"></i>
     </template>
     <div>Consistent with real life: in line with the process and logic of real life, and comply with languages and habits that the users are used to;</div>
     <div>Consistent within interface: all elements should be consistent, such as: design style, icons and texts, position of elements, etc.</div>
-  </sm-collapse-item>
-  <sm-collapse-item title="Feedback" name="2">
+  </<%= sysAbb %>-collapse-item>
+  <<%= sysAbb %>-collapse-item title="Feedback" name="2">
     <div>Operation feedback: enable the users to clearly perceive their operations by style updates and interactive effects;</div>
     <div>Visual feedback: reflect current state by updating or rearranging elements of the page.</div>
-  </sm-collapse-item>
-  <sm-collapse-item title="Efficiency" name="3">
+  </<%= sysAbb %>-collapse-item>
+  <<%= sysAbb %>-collapse-item title="Efficiency" name="3">
     <div>Simplify the process: keep operating process simple and intuitive;</div>
     <div>Definite and clear: enunciate your intentions clearly so that the users can quickly understand and make decisions;</div>
     <div>Easy to identify: the interface should be straightforward, which helps the users to identify and frees them from memorizing and recalling.</div>
-  </sm-collapse-item>
-  <sm-collapse-item title="Controllability" name="4">
+  </<%= sysAbb %>-collapse-item>
+  <<%= sysAbb %>-collapse-item title="Controllability" name="4">
     <div>Decision making: giving advices about operations is acceptable, but do not make decisions for the users;</div>
     <div>Controlled consequences: users should be granted the freedom to operate, including canceling, aborting or terminating current operation.</div>
-  </sm-collapse-item>
-</sm-collapse>
+  </<%= sysAbb %>-collapse-item>
+</<%= sysAbb %>-collapse>
 ```
 :::
 

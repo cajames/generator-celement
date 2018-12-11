@@ -66,11 +66,11 @@ Used for marking and selection.
 :::demo Use the `type` attribute to define Tag's type. In addition, the `color` attribute can be used to set the background color of the Tag.
 
 ```html
-<sm-tag>Tag One</sm-tag>
-<sm-tag type="success">Tag Two</sm-tag>
-<sm-tag type="info">Tag Three</sm-tag>
-<sm-tag type="warning">Tag Four</sm-tag>
-<sm-tag type="danger">Tag Five</sm-tag>
+<<%= sysAbb %>-tag>Tag One</<%= sysAbb %>-tag>
+<<%= sysAbb %>-tag type="success">Tag Two</<%= sysAbb %>-tag>
+<<%= sysAbb %>-tag type="info">Tag Three</<%= sysAbb %>-tag>
+<<%= sysAbb %>-tag type="warning">Tag Four</<%= sysAbb %>-tag>
+<<%= sysAbb %>-tag type="danger">Tag Five</<%= sysAbb %>-tag>
 ```
 :::
 
@@ -79,13 +79,13 @@ Used for marking and selection.
 :::demo `closable` attribute can be used to define a removable tag. It accepts a `Boolean`. By default the removal of Tag has a fading animation. If you don't want to use it, you can set the `disable-transitions` attribute, which accepts a `Boolean`, to `true`. `close` event triggers when Tag is removed.
 
 ```html
-<sm-tag
+<<%= sysAbb %>-tag
   v-for="tag in tags"
   :key="tag.name"
   closable
   :type="tag.type">
   {{tag.name}}
-</sm-tag>
+</<%= sysAbb %>-tag>
 
 <script>
   export default {
@@ -111,15 +111,15 @@ You can use the `close` event to add and remove tag dynamically.
 
 :::demo
 ```html
-<sm-tag
+<<%= sysAbb %>-tag
   :key="tag"
   v-for="tag in dynamicTags"
   closable
   :disable-transitions="false"
   @close="handleClose(tag)">
   {{tag}}
-</sm-tag>
-<sm-input
+</<%= sysAbb %>-tag>
+<<%= sysAbb %>-input
   class="input-new-tag"
   v-if="inputVisible"
   v-model="inputValue"
@@ -128,8 +128,8 @@ You can use the `close` event to add and remove tag dynamically.
   @keyup.enter.native="handleInputConfirm"
   @blur="handleInputConfirm"
 >
-</sm-input>
-<sm-button v-else class="button-new-tag" size="small" @click="showInput">+ New Tag</sm-button>
+</<%= sysAbb %>-input>
+<<%= sysAbb %>-button v-else class="button-new-tag" size="small" @click="showInput">+ New Tag</<%= sysAbb %>-button>
 
 <style>
   .el-tag + .el-tag {
@@ -191,10 +191,10 @@ Besides default size, Tag component provides three additional sizes for you to c
 :::demo Use attribute `size` to set additional sizes with `medium`, `small` or `mini`.
 
 ```html
-<sm-tag>Default</sm-tag>
-<sm-tag size="medium">Medium</sm-tag>
-<sm-tag size="small">Small</sm-tag>
-<sm-tag size="mini">Mini</sm-tag>
+<<%= sysAbb %>-tag>Default</<%= sysAbb %>-tag>
+<<%= sysAbb %>-tag size="medium">Medium</<%= sysAbb %>-tag>
+<<%= sysAbb %>-tag size="small">Small</<%= sysAbb %>-tag>
+<<%= sysAbb %>-tag size="mini">Mini</<%= sysAbb %>-tag>
 ```
 :::
 

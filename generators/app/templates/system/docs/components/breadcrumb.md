@@ -8,12 +8,12 @@ Displays the location of the current page, making it easier to browser back.
 :::demo In `el-breadcrumb`, each `el-breadcrumb-item` is a tag that stands for every level starting from homepage. This component has a `String` attribute `separator`, and it determines the separator. Its default value is '/'.
 
 ```html
-<sm-breadcrumb separator="/">
-  <sm-breadcrumb-item :to="{ path: '/' }">homepage</sm-breadcrumb-item>
-  <sm-breadcrumb-item><a href="/">promotion management</a></sm-breadcrumb-item>
-  <sm-breadcrumb-item>promotion list</sm-breadcrumb-item>
-  <sm-breadcrumb-item>promotion detail</sm-breadcrumb-item>
-</sm-breadcrumb>
+<<%= sysAbb %>-breadcrumb separator="/">
+  <<%= sysAbb %>-breadcrumb-item :to="{ path: '/' }">homepage</<%= sysAbb %>-breadcrumb-item>
+  <<%= sysAbb %>-breadcrumb-item><a href="/">promotion management</a></<%= sysAbb %>-breadcrumb-item>
+  <<%= sysAbb %>-breadcrumb-item>promotion list</<%= sysAbb %>-breadcrumb-item>
+  <<%= sysAbb %>-breadcrumb-item>promotion detail</<%= sysAbb %>-breadcrumb-item>
+</<%= sysAbb %>-breadcrumb>
 ```
 :::
 
@@ -22,12 +22,12 @@ Displays the location of the current page, making it easier to browser back.
 :::demo Set `separator-class` to use `iconfont` as the separator，it will cover `separator`
 
 ```html
-<sm-breadcrumb separator-class="el-icon-arrow-right">
-  <sm-breadcrumb-item :to="{ path: '/' }">homepage</sm-breadcrumb-item>
-  <sm-breadcrumb-item>promotion management</sm-breadcrumb-item>
-  <sm-breadcrumb-item>promotion list</sm-breadcrumb-item>
-  <sm-breadcrumb-item>promotion detail</sm-breadcrumb-item>
-</sm-breadcrumb>
+<<%= sysAbb %>-breadcrumb separator-class="el-icon-arrow-right">
+  <<%= sysAbb %>-breadcrumb-item :to="{ path: '/' }">homepage</<%= sysAbb %>-breadcrumb-item>
+  <<%= sysAbb %>-breadcrumb-item>promotion management</<%= sysAbb %>-breadcrumb-item>
+  <<%= sysAbb %>-breadcrumb-item>promotion list</<%= sysAbb %>-breadcrumb-item>
+  <<%= sysAbb %>-breadcrumb-item>promotion detail</<%= sysAbb %>-breadcrumb-item>
+</<%= sysAbb %>-breadcrumb>
 ```
 :::
 

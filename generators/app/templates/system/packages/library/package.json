@@ -1,5 +1,5 @@
 {
-  "name": "@company/baller",
+  "name": "<%= libNpmName %>",
   "version": "0.0.0",
   "main": "./lib/index.cjs.js",
   "license": "MIT",
@@ -14,7 +14,7 @@
     "dev": "yarn build:entry && yarn build:src && cross-env NODE_ENV=production webpack --watch --display-error-details"
   },
   "dependencies": {
-    "@company/baller-theme": "^0.0.0",
+    "<%= themeNpmName %>": "^0.0.0",
     "element-ui": "^2.4.11",
     "vue": "^2.5.19"
   },

@@ -15,35 +15,80 @@ module.exports = class extends Generator {
     );
 
     const prompts = [
-      // {
-      //   type: "confirm",
-      //   name: "someAnswer",
-      //   message: "Would you like to enable this option?",
-      //   default: true
-      // }
+      {
+        type: "input",
+        name: "systemName",
+        message:
+          "What is the name of your Design System? (e.g. Material, Lightning, Polaris...)",
+        default: "Celement"
+      },
+      {
+        type: "input",
+        name: "orgName",
+        message: "What is the name of your npm_org?",
+        default: ""
+      },
+      {
+        type: "input",
+        name: "systemAbbreviation",
+        message:
+          "What would you design system element prefix be? (e.g. <cel-...>)",
+        default: "cel"
+      },
+      {
+        type: "input",
+        name: "repoUrl",
+        message: "What is the github url for this repo?",
+        default: ""
+      },
+      {
+        type: "input",
+        name: "primaryColor",
+        message: "What is your brand primary color",
+        default: "#f14a00"
+      }
     ];
 
     return this.prompt(prompts).then(props => {
       // To access props later use this.props.someAnswer;
-      // this.props = props;
+      const abb = props.systemAbbreviation;
+      const npmName = props.systemName.toLowerCase();
+      const orgName = props.orgName.toLowerCase();
+      const libNpmName = orgName ? `@${orgName}/${npmName}` : npmName
+      const themeNpmName = libNpmName + '-theme'
+
+      props.sysAbb = abb.toLowerCase();
+      props.capAbb = abb[0].toUpperCase() + abb.slice(1);
+      props.npmName = npmName;
+      props.libNpmName = libNpmName
+      props.themeNpmName = themeNpmName
+
+      this.props = props;
     });
   }
 
   writing() {
+    const templateValues = this.props;
 
-    this.fs.copyTpl(this.templatePath("system/**/*"), this.destinationRoot(), {
-      yay: "this should work"
-    });
+    // Copy all files
+    this.fs.copyTpl(
+      this.templatePath("system/**/*"),
+      this.destinationRoot(),
+      templateValues
+    );
 
+    // Copy all .dot files
     this.fs.copyTpl(
       this.templatePath("system/**/.*"),
       this.destinationRoot(),
-      {}
+      templateValues
     );
+
+    // Copy all files in .dot folders
     this.fs.copyTpl(
-      this.templatePath("system/**/.**/*"),
+      this.templatePath("system/**/.**/**/*"),
       this.destinationRoot(),
-      {}
+      templateValues
     );
   }
 

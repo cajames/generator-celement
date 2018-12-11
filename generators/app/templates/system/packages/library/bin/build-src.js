@@ -9,14 +9,14 @@ const execSync = require('child_process').execSync;
 const { getDirs } = require('./utils')
 
 const ELEMENT_PROXY_TEMPLATE = `import {{name}} from 'element-ui/lib/{{package}}'
-import '@company/baller-theme/src/{{package}}.scss';
+import '<%= themeNpmName %>/src/{{package}}.scss';
 
 // Element by default uses Chinese. Need to default to English
 import '../locale';
 
 {{name}}.install = function(Vue) {
-    // Swap out names prefixed with 'El' to 'Sm'
-    const name = {{name}}.name.replace(/^El([A-Z])/, "Sm$1") //TODO: Change here
+    // Swap out names prefixed with 'El' to '<%= capAbb %>'
+    const name = {{name}}.name.replace(/^El([A-Z])/, "<%= capAbb %>$1")
     Vue.component(name, {{name}});
 };
 

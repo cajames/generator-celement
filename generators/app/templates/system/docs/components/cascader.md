@@ -10,20 +10,20 @@ There are two ways to expand child option items.
 ```html
 <div class="block">
   <span class="demonstration">Child options expand when clicked (default)</span>
-  <sm-cascader
+  <<%= sysAbb %>-cascader
     :options="options"
     v-model="selectedOptions"
     @change="handleChange">
-  </sm-cascader>
+  </<%= sysAbb %>-cascader>
 </div>
 <div class="block">
   <span class="demonstration">Child options expand when hovered</span>
-  <sm-cascader
+  <<%= sysAbb %>-cascader
     expand-trigger="hover"
     :options="options"
     v-model="selectedOptions2"
     @change="handleChange">
-  </sm-cascader>
+  </<%= sysAbb %>-cascader>
 </div>
 
 <script>
@@ -245,9 +245,9 @@ Disable an option by setting a `disabled` field in the option object.
 
 :::demo In this example, the first item in `options` array has a `disabled: true` field, so it is disabled. By default, Cascader checks the `disabled` field in each option object; if you are using another field name to indicate whether an option is disabled, you can assign it in the `props` attribute (see the API table below for details). And of course, field name `value`, `label` and `children` can also be customized in the same way.
 ```html
-<sm-cascader
+<<%= sysAbb %>-cascader
   :options="optionsWithDisabled"
-></sm-cascader>
+></<%= sysAbb %>-cascader>
 <script>
   export default {
     data() {
@@ -461,10 +461,10 @@ The input can display only the last level instead of all levels.
 
 :::demo The `show-all-levels` attribute defines if all levels are displayed. If it is `false`, only the last level is displayed.
 ```html
-<sm-cascader
+<<%= sysAbb %>-cascader
     :options="options"
     :show-all-levels="false"
-></sm-cascader>
+></<%= sysAbb %>-cascader>
 <script>
   export default {
     data() {
@@ -675,10 +675,10 @@ The input can display only the last level instead of all levels.
 
 :::demo The default value can be defined with an array.
 ```html
-<sm-cascader
+<<%= sysAbb %>-cascader
   :options="options"
   v-model="selectedOptions3"
-></sm-cascader>
+></<%= sysAbb %>-cascader>
 <script>
   export default {
     data() {
@@ -892,10 +892,10 @@ Parent options can also be selected.
 
 :::demo By default only the options in the last level can be selected. By assigning `change-on-select` to `true`, options in parent levels can also be selected.
 ```html
-<sm-cascader
+<<%= sysAbb %>-cascader
   :options="options"
   change-on-select
-></sm-cascader>
+></<%= sysAbb %>-cascader>
 <script>
   export default {
     data() {
@@ -1108,11 +1108,11 @@ Load child options when their parent option is clicked or hovered over.
 
 :::demo In this example, the options array does not have data of cities when initialized. With the `active-item-change` event, you can load the cities of a specific state dynamically. Besides, this example also demonstrates how `props` is used.
 ```html
-<sm-cascader
+<<%= sysAbb %>-cascader
   :options="options2"
   @active-item-change="handleItemChange"
   :props="props"
-></sm-cascader>
+></<%= sysAbb %>-cascader>
 
 <script>
   export default {
@@ -1161,20 +1161,20 @@ Search and select options with a keyword.
 ```html
 <div class="block">
   <span class="demonstration">Only options of the last level can be selected</span>
-  <sm-cascader
+  <<%= sysAbb %>-cascader
     placeholder="Try searching: Guide"
     :options="options"
     filterable
-  ></sm-cascader>
+  ></<%= sysAbb %>-cascader>
 </div>
 <div class="block">
   <span class="demonstration">Options of all levels can be selected</span>
-  <sm-cascader
+  <<%= sysAbb %>-cascader
     placeholder="Try searching: Guide"
     :options="options"
     filterable
     change-on-select
-  ></sm-cascader>
+  ></<%= sysAbb %>-cascader>
 </div>
 
 <script>

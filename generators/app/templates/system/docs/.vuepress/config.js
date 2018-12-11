@@ -2,8 +2,8 @@ const demoContainer = require("./markdown/markdown-it.conf");
 const fs = require("fs");
 
 module.exports = {
-    title: "Baller",
-    description: "Documentation for the Baller Component Library",
+    title: "<%= systemName %>",
+    description: "Documentation for the <%= systemName %> Design System",
     base: "/",
     head: [
         [
@@ -28,17 +28,10 @@ module.exports = {
             options.plugins.push('@babel/plugin-syntax-dynamic-import')
             return options
         });
-        // jsRule
-        //     .use("babel-loader")
-        //     .loader("babel-loader")
-        //     .options({
-        //         presets: ["env"],
-        //         plugins: ["syntax-dynamic-import"]
-        //     });
     },
     themeConfig: {
         // GitHub config
-        repo: "{{repo}}",
+        repo: "<%= repoUrl %>",
         docsDir: "docs",
         editLinks: true,
         editLinkText: "Help us improve this page!",
@@ -56,10 +49,6 @@ module.exports = {
                 text: "Components",
                 link: "/components/"
             }
-            // {
-            //     text: "Changelog",
-            //     link: "/CHANGELOG.html"
-            // }
         ],
         sidebar: {
             // "/guide/": genGuideSidebar(),
@@ -75,14 +64,6 @@ function genGuideSidebar() {
             collapsable: false,
             children: [
                 "",
-                "installation",
-                "quickstart",
-                "video",
-                "migrating-from-v2",
-                "faq",
-                "custom-theme",
-                "layout",
-                "i18n"
             ]
         }
     ];

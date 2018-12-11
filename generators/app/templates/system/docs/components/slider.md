@@ -63,23 +63,23 @@ The current value is displayed when the slider is being dragged.
 <template>
   <div class="block">
     <span class="demonstration">Default value</span>
-    <sm-slider v-model="value1"></sm-slider>
+    <<%= sysAbb %>-slider v-model="value1"></<%= sysAbb %>-slider>
   </div>
   <div class="block">
     <span class="demonstration">Customized initial value</span>
-    <sm-slider v-model="value2"></sm-slider>
+    <<%= sysAbb %>-slider v-model="value2"></<%= sysAbb %>-slider>
   </div>
   <div class="block">
     <span class="demonstration">Hide Tooltip</span>
-    <sm-slider v-model="value3" :show-tooltip="false"></sm-slider>
+    <<%= sysAbb %>-slider v-model="value3" :show-tooltip="false"></<%= sysAbb %>-slider>
   </div>
   <div class="block">
     <span class="demonstration">Format Tooltip</span>
-    <sm-slider v-model="value4" :format-tooltip="formatTooltip"></sm-slider>
+    <<%= sysAbb %>-slider v-model="value4" :format-tooltip="formatTooltip"></<%= sysAbb %>-slider>
   </div>
   <div class="block">
     <span class="demonstration">Disabled</span>
-    <sm-slider v-model="value5" disabled></sm-slider>
+    <<%= sysAbb %>-slider v-model="value5" disabled></<%= sysAbb %>-slider>
   </div>
 </template>
 
@@ -114,18 +114,18 @@ The options can be discrete.
 <template>
   <div class="block">
     <span class="demonstration">Breakpoints not displayed</span>
-    <sm-slider
+    <<%= sysAbb %>-slider
       v-model="value6"
       :step="10">
-    </sm-slider>
+    </<%= sysAbb %>-slider>
   </div>
   <div class="block">
     <span class="demonstration">Breakpoints displayed</span>
-    <sm-slider
+    <<%= sysAbb %>-slider
       v-model="value7"
       :step="10"
       show-stops>
-    </sm-slider>
+    </<%= sysAbb %>-slider>
   </div>
 </template>
 
@@ -151,10 +151,10 @@ Set value via a input box.
 ```html
 <template>
   <div class="block">
-    <sm-slider
+    <<%= sysAbb %>-slider
       v-model="value8"
       show-input>
-    </sm-slider>
+    </<%= sysAbb %>-slider>
   </div>
 </template>
 
@@ -178,12 +178,12 @@ Selecting a range of values is supported.
 ```html
 <template>
   <div class="block">
-    <sm-slider
+    <<%= sysAbb %>-slider
       v-model="value9"
       range
       show-stops
       :max="10">
-    </sm-slider>
+    </<%= sysAbb %>-slider>
   </div>
 </template>
 
@@ -205,11 +205,11 @@ Selecting a range of values is supported.
 ```html
 <template>
   <div class="block">
-    <sm-slider
+    <<%= sysAbb %>-slider
       v-model="value10"
       vertical
       height="200px">
-    </sm-slider>
+    </<%= sysAbb %>-slider>
   </div>
 </template>
 

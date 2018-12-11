@@ -93,8 +93,8 @@ Displays at the top, and disappears after 3 seconds.
 
 ```html
 <template>
-  <sm-button :plain="true" @click="open">Show message</sm-button>
-  <sm-button :plain="true" @click="openVn">VNode</sm-button>
+  <<%= sysAbb %>-button :plain="true" @click="open">Show message</<%= sysAbb %>-button>
+  <<%= sysAbb %>-button :plain="true" @click="openVn">VNode</<%= sysAbb %>-button>
 </template>
 
 <script>
@@ -126,10 +126,10 @@ Used to show the feedback of Success, Warning, Message and Error activities.
 :::demo When you need more customizations, Message component can also take an object as parameter. For example, setting value of `type` can define different types, and its default is `info`. In such cases the main body is passed in as the value of `message`. Also, we have registered methods for different types, so you can directly call it without passing a type like `open4`.
 ```html
 <template>
-  <sm-button :plain="true" @click="open2">success</sm-button>
-  <sm-button :plain="true" @click="open3">warning</sm-button>
-  <sm-button :plain="true" @click="open">message</sm-button>
-  <sm-button :plain="true" @click="open4">error</sm-button>
+  <<%= sysAbb %>-button :plain="true" @click="open2">success</<%= sysAbb %>-button>
+  <<%= sysAbb %>-button :plain="true" @click="open3">warning</<%= sysAbb %>-button>
+  <<%= sysAbb %>-button :plain="true" @click="open">message</<%= sysAbb %>-button>
+  <<%= sysAbb %>-button :plain="true" @click="open4">error</<%= sysAbb %>-button>
 </template>
 
 <script>
@@ -168,10 +168,10 @@ A close button can be added.
 :::demo A default Message cannot be closed manually. If you need a closable message, you can set `showClose` field. Besides, same as notification, message has a controllable `duration`. Default duration is 3000 ms, and it won't disappear when set to `0`.
 ```html
 <template>
-  <sm-button :plain="true" @click="open5">message</sm-button>
-  <sm-button :plain="true" @click="open6">success</sm-button>
-  <sm-button :plain="true" @click="open7">warning</sm-button>
-  <sm-button :plain="true" @click="open8">error</sm-button>
+  <<%= sysAbb %>-button :plain="true" @click="open5">message</<%= sysAbb %>-button>
+  <<%= sysAbb %>-button :plain="true" @click="open6">success</<%= sysAbb %>-button>
+  <<%= sysAbb %>-button :plain="true" @click="open7">warning</<%= sysAbb %>-button>
+  <<%= sysAbb %>-button :plain="true" @click="open8">error</<%= sysAbb %>-button>
 </template>
 
 <script>
@@ -220,7 +220,7 @@ Use the `center` attribute to center the text.
 
 ```html
 <template>
-  <sm-button :plain="true" @click="openCenter">Centered text</sm-button>
+  <<%= sysAbb %>-button :plain="true" @click="openCenter">Centered text</<%= sysAbb %>-button>
 </template>
 
 <script>
@@ -245,7 +245,7 @@ Use the `center` attribute to center the text.
 
 ```html
 <template>
-  <sm-button :plain="true" @click="openHTML">Use HTML String</sm-button>
+  <<%= sysAbb %>-button :plain="true" @click="openHTML">Use HTML String</<%= sysAbb %>-button>
 </template>
 
 <script>

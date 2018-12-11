@@ -10,22 +10,22 @@ Alert components are non-overlay elements in the page that does not disappear au
 
 ```html
 <template>
-  <sm-alert
+  <<%= sysAbb %>-alert
     title="success alert"
     type="success">
-  </sm-alert>
-  <sm-alert
+  </<%= sysAbb %>-alert>
+  <<%= sysAbb %>-alert
     title="info alert"
     type="info">
-  </sm-alert>
-  <sm-alert
+  </<%= sysAbb %>-alert>
+  <<%= sysAbb %>-alert
     title="warning alert"
     type="warning">
-  </sm-alert>
-  <sm-alert
+  </<%= sysAbb %>-alert>
+  <<%= sysAbb %>-alert
     title="error alert"
     type="error">
-  </sm-alert>
+  </<%= sysAbb %>-alert>
 </template>
 ```
 :::
@@ -38,21 +38,21 @@ Customize the close button as texts or other symbols.
 
 ```html
 <template>
-  <sm-alert
+  <<%= sysAbb %>-alert
     title="unclosable alert"
     type="success"
     :closable="false">
-  </sm-alert>
-  <sm-alert
+  </<%= sysAbb %>-alert>
+  <<%= sysAbb %>-alert
     title="customized close-text"
     type="info"
     close-text="Gotcha">
-  </sm-alert>
-  <sm-alert
+  </<%= sysAbb %>-alert>
+  <<%= sysAbb %>-alert
     title="alert with callback"
     type="warning"
     @close="hello">
-  </sm-alert>
+  </<%= sysAbb %>-alert>
 </template>
 
 <script>
@@ -75,26 +75,26 @@ Displaying an icon improves readability.
 
 ```html
 <template>
-  <sm-alert
+  <<%= sysAbb %>-alert
     title="success alert"
     type="success"
     show-icon>
-  </sm-alert>
-  <sm-alert
+  </<%= sysAbb %>-alert>
+  <<%= sysAbb %>-alert
     title="info alert"
     type="info"
     show-icon>
-  </sm-alert>
-  <sm-alert
+  </<%= sysAbb %>-alert>
+  <<%= sysAbb %>-alert
     title="warning alert"
     type="warning"
     show-icon>
-  </sm-alert>
-  <sm-alert
+  </<%= sysAbb %>-alert>
+  <<%= sysAbb %>-alert
     title="error alert"
     type="error"
     show-icon>
-  </sm-alert>
+  </<%= sysAbb %>-alert>
 </template>
 ```
 :::
@@ -107,30 +107,30 @@ Use the `center` attribute to center the text.
 
 ```html
 <template>
-  <sm-alert
+  <<%= sysAbb %>-alert
     title="success alert"
     type="success"
     center
     show-icon>
-  </sm-alert>
-  <sm-alert
+  </<%= sysAbb %>-alert>
+  <<%= sysAbb %>-alert
     title="info alert"
     type="info"
     center
     show-icon>
-  </sm-alert>
-  <sm-alert
+  </<%= sysAbb %>-alert>
+  <<%= sysAbb %>-alert
     title="warning alert"
     type="warning"
     center
     show-icon>
-  </sm-alert>
-  <sm-alert
+  </<%= sysAbb %>-alert>
+  <<%= sysAbb %>-alert
     title="error alert"
     type="error"
     center
     show-icon>
-  </sm-alert>
+  </<%= sysAbb %>-alert>
 </template>
 ```
 :::
@@ -143,11 +143,11 @@ Description includes a message with more detailed information.
 
 ```html
 <template>
-  <sm-alert
+  <<%= sysAbb %>-alert
     title="with description"
     type="success"
     description="This is a description.">
-  </sm-alert>
+  </<%= sysAbb %>-alert>
 </template>
 ```
 :::
@@ -158,30 +158,30 @@ Description includes a message with more detailed information.
 
 ```html
 <template>
-  <sm-alert
+  <<%= sysAbb %>-alert
     title="success alert"
     type="success"
     description="more text description"
     show-icon>
-  </sm-alert>
-  <sm-alert
+  </<%= sysAbb %>-alert>
+  <<%= sysAbb %>-alert
     title="info alert"
     type="info"
     description="more text description"
     show-icon>
-  </sm-alert>
-  <sm-alert
+  </<%= sysAbb %>-alert>
+  <<%= sysAbb %>-alert
     title="warning alert"
     type="warning"
     description="more text description"
     show-icon>
-  </sm-alert>
-  <sm-alert
+  </<%= sysAbb %>-alert>
+  <<%= sysAbb %>-alert
     title="error alert"
     type="error"
     description="more text description"
     show-icon>
-  </sm-alert>
+  </<%= sysAbb %>-alert>
 </template>
 ```
 :::

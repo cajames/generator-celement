@@ -61,25 +61,25 @@ Top bar NavMenu can be used in a variety of scenarios.
 
 :::demo By default Menu is vertical, but you can change it to horizontal by setting the mode prop to 'horizontal'. In addition, you can use the submenu component to create a second level menu. Menu provides `background-color`, `text-color` and `active-text-color` to customize the colors.
 ```html
-<sm-menu :default-active="activeIndex" class="el-menu-demo" mode="horizontal" @select="handleSelect">
-  <sm-menu-item index="1">Processing Center</sm-menu-item>
-  <sm-submenu index="2">
+<<%= sysAbb %>-menu :default-active="activeIndex" class="el-menu-demo" mode="horizontal" @select="handleSelect">
+  <<%= sysAbb %>-menu-item index="1">Processing Center</<%= sysAbb %>-menu-item>
+  <<%= sysAbb %>-submenu index="2">
     <template slot="title">Workspace</template>
-    <sm-menu-item index="2-1">item one</sm-menu-item>
-    <sm-menu-item index="2-2">item two</sm-menu-item>
-    <sm-menu-item index="2-3">item three</sm-menu-item>
-    <sm-submenu index="2-4">
+    <<%= sysAbb %>-menu-item index="2-1">item one</<%= sysAbb %>-menu-item>
+    <<%= sysAbb %>-menu-item index="2-2">item two</<%= sysAbb %>-menu-item>
+    <<%= sysAbb %>-menu-item index="2-3">item three</<%= sysAbb %>-menu-item>
+    <<%= sysAbb %>-submenu index="2-4">
       <template slot="title">item four</template>
-      <sm-menu-item index="2-4-1">item one</sm-menu-item>
-      <sm-menu-item index="2-4-2">item two</sm-menu-item>
-      <sm-menu-item index="2-4-3">item three</sm-menu-item>
-    </sm-submenu>
-  </sm-submenu>
-  <sm-menu-item index="3" disabled>Info</sm-menu-item>
-  <sm-menu-item index="4"><a href="https://www.ele.me" target="_blank">Orders</a></sm-menu-item>
-</sm-menu>
+      <<%= sysAbb %>-menu-item index="2-4-1">item one</<%= sysAbb %>-menu-item>
+      <<%= sysAbb %>-menu-item index="2-4-2">item two</<%= sysAbb %>-menu-item>
+      <<%= sysAbb %>-menu-item index="2-4-3">item three</<%= sysAbb %>-menu-item>
+    </<%= sysAbb %>-submenu>
+  </<%= sysAbb %>-submenu>
+  <<%= sysAbb %>-menu-item index="3" disabled>Info</<%= sysAbb %>-menu-item>
+  <<%= sysAbb %>-menu-item index="4"><a href="https://www.ele.me" target="_blank">Orders</a></<%= sysAbb %>-menu-item>
+</<%= sysAbb %>-menu>
 <div class="line"></div>
-<sm-menu
+<<%= sysAbb %>-menu
   :default-active="activeIndex2"
   class="el-menu-demo"
   mode="horizontal"
@@ -87,22 +87,22 @@ Top bar NavMenu can be used in a variety of scenarios.
   background-color="#545c64"
   text-color="#fff"
   active-text-color="#ffd04b">
-  <sm-menu-item index="1">Processing Center</sm-menu-item>
-  <sm-submenu index="2">
+  <<%= sysAbb %>-menu-item index="1">Processing Center</<%= sysAbb %>-menu-item>
+  <<%= sysAbb %>-submenu index="2">
     <template slot="title">Workspace</template>
-    <sm-menu-item index="2-1">item one</sm-menu-item>
-    <sm-menu-item index="2-2">item two</sm-menu-item>
-    <sm-menu-item index="2-3">item three</sm-menu-item>
-    <sm-submenu index="2-4">
+    <<%= sysAbb %>-menu-item index="2-1">item one</<%= sysAbb %>-menu-item>
+    <<%= sysAbb %>-menu-item index="2-2">item two</<%= sysAbb %>-menu-item>
+    <<%= sysAbb %>-menu-item index="2-3">item three</<%= sysAbb %>-menu-item>
+    <<%= sysAbb %>-submenu index="2-4">
       <template slot="title">item four</template>
-      <sm-menu-item index="2-4-1">item one</sm-menu-item>
-      <sm-menu-item index="2-4-2">item two</sm-menu-item>
-      <sm-menu-item index="2-4-3">item three</sm-menu-item>
-    </sm-submenu>
-  </sm-submenu>
-  <sm-menu-item index="3" disabled>Info</sm-menu-item>
-  <sm-menu-item index="4"><a href="https://www.ele.me" target="_blank">Orders</a></sm-menu-item>
-</sm-menu>
+      <<%= sysAbb %>-menu-item index="2-4-1">item one</<%= sysAbb %>-menu-item>
+      <<%= sysAbb %>-menu-item index="2-4-2">item two</<%= sysAbb %>-menu-item>
+      <<%= sysAbb %>-menu-item index="2-4-3">item three</<%= sysAbb %>-menu-item>
+    </<%= sysAbb %>-submenu>
+  </<%= sysAbb %>-submenu>
+  <<%= sysAbb %>-menu-item index="3" disabled>Info</<%= sysAbb %>-menu-item>
+  <<%= sysAbb %>-menu-item index="4"><a href="https://www.ele.me" target="_blank">Orders</a></<%= sysAbb %>-menu-item>
+</<%= sysAbb %>-menu>
 
 <script>
   export default {
@@ -128,48 +128,48 @@ Vertical NavMenu with sub-menus.
 
 :::demo You can use the el-menu-item-group component to create a menu group, and the name of the group is determined by the title prop or a named slot.
 ```html
-<sm-row class="tac">
-  <sm-col :span="12">
+<<%= sysAbb %>-row class="tac">
+  <<%= sysAbb %>-col :span="12">
     <h5>Default colors</h5>
-    <sm-menu
+    <<%= sysAbb %>-menu
       default-active="2"
       class="el-menu-vertical-demo"
       @open="handleOpen"
       @close="handleClose">
-      <sm-submenu index="1">
+      <<%= sysAbb %>-submenu index="1">
         <template slot="title">
           <i class="el-icon-location"></i>
           <span>Navigator One</span>
         </template>
-        <sm-menu-item-group title="Group One">
-          <sm-menu-item index="1-1">item one</sm-menu-item>
-          <sm-menu-item index="1-2">item one</sm-menu-item>
-        </sm-menu-item-group>
-        <sm-menu-item-group title="Group Two">
-          <sm-menu-item index="1-3">item three</sm-menu-item>
-        </sm-menu-item-group>
-        <sm-submenu index="1-4">
+        <<%= sysAbb %>-menu-item-group title="Group One">
+          <<%= sysAbb %>-menu-item index="1-1">item one</<%= sysAbb %>-menu-item>
+          <<%= sysAbb %>-menu-item index="1-2">item one</<%= sysAbb %>-menu-item>
+        </<%= sysAbb %>-menu-item-group>
+        <<%= sysAbb %>-menu-item-group title="Group Two">
+          <<%= sysAbb %>-menu-item index="1-3">item three</<%= sysAbb %>-menu-item>
+        </<%= sysAbb %>-menu-item-group>
+        <<%= sysAbb %>-submenu index="1-4">
           <template slot="title">item four</template>
-          <sm-menu-item index="1-4-1">item one</sm-menu-item>
-        </sm-submenu>
-      </sm-submenu>
-      <sm-menu-item index="2">
+          <<%= sysAbb %>-menu-item index="1-4-1">item one</<%= sysAbb %>-menu-item>
+        </<%= sysAbb %>-submenu>
+      </<%= sysAbb %>-submenu>
+      <<%= sysAbb %>-menu-item index="2">
         <i class="el-icon-menu"></i>
         <span>Navigator Two</span>
-      </sm-menu-item>
-      <sm-menu-item index="3" disabled>
+      </<%= sysAbb %>-menu-item>
+      <<%= sysAbb %>-menu-item index="3" disabled>
         <i class="el-icon-document"></i>
         <span>Navigator Three</span>
-      </sm-menu-item>
-      <sm-menu-item index="4">
+      </<%= sysAbb %>-menu-item>
+      <<%= sysAbb %>-menu-item index="4">
         <i class="el-icon-setting"></i>
         <span>Navigator Four</span>
-      </sm-menu-item>
-    </sm-menu>
-  </sm-col>
-  <sm-col :span="12">
+      </<%= sysAbb %>-menu-item>
+    </<%= sysAbb %>-menu>
+  </<%= sysAbb %>-col>
+  <<%= sysAbb %>-col :span="12">
     <h5>Custom colors</h5>
-    <sm-menu
+    <<%= sysAbb %>-menu
       default-active="2"
       class="el-menu-vertical-demo"
       @open="handleOpen"
@@ -177,38 +177,38 @@ Vertical NavMenu with sub-menus.
       background-color="#545c64"
       text-color="#fff"
       active-text-color="#ffd04b">
-      <sm-submenu index="1">
+      <<%= sysAbb %>-submenu index="1">
         <template slot="title">
           <i class="el-icon-location"></i>
           <span>Navigator One</span>
         </template>
-        <sm-menu-item-group title="Group One">
-          <sm-menu-item index="1-1">item one</sm-menu-item>
-          <sm-menu-item index="1-2">item one</sm-menu-item>
-        </sm-menu-item-group>
-        <sm-menu-item-group title="Group Two">
-          <sm-menu-item index="1-3">item three</sm-menu-item>
-        </sm-menu-item-group>
-        <sm-submenu index="1-4">
+        <<%= sysAbb %>-menu-item-group title="Group One">
+          <<%= sysAbb %>-menu-item index="1-1">item one</<%= sysAbb %>-menu-item>
+          <<%= sysAbb %>-menu-item index="1-2">item one</<%= sysAbb %>-menu-item>
+        </<%= sysAbb %>-menu-item-group>
+        <<%= sysAbb %>-menu-item-group title="Group Two">
+          <<%= sysAbb %>-menu-item index="1-3">item three</<%= sysAbb %>-menu-item>
+        </<%= sysAbb %>-menu-item-group>
+        <<%= sysAbb %>-submenu index="1-4">
           <template slot="title">item four</template>
-          <sm-menu-item index="1-4-1">item one</sm-menu-item>
-        </sm-submenu>
-      </sm-submenu>
-      <sm-menu-item index="2">
+          <<%= sysAbb %>-menu-item index="1-4-1">item one</<%= sysAbb %>-menu-item>
+        </<%= sysAbb %>-submenu>
+      </<%= sysAbb %>-submenu>
+      <<%= sysAbb %>-menu-item index="2">
         <i class="el-icon-menu"></i>
         <span>Navigator Two</span>
-      </sm-menu-item>
-      <sm-menu-item index="3" disabled>
+      </<%= sysAbb %>-menu-item>
+      <<%= sysAbb %>-menu-item index="3" disabled>
         <i class="el-icon-document"></i>
         <span>Navigator Three</span>
-      </sm-menu-item>
-      <sm-menu-item index="4">
+      </<%= sysAbb %>-menu-item>
+      <<%= sysAbb %>-menu-item index="4">
         <i class="el-icon-setting"></i>
         <span>Navigator Four</span>
-      </sm-menu-item>
-    </sm-menu>
-  </sm-col>
-</sm-row>
+      </<%= sysAbb %>-menu-item>
+    </<%= sysAbb %>-menu>
+  </<%= sysAbb %>-col>
+</<%= sysAbb %>-row>
 
 <script>
   export default {
@@ -231,42 +231,42 @@ Vertical NavMenu could be collapsed.
 
 :::demo
 ```html
-<sm-radio-group v-model="isCollapse" style="margin-bottom: 20px;">
-  <sm-radio-button :label="false">expand</sm-radio-button>
-  <sm-radio-button :label="true">collapse</sm-radio-button>
-</sm-radio-group>
-<sm-menu default-active="2" class="el-menu-vertical-demo" @open="handleOpen" @close="handleClose" :collapse="isCollapse">
-  <sm-submenu index="1">
+<<%= sysAbb %>-radio-group v-model="isCollapse" style="margin-bottom: 20px;">
+  <<%= sysAbb %>-radio-button :label="false">expand</<%= sysAbb %>-radio-button>
+  <<%= sysAbb %>-radio-button :label="true">collapse</<%= sysAbb %>-radio-button>
+</<%= sysAbb %>-radio-group>
+<<%= sysAbb %>-menu default-active="2" class="el-menu-vertical-demo" @open="handleOpen" @close="handleClose" :collapse="isCollapse">
+  <<%= sysAbb %>-submenu index="1">
     <template slot="title">
       <i class="el-icon-location"></i>
       <span slot="title">Navigator One</span>
     </template>
-    <sm-menu-item-group>
+    <<%= sysAbb %>-menu-item-group>
       <span slot="title">Group One</span>
-      <sm-menu-item index="1-1">item one</sm-menu-item>
-      <sm-menu-item index="1-2">item two</sm-menu-item>
-    </sm-menu-item-group>
-    <sm-menu-item-group title="Group Two">
-      <sm-menu-item index="1-3">item three</sm-menu-item>
-    </sm-menu-item-group>
-    <sm-submenu index="1-4">
+      <<%= sysAbb %>-menu-item index="1-1">item one</<%= sysAbb %>-menu-item>
+      <<%= sysAbb %>-menu-item index="1-2">item two</<%= sysAbb %>-menu-item>
+    </<%= sysAbb %>-menu-item-group>
+    <<%= sysAbb %>-menu-item-group title="Group Two">
+      <<%= sysAbb %>-menu-item index="1-3">item three</<%= sysAbb %>-menu-item>
+    </<%= sysAbb %>-menu-item-group>
+    <<%= sysAbb %>-submenu index="1-4">
       <span slot="title">item four</span>
-      <sm-menu-item index="1-4-1">item one</sm-menu-item>
-    </sm-submenu>
-  </sm-submenu>
-  <sm-menu-item index="2">
+      <<%= sysAbb %>-menu-item index="1-4-1">item one</<%= sysAbb %>-menu-item>
+    </<%= sysAbb %>-submenu>
+  </<%= sysAbb %>-submenu>
+  <<%= sysAbb %>-menu-item index="2">
     <i class="el-icon-menu"></i>
     <span slot="title">Navigator Two</span>
-  </sm-menu-item>
-  <sm-menu-item index="3" disabled>
+  </<%= sysAbb %>-menu-item>
+  <<%= sysAbb %>-menu-item index="3" disabled>
     <i class="el-icon-document"></i>
     <span slot="title">Navigator Three</span>
-  </sm-menu-item>
-  <sm-menu-item index="4">
+  </<%= sysAbb %>-menu-item>
+  <<%= sysAbb %>-menu-item index="4">
     <i class="el-icon-setting"></i>
     <span slot="title">Navigator Four</span>
-  </sm-menu-item>
-</sm-menu>
+  </<%= sysAbb %>-menu-item>
+</<%= sysAbb %>-menu>
 
 <style lang="scss">
   .el-menu-vertical-demo:not(.el-menu--collapse) {

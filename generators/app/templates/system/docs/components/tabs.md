@@ -102,12 +102,12 @@ Basic and concise tabs.
 
 ```html
 <template>
-  <sm-tabs v-model="activeName" @tab-click="handleClick">
-    <sm-tab-pane label="User" name="first">User</sm-tab-pane>
-    <sm-tab-pane label="Config" name="second">Config</sm-tab-pane>
-    <sm-tab-pane label="Role" name="third">Role</sm-tab-pane>
-    <sm-tab-pane label="Task" name="fourth">Task</sm-tab-pane>
-  </sm-tabs>
+  <<%= sysAbb %>-tabs v-model="activeName" @tab-click="handleClick">
+    <<%= sysAbb %>-tab-pane label="User" name="first">User</<%= sysAbb %>-tab-pane>
+    <<%= sysAbb %>-tab-pane label="Config" name="second">Config</<%= sysAbb %>-tab-pane>
+    <<%= sysAbb %>-tab-pane label="Role" name="third">Role</<%= sysAbb %>-tab-pane>
+    <<%= sysAbb %>-tab-pane label="Task" name="fourth">Task</<%= sysAbb %>-tab-pane>
+  </<%= sysAbb %>-tabs>
 </template>
 <script>
   export default {
@@ -134,12 +134,12 @@ Tabs styled as cards.
 
 ```html
 <template>
-  <sm-tabs type="card" @tab-click="handleClick">
-    <sm-tab-pane label="User">User</sm-tab-pane>
-    <sm-tab-pane label="Config">Config</sm-tab-pane>
-    <sm-tab-pane label="Role">Role</sm-tab-pane>
-    <sm-tab-pane label="Task">Task</sm-tab-pane>
-  </sm-tabs>
+  <<%= sysAbb %>-tabs type="card" @tab-click="handleClick">
+    <<%= sysAbb %>-tab-pane label="User">User</<%= sysAbb %>-tab-pane>
+    <<%= sysAbb %>-tab-pane label="Config">Config</<%= sysAbb %>-tab-pane>
+    <<%= sysAbb %>-tab-pane label="Role">Role</<%= sysAbb %>-tab-pane>
+    <<%= sysAbb %>-tab-pane label="Task">Task</<%= sysAbb %>-tab-pane>
+  </<%= sysAbb %>-tabs>
 </template>
 <script>
   export default {
@@ -165,12 +165,12 @@ Border card tabs.
 :::demo Set `type` to `border-card`.
 
 ```html
-<sm-tabs type="border-card">
-  <sm-tab-pane label="User">User</sm-tab-pane>
-  <sm-tab-pane label="Config">Config</sm-tab-pane>
-  <sm-tab-pane label="Role">Role</sm-tab-pane>
-  <sm-tab-pane label="Task">Task</sm-tab-pane>
-</sm-tabs>
+<<%= sysAbb %>-tabs type="border-card">
+  <<%= sysAbb %>-tab-pane label="User">User</<%= sysAbb %>-tab-pane>
+  <<%= sysAbb %>-tab-pane label="Config">Config</<%= sysAbb %>-tab-pane>
+  <<%= sysAbb %>-tab-pane label="Role">Role</<%= sysAbb %>-tab-pane>
+  <<%= sysAbb %>-tab-pane label="Task">Task</<%= sysAbb %>-tab-pane>
+</<%= sysAbb %>-tabs>
 ```
 
 :::
@@ -183,19 +183,19 @@ You can use `tab-position` attribute to set the tab's position.
 
 ```html
 <template>
-  <sm-radio-group v-model="tabPosition" style="margin-bottom: 30px;">
-    <sm-radio-button label="top">top</sm-radio-button>
-    <sm-radio-button label="right">right</sm-radio-button>
-    <sm-radio-button label="bottom">bottom</sm-radio-button>
-    <sm-radio-button label="left">left</sm-radio-button>
-  </sm-radio-group>
+  <<%= sysAbb %>-radio-group v-model="tabPosition" style="margin-bottom: 30px;">
+    <<%= sysAbb %>-radio-button label="top">top</<%= sysAbb %>-radio-button>
+    <<%= sysAbb %>-radio-button label="right">right</<%= sysAbb %>-radio-button>
+    <<%= sysAbb %>-radio-button label="bottom">bottom</<%= sysAbb %>-radio-button>
+    <<%= sysAbb %>-radio-button label="left">left</<%= sysAbb %>-radio-button>
+  </<%= sysAbb %>-radio-group>
 
-  <sm-tabs :tab-position="tabPosition" style="height: 200px;">
-    <sm-tab-pane label="User">User</sm-tab-pane>
-    <sm-tab-pane label="Config">Config</sm-tab-pane>
-    <sm-tab-pane label="Role">Role</sm-tab-pane>
-    <sm-tab-pane label="Task">Task</sm-tab-pane>
-  </sm-tabs>
+  <<%= sysAbb %>-tabs :tab-position="tabPosition" style="height: 200px;">
+    <<%= sysAbb %>-tab-pane label="User">User</<%= sysAbb %>-tab-pane>
+    <<%= sysAbb %>-tab-pane label="Config">Config</<%= sysAbb %>-tab-pane>
+    <<%= sysAbb %>-tab-pane label="Role">Role</<%= sysAbb %>-tab-pane>
+    <<%= sysAbb %>-tab-pane label="Task">Task</<%= sysAbb %>-tab-pane>
+  </<%= sysAbb %>-tabs>
 </template>
 <script>
   export default {
@@ -215,15 +215,15 @@ You can use named slot to customize the tab label content.
 
 :::demo
 ```html
-<sm-tabs type="border-card">
-  <sm-tab-pane>
+<<%= sysAbb %>-tabs type="border-card">
+  <<%= sysAbb %>-tab-pane>
     <span slot="label"><i class="el-icon-date"></i> Route</span>
     Route
-  </sm-tab-pane>
-  <sm-tab-pane label="Config">Config</sm-tab-pane>
-  <sm-tab-pane label="Role">Role</sm-tab-pane>
-  <sm-tab-pane label="Task">Task</sm-tab-pane>
-</sm-tabs>
+  </<%= sysAbb %>-tab-pane>
+  <<%= sysAbb %>-tab-pane label="Config">Config</<%= sysAbb %>-tab-pane>
+  <<%= sysAbb %>-tab-pane label="Role">Role</<%= sysAbb %>-tab-pane>
+  <<%= sysAbb %>-tab-pane label="Task">Task</<%= sysAbb %>-tab-pane>
+</<%= sysAbb %>-tabs>
 ```
 :::
 
@@ -233,16 +233,16 @@ Only card type Tabs support addable & closeable.
 
 :::demo
 ```html
-<sm-tabs v-model="editableTabsValue" type="card" editable @edit="handleTabsEdit">
-  <sm-tab-pane
+<<%= sysAbb %>-tabs v-model="editableTabsValue" type="card" editable @edit="handleTabsEdit">
+  <<%= sysAbb %>-tab-pane
     v-for="(item, index) in editableTabs"
     :key="item.name"
     :label="item.title"
     :name="item.name"
   >
     {{item.content}}
-  </sm-tab-pane>
-</sm-tabs>
+  </<%= sysAbb %>-tab-pane>
+</<%= sysAbb %>-tabs>
 <script>
   export default {
     data() {
@@ -300,23 +300,23 @@ Only card type Tabs support addable & closeable.
 :::demo
 ```html
 <div style="margin-bottom: 20px;">
-  <sm-button
+  <<%= sysAbb %>-button
     size="small"
     @click="addTab(editableTabsValue2)"
   >
     add tab
-  </sm-button>
+  </<%= sysAbb %>-button>
 </div>
-<sm-tabs v-model="editableTabsValue2" type="card" closable @tab-remove="removeTab">
-  <sm-tab-pane
+<<%= sysAbb %>-tabs v-model="editableTabsValue2" type="card" closable @tab-remove="removeTab">
+  <<%= sysAbb %>-tab-pane
     v-for="(item, index) in editableTabs2"
     :key="item.name"
     :label="item.title"
     :name="item.name"
   >
     {{item.content}}
-  </sm-tab-pane>
-</sm-tabs>
+  </<%= sysAbb %>-tab-pane>
+</<%= sysAbb %>-tabs>
 <script>
   export default {
     data() {

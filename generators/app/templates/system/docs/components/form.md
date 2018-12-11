@@ -256,50 +256,50 @@ It includes all kinds of input items, such as `input`, `select`, `radio` and `ch
 :::demo In each `form` component, you need a `form-item` field to be the container of your input item.
 
 ```html
-<sm-form ref="form" :model="form" label-width="120px">
-  <sm-form-item label="Activity name">
-    <sm-input v-model="form.name"></sm-input>
-  </sm-form-item>
-  <sm-form-item label="Activity zone">
-    <sm-select v-model="form.region" placeholder="please select your zone">
-      <sm-option label="Zone one" value="shanghai"></sm-option>
-      <sm-option label="Zone two" value="beijing"></sm-option>
-    </sm-select>
-  </sm-form-item>
-  <sm-form-item label="Activity time">
-    <sm-col :span="11">
-      <sm-date-picker type="date" placeholder="Pick a date" v-model="form.date1" style="width: 100%;"></sm-date-picker>
-    </sm-col>
-    <sm-col class="line" :span="2">-</sm-col>
-    <sm-col :span="11">
-      <sm-time-picker type="fixed-time" placeholder="Pick a time" v-model="form.date2" style="width: 100%;"></sm-time-picker>
-    </sm-col>
-  </sm-form-item>
-  <sm-form-item label="Instant delivery">
-    <sm-switch v-model="form.delivery"></sm-switch>
-  </sm-form-item>
-  <sm-form-item label="Activity type">
-    <sm-checkbox-group v-model="form.type">
-      <sm-checkbox label="Online activities" name="type"></sm-checkbox>
-      <sm-checkbox label="Promotion activities" name="type"></sm-checkbox>
-      <sm-checkbox label="Offline activities" name="type"></sm-checkbox>
-      <sm-checkbox label="Simple brand exposure" name="type"></sm-checkbox>
-    </sm-checkbox-group>
-  </sm-form-item>
-  <sm-form-item label="Resources">
-    <sm-radio-group v-model="form.resource">
-      <sm-radio label="Sponsor"></sm-radio>
-      <sm-radio label="Venue"></sm-radio>
-    </sm-radio-group>
-  </sm-form-item>
-  <sm-form-item label="Activity form">
-    <sm-input type="textarea" v-model="form.desc"></sm-input>
-  </sm-form-item>
-  <sm-form-item>
-    <sm-button type="primary" @click="onSubmit">Create</sm-button>
-    <sm-button>Cancel</sm-button>
-  </sm-form-item>
-</sm-form>
+<<%= sysAbb %>-form ref="form" :model="form" label-width="120px">
+  <<%= sysAbb %>-form-item label="Activity name">
+    <<%= sysAbb %>-input v-model="form.name"></<%= sysAbb %>-input>
+  </<%= sysAbb %>-form-item>
+  <<%= sysAbb %>-form-item label="Activity zone">
+    <<%= sysAbb %>-select v-model="form.region" placeholder="please select your zone">
+      <<%= sysAbb %>-option label="Zone one" value="shanghai"></<%= sysAbb %>-option>
+      <<%= sysAbb %>-option label="Zone two" value="beijing"></<%= sysAbb %>-option>
+    </<%= sysAbb %>-select>
+  </<%= sysAbb %>-form-item>
+  <<%= sysAbb %>-form-item label="Activity time">
+    <<%= sysAbb %>-col :span="11">
+      <<%= sysAbb %>-date-picker type="date" placeholder="Pick a date" v-model="form.date1" style="width: 100%;"></<%= sysAbb %>-date-picker>
+    </<%= sysAbb %>-col>
+    <<%= sysAbb %>-col class="line" :span="2">-</<%= sysAbb %>-col>
+    <<%= sysAbb %>-col :span="11">
+      <<%= sysAbb %>-time-picker type="fixed-time" placeholder="Pick a time" v-model="form.date2" style="width: 100%;"></<%= sysAbb %>-time-picker>
+    </<%= sysAbb %>-col>
+  </<%= sysAbb %>-form-item>
+  <<%= sysAbb %>-form-item label="Instant delivery">
+    <<%= sysAbb %>-switch v-model="form.delivery"></<%= sysAbb %>-switch>
+  </<%= sysAbb %>-form-item>
+  <<%= sysAbb %>-form-item label="Activity type">
+    <<%= sysAbb %>-checkbox-group v-model="form.type">
+      <<%= sysAbb %>-checkbox label="Online activities" name="type"></<%= sysAbb %>-checkbox>
+      <<%= sysAbb %>-checkbox label="Promotion activities" name="type"></<%= sysAbb %>-checkbox>
+      <<%= sysAbb %>-checkbox label="Offline activities" name="type"></<%= sysAbb %>-checkbox>
+      <<%= sysAbb %>-checkbox label="Simple brand exposure" name="type"></<%= sysAbb %>-checkbox>
+    </<%= sysAbb %>-checkbox-group>
+  </<%= sysAbb %>-form-item>
+  <<%= sysAbb %>-form-item label="Resources">
+    <<%= sysAbb %>-radio-group v-model="form.resource">
+      <<%= sysAbb %>-radio label="Sponsor"></<%= sysAbb %>-radio>
+      <<%= sysAbb %>-radio label="Venue"></<%= sysAbb %>-radio>
+    </<%= sysAbb %>-radio-group>
+  </<%= sysAbb %>-form-item>
+  <<%= sysAbb %>-form-item label="Activity form">
+    <<%= sysAbb %>-input type="textarea" v-model="form.desc"></<%= sysAbb %>-input>
+  </<%= sysAbb %>-form-item>
+  <<%= sysAbb %>-form-item>
+    <<%= sysAbb %>-button type="primary" @click="onSubmit">Create</<%= sysAbb %>-button>
+    <<%= sysAbb %>-button>Cancel</<%= sysAbb %>-button>
+  </<%= sysAbb %>-form-item>
+</<%= sysAbb %>-form>
 <script>
   export default {
     data() {
@@ -330,7 +330,7 @@ It includes all kinds of input items, such as `input`, `select`, `radio` and `ch
 [W3C](https://www.w3.org/MarkUp/html-spec/html-spec_8.html#SEC8.2) regulates that
 > <i>When there is only one single-line text input field in a form, the user agent should accept Enter in that field as a request to submit the form.</i>
 
-To prevent this behavior, you can add `@submit.native.prevent` on `<sm-form>`.
+To prevent this behavior, you can add `@submit.native.prevent` on `<<%= sysAbb %>-form>`.
   :::
 
 ### Inline form
@@ -340,20 +340,20 @@ When the vertical space is limited and the form is relatively simple, you can pu
 :::demo Set the `inline` attribute to `true` and the form will be inline.
 
 ```html
-<sm-form :inline="true" :model="formInline" class="demo-form-inline">
-  <sm-form-item label="Approved by">
-    <sm-input v-model="formInline.user" placeholder="Approved by"></sm-input>
-  </sm-form-item>
-  <sm-form-item label="Activity zone">
-    <sm-select v-model="formInline.region" placeholder="Activity zone">
-      <sm-option label="Zone one" value="shanghai"></sm-option>
-      <sm-option label="Zone two" value="beijing"></sm-option>
-    </sm-select>
-  </sm-form-item>
-  <sm-form-item>
-    <sm-button type="primary" @click="onSubmit">Query</sm-button>
-  </sm-form-item>
-</sm-form>
+<<%= sysAbb %>-form :inline="true" :model="formInline" class="demo-form-inline">
+  <<%= sysAbb %>-form-item label="Approved by">
+    <<%= sysAbb %>-input v-model="formInline.user" placeholder="Approved by"></<%= sysAbb %>-input>
+  </<%= sysAbb %>-form-item>
+  <<%= sysAbb %>-form-item label="Activity zone">
+    <<%= sysAbb %>-select v-model="formInline.region" placeholder="Activity zone">
+      <<%= sysAbb %>-option label="Zone one" value="shanghai"></<%= sysAbb %>-option>
+      <<%= sysAbb %>-option label="Zone two" value="beijing"></<%= sysAbb %>-option>
+    </<%= sysAbb %>-select>
+  </<%= sysAbb %>-form-item>
+  <<%= sysAbb %>-form-item>
+    <<%= sysAbb %>-button type="primary" @click="onSubmit">Query</<%= sysAbb %>-button>
+  </<%= sysAbb %>-form-item>
+</<%= sysAbb %>-form>
 <script>
   export default {
     data() {
@@ -381,23 +381,23 @@ Depending on your design, there are several different ways to align your label e
 :::demo The `label-position` attribute decides how labels align, it can be `top` or `left`. When set to `top`, labels will be placed at the top of the form field.
 
 ```html
-<sm-radio-group v-model="labelPosition" size="small">
-  <sm-radio-button label="left">Left</sm-radio-button>
-  <sm-radio-button label="right">Right</sm-radio-button>
-  <sm-radio-button label="top">Top</sm-radio-button>
-</sm-radio-group>
+<<%= sysAbb %>-radio-group v-model="labelPosition" size="small">
+  <<%= sysAbb %>-radio-button label="left">Left</<%= sysAbb %>-radio-button>
+  <<%= sysAbb %>-radio-button label="right">Right</<%= sysAbb %>-radio-button>
+  <<%= sysAbb %>-radio-button label="top">Top</<%= sysAbb %>-radio-button>
+</<%= sysAbb %>-radio-group>
 <div style="margin: 20px;"></div>
-<sm-form :label-position="labelPosition" label-width="100px" :model="formLabelAlign">
-  <sm-form-item label="Name">
-    <sm-input v-model="formLabelAlign.name"></sm-input>
-  </sm-form-item>
-  <sm-form-item label="Activity zone">
-    <sm-input v-model="formLabelAlign.region"></sm-input>
-  </sm-form-item>
-  <sm-form-item label="Activity form">
-    <sm-input v-model="formLabelAlign.type"></sm-input>
-  </sm-form-item>
-</sm-form>
+<<%= sysAbb %>-form :label-position="labelPosition" label-width="100px" :model="formLabelAlign">
+  <<%= sysAbb %>-form-item label="Name">
+    <<%= sysAbb %>-input v-model="formLabelAlign.name"></<%= sysAbb %>-input>
+  </<%= sysAbb %>-form-item>
+  <<%= sysAbb %>-form-item label="Activity zone">
+    <<%= sysAbb %>-input v-model="formLabelAlign.region"></<%= sysAbb %>-input>
+  </<%= sysAbb %>-form-item>
+  <<%= sysAbb %>-form-item label="Activity form">
+    <<%= sysAbb %>-input v-model="formLabelAlign.type"></<%= sysAbb %>-input>
+  </<%= sysAbb %>-form-item>
+</<%= sysAbb %>-form>
 <script>
   export default {
     data() {
@@ -422,54 +422,54 @@ Form component allows you to verify your data, helping you find and correct erro
 :::demo Just add the `rules` attribute for `Form` component, pass validation rules, and set `prop` attribute for `Form-Item` as a specific key that needs to be validated. See more information at [async-validator](https://github.com/yiminghe/async-validator).
 
 ```html
-<sm-form :model="ruleForm" :rules="rules" ref="ruleForm" label-width="120px" class="demo-ruleForm">
-  <sm-form-item label="Activity name" prop="name">
-    <sm-input v-model="ruleForm.name"></sm-input>
-  </sm-form-item>
-  <sm-form-item label="Activity zone" prop="region">
-    <sm-select v-model="ruleForm.region" placeholder="Activity zone">
-      <sm-option label="Zone one" value="shanghai"></sm-option>
-      <sm-option label="Zone two" value="beijing"></sm-option>
-    </sm-select>
-  </sm-form-item>
-  <sm-form-item label="Activity time" required>
-    <sm-col :span="11">
-      <sm-form-item prop="date1">
-        <sm-date-picker type="date" placeholder="Pick a date" v-model="ruleForm.date1" style="width: 100%;"></sm-date-picker>
-      </sm-form-item>
-    </sm-col>
-    <sm-col class="line" :span="2">-</sm-col>
-    <sm-col :span="11">
-      <sm-form-item prop="date2">
-        <sm-time-picker type="fixed-time" placeholder="Pick a time" v-model="ruleForm.date2" style="width: 100%;"></sm-time-picker>
-      </sm-form-item>
-    </sm-col>
-  </sm-form-item>
-  <sm-form-item label="Instant delivery" prop="delivery">
-    <sm-switch v-model="ruleForm.delivery"></sm-switch>
-  </sm-form-item>
-  <sm-form-item label="Activity type" prop="type">
-    <sm-checkbox-group v-model="ruleForm.type">
-      <sm-checkbox label="Online activities" name="type"></sm-checkbox>
-      <sm-checkbox label="Promotion activities" name="type"></sm-checkbox>
-      <sm-checkbox label="Offline activities" name="type"></sm-checkbox>
-      <sm-checkbox label="Simple brand exposure" name="type"></sm-checkbox>
-    </sm-checkbox-group>
-  </sm-form-item>
-  <sm-form-item label="Resources" prop="resource">
-    <sm-radio-group v-model="ruleForm.resource">
-      <sm-radio label="Sponsorship"></sm-radio>
-      <sm-radio label="Venue"></sm-radio>
-    </sm-radio-group>
-  </sm-form-item>
-  <sm-form-item label="Activity form" prop="desc">
-    <sm-input type="textarea" v-model="ruleForm.desc"></sm-input>
-  </sm-form-item>
-  <sm-form-item>
-    <sm-button type="primary" @click="submitForm('ruleForm')">Create</sm-button>
-    <sm-button @click="resetForm('ruleForm')">Reset</sm-button>
-  </sm-form-item>
-</sm-form>
+<<%= sysAbb %>-form :model="ruleForm" :rules="rules" ref="ruleForm" label-width="120px" class="demo-ruleForm">
+  <<%= sysAbb %>-form-item label="Activity name" prop="name">
+    <<%= sysAbb %>-input v-model="ruleForm.name"></<%= sysAbb %>-input>
+  </<%= sysAbb %>-form-item>
+  <<%= sysAbb %>-form-item label="Activity zone" prop="region">
+    <<%= sysAbb %>-select v-model="ruleForm.region" placeholder="Activity zone">
+      <<%= sysAbb %>-option label="Zone one" value="shanghai"></<%= sysAbb %>-option>
+      <<%= sysAbb %>-option label="Zone two" value="beijing"></<%= sysAbb %>-option>
+    </<%= sysAbb %>-select>
+  </<%= sysAbb %>-form-item>
+  <<%= sysAbb %>-form-item label="Activity time" required>
+    <<%= sysAbb %>-col :span="11">
+      <<%= sysAbb %>-form-item prop="date1">
+        <<%= sysAbb %>-date-picker type="date" placeholder="Pick a date" v-model="ruleForm.date1" style="width: 100%;"></<%= sysAbb %>-date-picker>
+      </<%= sysAbb %>-form-item>
+    </<%= sysAbb %>-col>
+    <<%= sysAbb %>-col class="line" :span="2">-</<%= sysAbb %>-col>
+    <<%= sysAbb %>-col :span="11">
+      <<%= sysAbb %>-form-item prop="date2">
+        <<%= sysAbb %>-time-picker type="fixed-time" placeholder="Pick a time" v-model="ruleForm.date2" style="width: 100%;"></<%= sysAbb %>-time-picker>
+      </<%= sysAbb %>-form-item>
+    </<%= sysAbb %>-col>
+  </<%= sysAbb %>-form-item>
+  <<%= sysAbb %>-form-item label="Instant delivery" prop="delivery">
+    <<%= sysAbb %>-switch v-model="ruleForm.delivery"></<%= sysAbb %>-switch>
+  </<%= sysAbb %>-form-item>
+  <<%= sysAbb %>-form-item label="Activity type" prop="type">
+    <<%= sysAbb %>-checkbox-group v-model="ruleForm.type">
+      <<%= sysAbb %>-checkbox label="Online activities" name="type"></<%= sysAbb %>-checkbox>
+      <<%= sysAbb %>-checkbox label="Promotion activities" name="type"></<%= sysAbb %>-checkbox>
+      <<%= sysAbb %>-checkbox label="Offline activities" name="type"></<%= sysAbb %>-checkbox>
+      <<%= sysAbb %>-checkbox label="Simple brand exposure" name="type"></<%= sysAbb %>-checkbox>
+    </<%= sysAbb %>-checkbox-group>
+  </<%= sysAbb %>-form-item>
+  <<%= sysAbb %>-form-item label="Resources" prop="resource">
+    <<%= sysAbb %>-radio-group v-model="ruleForm.resource">
+      <<%= sysAbb %>-radio label="Sponsorship"></<%= sysAbb %>-radio>
+      <<%= sysAbb %>-radio label="Venue"></<%= sysAbb %>-radio>
+    </<%= sysAbb %>-radio-group>
+  </<%= sysAbb %>-form-item>
+  <<%= sysAbb %>-form-item label="Activity form" prop="desc">
+    <<%= sysAbb %>-input type="textarea" v-model="ruleForm.desc"></<%= sysAbb %>-input>
+  </<%= sysAbb %>-form-item>
+  <<%= sysAbb %>-form-item>
+    <<%= sysAbb %>-button type="primary" @click="submitForm('ruleForm')">Create</<%= sysAbb %>-button>
+    <<%= sysAbb %>-button @click="resetForm('ruleForm')">Reset</<%= sysAbb %>-button>
+  </<%= sysAbb %>-form-item>
+</<%= sysAbb %>-form>
 <script>
   export default {
     data() {
@@ -536,21 +536,21 @@ This example shows how to customize your own validation rules to finish a two-fa
 
 :::demo Here we use `status-icon` to reflect validation result as an icon.
 ```html
-<sm-form :model="ruleForm2" status-icon :rules="rules2" ref="ruleForm2" label-width="120px" class="demo-ruleForm">
-  <sm-form-item label="Password" prop="pass">
-    <sm-input type="password" v-model="ruleForm2.pass" autocomplete="off"></sm-input>
-  </sm-form-item>
-  <sm-form-item label="Confirm" prop="checkPass">
-    <sm-input type="password" v-model="ruleForm2.checkPass" autocomplete="off"></sm-input>
-  </sm-form-item>
-  <sm-form-item label="Age" prop="age">
-    <sm-input v-model.number="ruleForm2.age"></sm-input>
-  </sm-form-item>
-  <sm-form-item>
-    <sm-button type="primary" @click="submitForm('ruleForm2')">Submit</sm-button>
-    <sm-button @click="resetForm('ruleForm2')">Reset</sm-button>
-  </sm-form-item>
-</sm-form>
+<<%= sysAbb %>-form :model="ruleForm2" status-icon :rules="rules2" ref="ruleForm2" label-width="120px" class="demo-ruleForm">
+  <<%= sysAbb %>-form-item label="Password" prop="pass">
+    <<%= sysAbb %>-input type="password" v-model="ruleForm2.pass" autocomplete="off"></<%= sysAbb %>-input>
+  </<%= sysAbb %>-form-item>
+  <<%= sysAbb %>-form-item label="Confirm" prop="checkPass">
+    <<%= sysAbb %>-input type="password" v-model="ruleForm2.checkPass" autocomplete="off"></<%= sysAbb %>-input>
+  </<%= sysAbb %>-form-item>
+  <<%= sysAbb %>-form-item label="Age" prop="age">
+    <<%= sysAbb %>-input v-model.number="ruleForm2.age"></<%= sysAbb %>-input>
+  </<%= sysAbb %>-form-item>
+  <<%= sysAbb %>-form-item>
+    <<%= sysAbb %>-button type="primary" @click="submitForm('ruleForm2')">Submit</<%= sysAbb %>-button>
+    <<%= sysAbb %>-button @click="resetForm('ruleForm2')">Reset</<%= sysAbb %>-button>
+  </<%= sysAbb %>-form-item>
+</<%= sysAbb %>-form>
 <script>
   export default {
     data() {
@@ -633,8 +633,8 @@ This example shows how to customize your own validation rules to finish a two-fa
 :::demo In addition to passing all validation rules at once on the form component, you can also pass the validation rules or delete rules on a single form field dynamically.
 
 ```html
-<sm-form :model="dynamicValidateForm" ref="dynamicValidateForm" label-width="120px" class="demo-dynamic">
-  <sm-form-item
+<<%= sysAbb %>-form :model="dynamicValidateForm" ref="dynamicValidateForm" label-width="120px" class="demo-dynamic">
+  <<%= sysAbb %>-form-item
     prop="email"
     label="Email"
     :rules="[
@@ -642,9 +642,9 @@ This example shows how to customize your own validation rules to finish a two-fa
       { type: 'email', message: 'Please input correct email address', trigger: ['blur', 'change'] }
     ]"
   >
-    <sm-input v-model="dynamicValidateForm.email"></sm-input>
-  </sm-form-item>
-  <sm-form-item
+    <<%= sysAbb %>-input v-model="dynamicValidateForm.email"></<%= sysAbb %>-input>
+  </<%= sysAbb %>-form-item>
+  <<%= sysAbb %>-form-item
     v-for="(domain, index) in dynamicValidateForm.domains"
     :label="'Domain' + index"
     :key="domain.key"
@@ -653,14 +653,14 @@ This example shows how to customize your own validation rules to finish a two-fa
       required: true, message: 'domain can not be null', trigger: 'blur'
     }"
   >
-    <sm-input v-model="domain.value"></sm-input><sm-button @click.prevent="removeDomain(domain)">Delete</sm-button>
-  </sm-form-item>
-  <sm-form-item>
-    <sm-button type="primary" @click="submitForm('dynamicValidateForm')">Submit</sm-button>
-    <sm-button @click="addDomain">New domain</sm-button>
-    <sm-button @click="resetForm('dynamicValidateForm')">Reset</sm-button>
-  </sm-form-item>
-</sm-form>
+    <<%= sysAbb %>-input v-model="domain.value"></<%= sysAbb %>-input><<%= sysAbb %>-button @click.prevent="removeDomain(domain)">Delete</<%= sysAbb %>-button>
+  </<%= sysAbb %>-form-item>
+  <<%= sysAbb %>-form-item>
+    <<%= sysAbb %>-button type="primary" @click="submitForm('dynamicValidateForm')">Submit</<%= sysAbb %>-button>
+    <<%= sysAbb %>-button @click="addDomain">New domain</<%= sysAbb %>-button>
+    <<%= sysAbb %>-button @click="resetForm('dynamicValidateForm')">Reset</<%= sysAbb %>-button>
+  </<%= sysAbb %>-form-item>
+</<%= sysAbb %>-form>
 <script>
   export default {
     data() {
@@ -710,8 +710,8 @@ This example shows how to customize your own validation rules to finish a two-fa
 
 :::demo Number Validate need a `.number` modifier added on the input `v-model` binding，it's used to transform the string value to the number which is provided by Vuejs.
 ```html
-<sm-form :model="numberValidateForm" ref="numberValidateForm" label-width="100px" class="demo-ruleForm">
-  <sm-form-item
+<<%= sysAbb %>-form :model="numberValidateForm" ref="numberValidateForm" label-width="100px" class="demo-ruleForm">
+  <<%= sysAbb %>-form-item
     label="age"
     prop="age"
     :rules="[
@@ -719,13 +719,13 @@ This example shows how to customize your own validation rules to finish a two-fa
       { type: 'number', message: 'age must be a number'}
     ]"
   >
-    <sm-input type="age" v-model.number="numberValidateForm.age" autocomplete="off"></sm-input>
-  </sm-form-item>
-  <sm-form-item>
-    <sm-button type="primary" @click="submitForm('numberValidateForm')">Submit</sm-button>
-    <sm-button @click="resetForm('numberValidateForm')">Reset</sm-button>
-  </sm-form-item>
-</sm-form>
+    <<%= sysAbb %>-input type="age" v-model.number="numberValidateForm.age" autocomplete="off"></<%= sysAbb %>-input>
+  </<%= sysAbb %>-form-item>
+  <<%= sysAbb %>-form-item>
+    <<%= sysAbb %>-button type="primary" @click="submitForm('numberValidateForm')">Submit</<%= sysAbb %>-button>
+    <<%= sysAbb %>-button @click="resetForm('numberValidateForm')">Reset</<%= sysAbb %>-button>
+  </<%= sysAbb %>-form-item>
+</<%= sysAbb %>-form>
 <script>
   export default {
     data() {
@@ -765,42 +765,42 @@ All components in a Form inherit their `size` attribute from that Form. Similarl
 
 :::demo Still you can fine tune each component's `size` if you don't want that component to inherit its size from From or FormIten.
 ```html
-<sm-form ref="form" :model="sizeForm" label-width="120px" size="mini">
-  <sm-form-item label="Activity name">
-    <sm-input v-model="sizeForm.name"></sm-input>
-  </sm-form-item>
-  <sm-form-item label="Activity zone">
-    <sm-select v-model="sizeForm.region" placeholder="please select your zone">
-      <sm-option label="Zone one" value="shanghai"></sm-option>
-      <sm-option label="Zone two" value="beijing"></sm-option>
-    </sm-select>
-  </sm-form-item>
-  <sm-form-item label="Activity time">
-    <sm-col :span="11">
-      <sm-date-picker type="date" placeholder="Pick a date" v-model="sizeForm.date1" style="width: 100%;"></sm-date-picker>
-    </sm-col>
-    <sm-col class="line" :span="2">-</sm-col>
-    <sm-col :span="11">
-      <sm-time-picker type="fixed-time" placeholder="Pick a time" v-model="sizeForm.date2" style="width: 100%;"></sm-time-picker>
-    </sm-col>
-  </sm-form-item>
-  <sm-form-item label="Activity type">
-    <sm-checkbox-group v-model="sizeForm.type">
-      <sm-checkbox-button label="Online activities" name="type"></sm-checkbox-button>
-      <sm-checkbox-button label="Promotion activities" name="type"></sm-checkbox-button>
-    </sm-checkbox-group>
-  </sm-form-item>
-  <sm-form-item label="Resources">
-    <sm-radio-group v-model="sizeForm.resource" size="medium">
-      <sm-radio border label="Sponsor"></sm-radio>
-      <sm-radio border label="Venue"></sm-radio>
-    </sm-radio-group>
-  </sm-form-item>
-  <sm-form-item size="large">
-    <sm-button type="primary" @click="onSubmit">Create</sm-button>
-    <sm-button>Cancel</sm-button>
-  </sm-form-item>
-</sm-form>
+<<%= sysAbb %>-form ref="form" :model="sizeForm" label-width="120px" size="mini">
+  <<%= sysAbb %>-form-item label="Activity name">
+    <<%= sysAbb %>-input v-model="sizeForm.name"></<%= sysAbb %>-input>
+  </<%= sysAbb %>-form-item>
+  <<%= sysAbb %>-form-item label="Activity zone">
+    <<%= sysAbb %>-select v-model="sizeForm.region" placeholder="please select your zone">
+      <<%= sysAbb %>-option label="Zone one" value="shanghai"></<%= sysAbb %>-option>
+      <<%= sysAbb %>-option label="Zone two" value="beijing"></<%= sysAbb %>-option>
+    </<%= sysAbb %>-select>
+  </<%= sysAbb %>-form-item>
+  <<%= sysAbb %>-form-item label="Activity time">
+    <<%= sysAbb %>-col :span="11">
+      <<%= sysAbb %>-date-picker type="date" placeholder="Pick a date" v-model="sizeForm.date1" style="width: 100%;"></<%= sysAbb %>-date-picker>
+    </<%= sysAbb %>-col>
+    <<%= sysAbb %>-col class="line" :span="2">-</<%= sysAbb %>-col>
+    <<%= sysAbb %>-col :span="11">
+      <<%= sysAbb %>-time-picker type="fixed-time" placeholder="Pick a time" v-model="sizeForm.date2" style="width: 100%;"></<%= sysAbb %>-time-picker>
+    </<%= sysAbb %>-col>
+  </<%= sysAbb %>-form-item>
+  <<%= sysAbb %>-form-item label="Activity type">
+    <<%= sysAbb %>-checkbox-group v-model="sizeForm.type">
+      <<%= sysAbb %>-checkbox-button label="Online activities" name="type"></<%= sysAbb %>-checkbox-button>
+      <<%= sysAbb %>-checkbox-button label="Promotion activities" name="type"></<%= sysAbb %>-checkbox-button>
+    </<%= sysAbb %>-checkbox-group>
+  </<%= sysAbb %>-form-item>
+  <<%= sysAbb %>-form-item label="Resources">
+    <<%= sysAbb %>-radio-group v-model="sizeForm.resource" size="medium">
+      <<%= sysAbb %>-radio border label="Sponsor"></<%= sysAbb %>-radio>
+      <<%= sysAbb %>-radio border label="Venue"></<%= sysAbb %>-radio>
+    </<%= sysAbb %>-radio-group>
+  </<%= sysAbb %>-form-item>
+  <<%= sysAbb %>-form-item size="large">
+    <<%= sysAbb %>-button type="primary" @click="onSubmit">Create</<%= sysAbb %>-button>
+    <<%= sysAbb %>-button>Cancel</<%= sysAbb %>-button>
+  </<%= sysAbb %>-form-item>
+</<%= sysAbb %>-form>
 
 <script>
   export default {

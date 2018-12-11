@@ -1,7 +1,7 @@
 import EnLang from 'element-ui/lib/locale/lang/en'
 
 export default {
-    sm: {
+    <%= sysAbb %>: {
         // Insert component translations here
     },
     ...EnLang

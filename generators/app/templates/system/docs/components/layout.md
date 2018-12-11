@@ -39,32 +39,32 @@ Create basic grid layout using columns.
 
 :::demo With `row` and `col`, we can easily manipulate the layout using the `span` attribute.
 ```html
-<sm-row>
-  <sm-col :span="24"><div class="grid-content bg-purple-dark"></div></sm-col>
-</sm-row>
-<sm-row>
-  <sm-col :span="12"><div class="grid-content bg-purple"></div></sm-col>
-  <sm-col :span="12"><div class="grid-content bg-purple-light"></div></sm-col>
-</sm-row>
-<sm-row>
-  <sm-col :span="8"><div class="grid-content bg-purple"></div></sm-col>
-  <sm-col :span="8"><div class="grid-content bg-purple-light"></div></sm-col>
-  <sm-col :span="8"><div class="grid-content bg-purple"></div></sm-col>
-</sm-row>
-<sm-row>
-  <sm-col :span="6"><div class="grid-content bg-purple"></div></sm-col>
-  <sm-col :span="6"><div class="grid-content bg-purple-light"></div></sm-col>
-  <sm-col :span="6"><div class="grid-content bg-purple"></div></sm-col>
-  <sm-col :span="6"><div class="grid-content bg-purple-light"></div></sm-col>
-</sm-row>
-<sm-row>
-  <sm-col :span="4"><div class="grid-content bg-purple"></div></sm-col>
-  <sm-col :span="4"><div class="grid-content bg-purple-light"></div></sm-col>
-  <sm-col :span="4"><div class="grid-content bg-purple"></div></sm-col>
-  <sm-col :span="4"><div class="grid-content bg-purple-light"></div></sm-col>
-  <sm-col :span="4"><div class="grid-content bg-purple"></div></sm-col>
-  <sm-col :span="4"><div class="grid-content bg-purple-light"></div></sm-col>
-</sm-row>
+<<%= sysAbb %>-row>
+  <<%= sysAbb %>-col :span="24"><div class="grid-content bg-purple-dark"></div></<%= sysAbb %>-col>
+</<%= sysAbb %>-row>
+<<%= sysAbb %>-row>
+  <<%= sysAbb %>-col :span="12"><div class="grid-content bg-purple"></div></<%= sysAbb %>-col>
+  <<%= sysAbb %>-col :span="12"><div class="grid-content bg-purple-light"></div></<%= sysAbb %>-col>
+</<%= sysAbb %>-row>
+<<%= sysAbb %>-row>
+  <<%= sysAbb %>-col :span="8"><div class="grid-content bg-purple"></div></<%= sysAbb %>-col>
+  <<%= sysAbb %>-col :span="8"><div class="grid-content bg-purple-light"></div></<%= sysAbb %>-col>
+  <<%= sysAbb %>-col :span="8"><div class="grid-content bg-purple"></div></<%= sysAbb %>-col>
+</<%= sysAbb %>-row>
+<<%= sysAbb %>-row>
+  <<%= sysAbb %>-col :span="6"><div class="grid-content bg-purple"></div></<%= sysAbb %>-col>
+  <<%= sysAbb %>-col :span="6"><div class="grid-content bg-purple-light"></div></<%= sysAbb %>-col>
+  <<%= sysAbb %>-col :span="6"><div class="grid-content bg-purple"></div></<%= sysAbb %>-col>
+  <<%= sysAbb %>-col :span="6"><div class="grid-content bg-purple-light"></div></<%= sysAbb %>-col>
+</<%= sysAbb %>-row>
+<<%= sysAbb %>-row>
+  <<%= sysAbb %>-col :span="4"><div class="grid-content bg-purple"></div></<%= sysAbb %>-col>
+  <<%= sysAbb %>-col :span="4"><div class="grid-content bg-purple-light"></div></<%= sysAbb %>-col>
+  <<%= sysAbb %>-col :span="4"><div class="grid-content bg-purple"></div></<%= sysAbb %>-col>
+  <<%= sysAbb %>-col :span="4"><div class="grid-content bg-purple-light"></div></<%= sysAbb %>-col>
+  <<%= sysAbb %>-col :span="4"><div class="grid-content bg-purple"></div></<%= sysAbb %>-col>
+  <<%= sysAbb %>-col :span="4"><div class="grid-content bg-purple-light"></div></<%= sysAbb %>-col>
+</<%= sysAbb %>-row>
 
 <style>
   .el-row {
@@ -103,12 +103,12 @@ Column spacing is supported.
 
 :::demo Row provides `gutter` attribute to specify spacings between columns, and its default value is 0.
 ```html
-<sm-row :gutter="20">
-  <sm-col :span="6"><div class="grid-content bg-purple"></div></sm-col>
-  <sm-col :span="6"><div class="grid-content bg-purple"></div></sm-col>
-  <sm-col :span="6"><div class="grid-content bg-purple"></div></sm-col>
-  <sm-col :span="6"><div class="grid-content bg-purple"></div></sm-col>
-</sm-row>
+<<%= sysAbb %>-row :gutter="20">
+  <<%= sysAbb %>-col :span="6"><div class="grid-content bg-purple"></div></<%= sysAbb %>-col>
+  <<%= sysAbb %>-col :span="6"><div class="grid-content bg-purple"></div></<%= sysAbb %>-col>
+  <<%= sysAbb %>-col :span="6"><div class="grid-content bg-purple"></div></<%= sysAbb %>-col>
+  <<%= sysAbb %>-col :span="6"><div class="grid-content bg-purple"></div></<%= sysAbb %>-col>
+</<%= sysAbb %>-row>
 
 <style>
   .el-row {
@@ -147,21 +147,21 @@ Form a more complex hybrid layout by combining the basic 1/24 columns.
 
 :::demo
 ```html
-<sm-row :gutter="20">
-  <sm-col :span="16"><div class="grid-content bg-purple"></div></sm-col>
-  <sm-col :span="8"><div class="grid-content bg-purple"></div></sm-col>
-</sm-row>
-<sm-row :gutter="20">
-  <sm-col :span="8"><div class="grid-content bg-purple"></div></sm-col>
-  <sm-col :span="8"><div class="grid-content bg-purple"></div></sm-col>
-  <sm-col :span="4"><div class="grid-content bg-purple"></div></sm-col>
-  <sm-col :span="4"><div class="grid-content bg-purple"></div></sm-col>
-</sm-row>
-<sm-row :gutter="20">
-  <sm-col :span="4"><div class="grid-content bg-purple"></div></sm-col>
-  <sm-col :span="16"><div class="grid-content bg-purple"></div></sm-col>
-  <sm-col :span="4"><div class="grid-content bg-purple"></div></sm-col>
-</sm-row>
+<<%= sysAbb %>-row :gutter="20">
+  <<%= sysAbb %>-col :span="16"><div class="grid-content bg-purple"></div></<%= sysAbb %>-col>
+  <<%= sysAbb %>-col :span="8"><div class="grid-content bg-purple"></div></<%= sysAbb %>-col>
+</<%= sysAbb %>-row>
+<<%= sysAbb %>-row :gutter="20">
+  <<%= sysAbb %>-col :span="8"><div class="grid-content bg-purple"></div></<%= sysAbb %>-col>
+  <<%= sysAbb %>-col :span="8"><div class="grid-content bg-purple"></div></<%= sysAbb %>-col>
+  <<%= sysAbb %>-col :span="4"><div class="grid-content bg-purple"></div></<%= sysAbb %>-col>
+  <<%= sysAbb %>-col :span="4"><div class="grid-content bg-purple"></div></<%= sysAbb %>-col>
+</<%= sysAbb %>-row>
+<<%= sysAbb %>-row :gutter="20">
+  <<%= sysAbb %>-col :span="4"><div class="grid-content bg-purple"></div></<%= sysAbb %>-col>
+  <<%= sysAbb %>-col :span="16"><div class="grid-content bg-purple"></div></<%= sysAbb %>-col>
+  <<%= sysAbb %>-col :span="4"><div class="grid-content bg-purple"></div></<%= sysAbb %>-col>
+</<%= sysAbb %>-row>
 
 <style>
   .el-row {
@@ -201,17 +201,17 @@ You can specify column offsets.
 :::demo You can specify the number of column offset by setting the value of `offset` attribute of Col.
 
 ```html
-<sm-row :gutter="20">
-  <sm-col :span="6"><div class="grid-content bg-purple"></div></sm-col>
-  <sm-col :span="6" :offset="6"><div class="grid-content bg-purple"></div></sm-col>
-</sm-row>
-<sm-row :gutter="20">
-  <sm-col :span="6" :offset="6"><div class="grid-content bg-purple"></div></sm-col>
-  <sm-col :span="6" :offset="6"><div class="grid-content bg-purple"></div></sm-col>
-</sm-row>
-<sm-row :gutter="20">
-  <sm-col :span="12" :offset="6"><div class="grid-content bg-purple"></div></sm-col>
-</sm-row>
+<<%= sysAbb %>-row :gutter="20">
+  <<%= sysAbb %>-col :span="6"><div class="grid-content bg-purple"></div></<%= sysAbb %>-col>
+  <<%= sysAbb %>-col :span="6" :offset="6"><div class="grid-content bg-purple"></div></<%= sysAbb %>-col>
+</<%= sysAbb %>-row>
+<<%= sysAbb %>-row :gutter="20">
+  <<%= sysAbb %>-col :span="6" :offset="6"><div class="grid-content bg-purple"></div></<%= sysAbb %>-col>
+  <<%= sysAbb %>-col :span="6" :offset="6"><div class="grid-content bg-purple"></div></<%= sysAbb %>-col>
+</<%= sysAbb %>-row>
+<<%= sysAbb %>-row :gutter="20">
+  <<%= sysAbb %>-col :span="12" :offset="6"><div class="grid-content bg-purple"></div></<%= sysAbb %>-col>
+</<%= sysAbb %>-row>
 
 <style>
   .el-row {
@@ -250,31 +250,31 @@ Use the flex layout to make flexible alignment of columns.
 
 :::demo You can enable flex layout by setting `type` attribute to 'flex', and define the layout of child elements by setting `justify` attribute with start, center, end, space-between or space-around.
 ```html
-<sm-row type="flex" class="row-bg">
-  <sm-col :span="6"><div class="grid-content bg-purple"></div></sm-col>
-  <sm-col :span="6"><div class="grid-content bg-purple-light"></div></sm-col>
-  <sm-col :span="6"><div class="grid-content bg-purple"></div></sm-col>
-</sm-row>
-<sm-row type="flex" class="row-bg" justify="center">
-  <sm-col :span="6"><div class="grid-content bg-purple"></div></sm-col>
-  <sm-col :span="6"><div class="grid-content bg-purple-light"></div></sm-col>
-  <sm-col :span="6"><div class="grid-content bg-purple"></div></sm-col>
-</sm-row>
-<sm-row type="flex" class="row-bg" justify="end">
-  <sm-col :span="6"><div class="grid-content bg-purple"></div></sm-col>
-  <sm-col :span="6"><div class="grid-content bg-purple-light"></div></sm-col>
-  <sm-col :span="6"><div class="grid-content bg-purple"></div></sm-col>
-</sm-row>
-<sm-row type="flex" class="row-bg" justify="space-between">
-  <sm-col :span="6"><div class="grid-content bg-purple"></div></sm-col>
-  <sm-col :span="6"><div class="grid-content bg-purple-light"></div></sm-col>
-  <sm-col :span="6"><div class="grid-content bg-purple"></div></sm-col>
-</sm-row>
-<sm-row type="flex" class="row-bg" justify="space-around">
-  <sm-col :span="6"><div class="grid-content bg-purple"></div></sm-col>
-  <sm-col :span="6"><div class="grid-content bg-purple-light"></div></sm-col>
-  <sm-col :span="6"><div class="grid-content bg-purple"></div></sm-col>
-</sm-row>
+<<%= sysAbb %>-row type="flex" class="row-bg">
+  <<%= sysAbb %>-col :span="6"><div class="grid-content bg-purple"></div></<%= sysAbb %>-col>
+  <<%= sysAbb %>-col :span="6"><div class="grid-content bg-purple-light"></div></<%= sysAbb %>-col>
+  <<%= sysAbb %>-col :span="6"><div class="grid-content bg-purple"></div></<%= sysAbb %>-col>
+</<%= sysAbb %>-row>
+<<%= sysAbb %>-row type="flex" class="row-bg" justify="center">
+  <<%= sysAbb %>-col :span="6"><div class="grid-content bg-purple"></div></<%= sysAbb %>-col>
+  <<%= sysAbb %>-col :span="6"><div class="grid-content bg-purple-light"></div></<%= sysAbb %>-col>
+  <<%= sysAbb %>-col :span="6"><div class="grid-content bg-purple"></div></<%= sysAbb %>-col>
+</<%= sysAbb %>-row>
+<<%= sysAbb %>-row type="flex" class="row-bg" justify="end">
+  <<%= sysAbb %>-col :span="6"><div class="grid-content bg-purple"></div></<%= sysAbb %>-col>
+  <<%= sysAbb %>-col :span="6"><div class="grid-content bg-purple-light"></div></<%= sysAbb %>-col>
+  <<%= sysAbb %>-col :span="6"><div class="grid-content bg-purple"></div></<%= sysAbb %>-col>
+</<%= sysAbb %>-row>
+<<%= sysAbb %>-row type="flex" class="row-bg" justify="space-between">
+  <<%= sysAbb %>-col :span="6"><div class="grid-content bg-purple"></div></<%= sysAbb %>-col>
+  <<%= sysAbb %>-col :span="6"><div class="grid-content bg-purple-light"></div></<%= sysAbb %>-col>
+  <<%= sysAbb %>-col :span="6"><div class="grid-content bg-purple"></div></<%= sysAbb %>-col>
+</<%= sysAbb %>-row>
+<<%= sysAbb %>-row type="flex" class="row-bg" justify="space-around">
+  <<%= sysAbb %>-col :span="6"><div class="grid-content bg-purple"></div></<%= sysAbb %>-col>
+  <<%= sysAbb %>-col :span="6"><div class="grid-content bg-purple-light"></div></<%= sysAbb %>-col>
+  <<%= sysAbb %>-col :span="6"><div class="grid-content bg-purple"></div></<%= sysAbb %>-col>
+</<%= sysAbb %>-row>
 
 <style>
   .el-row {
@@ -313,12 +313,12 @@ Taking example by Bootstrap's responsive design, five breakpoints are preset: xs
 
 :::demo
 ```html
-<sm-row :gutter="10">
-  <sm-col :xs="8" :sm="6" :md="4" :lg="3" :xl="1"><div class="grid-content bg-purple"></div></sm-col>
-  <sm-col :xs="4" :sm="6" :md="8" :lg="9" :xl="11"><div class="grid-content bg-purple-light"></div></sm-col>
-  <sm-col :xs="4" :sm="6" :md="8" :lg="9" :xl="11"><div class="grid-content bg-purple"></div></sm-col>
-  <sm-col :xs="8" :sm="6" :md="4" :lg="3" :xl="1"><div class="grid-content bg-purple-light"></div></sm-col>
-</sm-row>
+<<%= sysAbb %>-row :gutter="10">
+  <<%= sysAbb %>-col :xs="8" :sm="6" :md="4" :lg="3" :xl="1"><div class="grid-content bg-purple"></div></<%= sysAbb %>-col>
+  <<%= sysAbb %>-col :xs="4" :sm="6" :md="8" :lg="9" :xl="11"><div class="grid-content bg-purple-light"></div></<%= sysAbb %>-col>
+  <<%= sysAbb %>-col :xs="4" :sm="6" :md="8" :lg="9" :xl="11"><div class="grid-content bg-purple"></div></<%= sysAbb %>-col>
+  <<%= sysAbb %>-col :xs="8" :sm="6" :md="4" :lg="3" :xl="1"><div class="grid-content bg-purple-light"></div></<%= sysAbb %>-col>
+</<%= sysAbb %>-row>
 
 <style>
   .el-col {

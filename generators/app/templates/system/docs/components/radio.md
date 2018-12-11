@@ -29,8 +29,8 @@ Radio should not have too many options. Otherwise, use the Select component inst
 :::demo Creating a radio component is easy, you just need to bind a variable to Radio's `v-model`. It equals to the value of `label` of the chosen radio. The type of `label` is `String`, `Number` or `Boolean`.
 ```html
 <template>
-  <sm-radio v-model="radio" label="1">Option A</sm-radio>
-  <sm-radio v-model="radio" label="2">Option B</sm-radio>
+  <<%= sysAbb %>-radio v-model="radio" label="1">Option A</<%= sysAbb %>-radio>
+  <<%= sysAbb %>-radio v-model="radio" label="2">Option B</<%= sysAbb %>-radio>
 </template>
 
 <script>
@@ -52,8 +52,8 @@ Radio should not have too many options. Otherwise, use the Select component inst
 :::demo You just need to add the `disabled` attribute.
 ```html
 <template>
-  <sm-radio disabled v-model="radio1" label="disabled">Option A</sm-radio>
-  <sm-radio disabled v-model="radio1" label="selected and disabled">Option B</sm-radio>
+  <<%= sysAbb %>-radio disabled v-model="radio1" label="disabled">Option A</<%= sysAbb %>-radio>
+  <<%= sysAbb %>-radio disabled v-model="radio1" label="selected and disabled">Option B</<%= sysAbb %>-radio>
 </template>
 
 <script>
@@ -75,11 +75,11 @@ Suitable for choosing from some mutually exclusive options.
 :::demo Combine `el-radio-group` with `el-radio` to display a radio group. Bind a variable with `v-model` of `el-radio-group` element and set label value in `el-radio`. It also provides `change` event with the current value as its parameter.
 
 ```html
-<sm-radio-group v-model="radio2">
-  <sm-radio :label="3">Option A</sm-radio>
-  <sm-radio :label="6">Option B</sm-radio>
-  <sm-radio :label="9">Option C</sm-radio>
-</sm-radio-group>
+<<%= sysAbb %>-radio-group v-model="radio2">
+  <<%= sysAbb %>-radio :label="3">Option A</<%= sysAbb %>-radio>
+  <<%= sysAbb %>-radio :label="6">Option B</<%= sysAbb %>-radio>
+  <<%= sysAbb %>-radio :label="9">Option C</<%= sysAbb %>-radio>
+</<%= sysAbb %>-radio-group>
 
 <script>
   export default {
@@ -101,36 +101,36 @@ Radio with button styles.
 ```html
 <template>
   <div>
-    <sm-radio-group v-model="radio3">
-      <sm-radio-button label="New York"></sm-radio-button>
-      <sm-radio-button label="Washington"></sm-radio-button>
-      <sm-radio-button label="Los Angeles"></sm-radio-button>
-      <sm-radio-button label="Chicago"></sm-radio-button>
-    </sm-radio-group>
+    <<%= sysAbb %>-radio-group v-model="radio3">
+      <<%= sysAbb %>-radio-button label="New York"></<%= sysAbb %>-radio-button>
+      <<%= sysAbb %>-radio-button label="Washington"></<%= sysAbb %>-radio-button>
+      <<%= sysAbb %>-radio-button label="Los Angeles"></<%= sysAbb %>-radio-button>
+      <<%= sysAbb %>-radio-button label="Chicago"></<%= sysAbb %>-radio-button>
+    </<%= sysAbb %>-radio-group>
   </div>
   <div style="margin-top: 20px">
-    <sm-radio-group v-model="radio4" size="medium">
-      <sm-radio-button label="New York" ></sm-radio-button>
-      <sm-radio-button label="Washington"></sm-radio-button>
-      <sm-radio-button label="Los Angeles"></sm-radio-button>
-      <sm-radio-button label="Chicago"></sm-radio-button>
-    </sm-radio-group>
+    <<%= sysAbb %>-radio-group v-model="radio4" size="medium">
+      <<%= sysAbb %>-radio-button label="New York" ></<%= sysAbb %>-radio-button>
+      <<%= sysAbb %>-radio-button label="Washington"></<%= sysAbb %>-radio-button>
+      <<%= sysAbb %>-radio-button label="Los Angeles"></<%= sysAbb %>-radio-button>
+      <<%= sysAbb %>-radio-button label="Chicago"></<%= sysAbb %>-radio-button>
+    </<%= sysAbb %>-radio-group>
   </div>
   <div style="margin-top: 20px">
-    <sm-radio-group v-model="radio5" size="small">
-      <sm-radio-button label="New York"></sm-radio-button>
-      <sm-radio-button label="Washington" disabled ></sm-radio-button>
-      <sm-radio-button label="Los Angeles"></sm-radio-button>
-      <sm-radio-button label="Chicago"></sm-radio-button>
-    </sm-radio-group>
+    <<%= sysAbb %>-radio-group v-model="radio5" size="small">
+      <<%= sysAbb %>-radio-button label="New York"></<%= sysAbb %>-radio-button>
+      <<%= sysAbb %>-radio-button label="Washington" disabled ></<%= sysAbb %>-radio-button>
+      <<%= sysAbb %>-radio-button label="Los Angeles"></<%= sysAbb %>-radio-button>
+      <<%= sysAbb %>-radio-button label="Chicago"></<%= sysAbb %>-radio-button>
+    </<%= sysAbb %>-radio-group>
   </div>
   <div style="margin-top: 20px">
-    <sm-radio-group v-model="radio6" disabled size="mini">
-      <sm-radio-button label="New York"></sm-radio-button>
-      <sm-radio-button label="Washington"></sm-radio-button>
-      <sm-radio-button label="Los Angeles"></sm-radio-button>
-      <sm-radio-button label="Chicago"></sm-radio-button>
-    </sm-radio-group>
+    <<%= sysAbb %>-radio-group v-model="radio6" disabled size="mini">
+      <<%= sysAbb %>-radio-button label="New York"></<%= sysAbb %>-radio-button>
+      <<%= sysAbb %>-radio-button label="Washington"></<%= sysAbb %>-radio-button>
+      <<%= sysAbb %>-radio-button label="Los Angeles"></<%= sysAbb %>-radio-button>
+      <<%= sysAbb %>-radio-button label="Chicago"></<%= sysAbb %>-radio-button>
+    </<%= sysAbb %>-radio-group>
   </div>
 </template>
 
@@ -155,24 +155,24 @@ Radio with button styles.
 ```html
 <template>
   <div>
-    <sm-radio v-model="radio7" label="1" border>Option A</sm-radio>
-    <sm-radio v-model="radio7" label="2" border>Option B</sm-radio>
+    <<%= sysAbb %>-radio v-model="radio7" label="1" border>Option A</<%= sysAbb %>-radio>
+    <<%= sysAbb %>-radio v-model="radio7" label="2" border>Option B</<%= sysAbb %>-radio>
   </div>
   <div style="margin-top: 20px">
-    <sm-radio v-model="radio8" label="1" border size="medium">Option A</sm-radio>
-    <sm-radio v-model="radio8" label="2" border size="medium">Option B</sm-radio>
+    <<%= sysAbb %>-radio v-model="radio8" label="1" border size="medium">Option A</<%= sysAbb %>-radio>
+    <<%= sysAbb %>-radio v-model="radio8" label="2" border size="medium">Option B</<%= sysAbb %>-radio>
   </div>
   <div style="margin-top: 20px">
-    <sm-radio-group v-model="radio9" size="small">
-      <sm-radio label="1" border>Option A</sm-radio>
-      <sm-radio label="2" border disabled>Option B</sm-radio>
-    </sm-radio-group>
+    <<%= sysAbb %>-radio-group v-model="radio9" size="small">
+      <<%= sysAbb %>-radio label="1" border>Option A</<%= sysAbb %>-radio>
+      <<%= sysAbb %>-radio label="2" border disabled>Option B</<%= sysAbb %>-radio>
+    </<%= sysAbb %>-radio-group>
   </div>
   <div style="margin-top: 20px">
-    <sm-radio-group v-model="radio10" size="mini" disabled>
-      <sm-radio label="1" border>Option A</sm-radio>
-      <sm-radio label="2" border>Option B</sm-radio>
-    </sm-radio-group>
+    <<%= sysAbb %>-radio-group v-model="radio10" size="mini" disabled>
+      <<%= sysAbb %>-radio label="1" border>Option A</<%= sysAbb %>-radio>
+      <<%= sysAbb %>-radio label="2" border>Option B</<%= sysAbb %>-radio>
+    </<%= sysAbb %>-radio-group>
   </div>
 </template>
 

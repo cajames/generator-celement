@@ -60,75 +60,75 @@
 ## Container
 Container components for scaffolding basic structure of the page:
 
-`<sm-container>`: wrapper container. When nested with a `<sm-header>` or `<sm-footer>`, all its child elements will be vertically arranged. Otherwise horizontally.
+`<<%= sysAbb %>-container>`: wrapper container. When nested with a `<<%= sysAbb %>-header>` or `<<%= sysAbb %>-footer>`, all its child elements will be vertically arranged. Otherwise horizontally.
 
-`<sm-header>`: container for headers.
+`<<%= sysAbb %>-header>`: container for headers.
 
-`<sm-aside>`: container for side sections (usually a side nav).
+`<<%= sysAbb %>-aside>`: container for side sections (usually a side nav).
 
-`<sm-main>`: container for main sections.
+`<<%= sysAbb %>-main>`: container for main sections.
 
-`<sm-footer>`: container for footers.
+`<<%= sysAbb %>-footer>`: container for footers.
 
 :::tip
-These components use flex for layout, so please make sure your browser supports it. Besides, `<sm-container>`'s direct child elements have to be one or more of the latter four components. And father element of the latter four components must be a `<sm-container>`.
+These components use flex for layout, so please make sure your browser supports it. Besides, `<<%= sysAbb %>-container>`'s direct child elements have to be one or more of the latter four components. And father element of the latter four components must be a `<<%= sysAbb %>-container>`.
 :::
 
 ### Common layouts
 
 :::demo
 ```html
-<sm-container>
-  <sm-header>Header</sm-header>
-  <sm-main>Main</sm-main>
-</sm-container>
+<<%= sysAbb %>-container>
+  <<%= sysAbb %>-header>Header</<%= sysAbb %>-header>
+  <<%= sysAbb %>-main>Main</<%= sysAbb %>-main>
+</<%= sysAbb %>-container>
 
-<sm-container>
-  <sm-header>Header</sm-header>
-  <sm-main>Main</sm-main>
-  <sm-footer>Footer</sm-footer>
-</sm-container>
+<<%= sysAbb %>-container>
+  <<%= sysAbb %>-header>Header</<%= sysAbb %>-header>
+  <<%= sysAbb %>-main>Main</<%= sysAbb %>-main>
+  <<%= sysAbb %>-footer>Footer</<%= sysAbb %>-footer>
+</<%= sysAbb %>-container>
 
-<sm-container>
-  <sm-aside width="200px">Aside</sm-aside>
-  <sm-main>Main</sm-main>
-</sm-container>
+<<%= sysAbb %>-container>
+  <<%= sysAbb %>-aside width="200px">Aside</<%= sysAbb %>-aside>
+  <<%= sysAbb %>-main>Main</<%= sysAbb %>-main>
+</<%= sysAbb %>-container>
 
-<sm-container>
-  <sm-header>Header</sm-header>
-  <sm-container>
-    <sm-aside width="200px">Aside</sm-aside>
-    <sm-main>Main</sm-main>
-  </sm-container>
-</sm-container>
+<<%= sysAbb %>-container>
+  <<%= sysAbb %>-header>Header</<%= sysAbb %>-header>
+  <<%= sysAbb %>-container>
+    <<%= sysAbb %>-aside width="200px">Aside</<%= sysAbb %>-aside>
+    <<%= sysAbb %>-main>Main</<%= sysAbb %>-main>
+  </<%= sysAbb %>-container>
+</<%= sysAbb %>-container>
 
-<sm-container>
-  <sm-header>Header</sm-header>
-  <sm-container>
-    <sm-aside width="200px">Aside</sm-aside>
-    <sm-container>
-      <sm-main>Main</sm-main>
-      <sm-footer>Footer</sm-footer>
-    </sm-container>
-  </sm-container>
-</sm-container>
+<<%= sysAbb %>-container>
+  <<%= sysAbb %>-header>Header</<%= sysAbb %>-header>
+  <<%= sysAbb %>-container>
+    <<%= sysAbb %>-aside width="200px">Aside</<%= sysAbb %>-aside>
+    <<%= sysAbb %>-container>
+      <<%= sysAbb %>-main>Main</<%= sysAbb %>-main>
+      <<%= sysAbb %>-footer>Footer</<%= sysAbb %>-footer>
+    </<%= sysAbb %>-container>
+  </<%= sysAbb %>-container>
+</<%= sysAbb %>-container>
 
-<sm-container>
-  <sm-aside width="200px">Aside</sm-aside>
-  <sm-container>
-    <sm-header>Header</sm-header>
-    <sm-main>Main</sm-main>
-  </sm-container>
-</sm-container>
+<<%= sysAbb %>-container>
+  <<%= sysAbb %>-aside width="200px">Aside</<%= sysAbb %>-aside>
+  <<%= sysAbb %>-container>
+    <<%= sysAbb %>-header>Header</<%= sysAbb %>-header>
+    <<%= sysAbb %>-main>Main</<%= sysAbb %>-main>
+  </<%= sysAbb %>-container>
+</<%= sysAbb %>-container>
 
-<sm-container>
-  <sm-aside width="200px">Aside</sm-aside>
-  <sm-container>
-    <sm-header>Header</sm-header>
-    <sm-main>Main</sm-main>
-    <sm-footer>Footer</sm-footer>
-  </sm-container>
-</sm-container>
+<<%= sysAbb %>-container>
+  <<%= sysAbb %>-aside width="200px">Aside</<%= sysAbb %>-aside>
+  <<%= sysAbb %>-container>
+    <<%= sysAbb %>-header>Header</<%= sysAbb %>-header>
+    <<%= sysAbb %>-main>Main</<%= sysAbb %>-main>
+    <<%= sysAbb %>-footer>Footer</<%= sysAbb %>-footer>
+  </<%= sysAbb %>-container>
+</<%= sysAbb %>-container>
 
 <style lang="scss">
   .el-header, .el-footer {
@@ -172,82 +172,82 @@ These components use flex for layout, so please make sure your browser supports 
 
 :::demo
 ```html
-<sm-container style="height: 500px; border: 1px solid #eee">
-  <sm-aside width="200px" style="background-color: rgb(238, 241, 246)">
-    <sm-menu :default-openeds="['1', '3']">
-      <sm-submenu index="1">
+<<%= sysAbb %>-container style="height: 500px; border: 1px solid #eee">
+  <<%= sysAbb %>-aside width="200px" style="background-color: rgb(238, 241, 246)">
+    <<%= sysAbb %>-menu :default-openeds="['1', '3']">
+      <<%= sysAbb %>-submenu index="1">
         <template slot="title"><i class="el-icon-message"></i>Navigator One</template>
-        <sm-menu-item-group>
+        <<%= sysAbb %>-menu-item-group>
           <template slot="title">Group 1</template>
-          <sm-menu-item index="1-1">Option 1</sm-menu-item>
-          <sm-menu-item index="1-2">Option 2</sm-menu-item>
-        </sm-menu-item-group>
-        <sm-menu-item-group title="Group 2">
-          <sm-menu-item index="1-3">Option 3</sm-menu-item>
-        </sm-menu-item-group>
-        <sm-submenu index="1-4">
+          <<%= sysAbb %>-menu-item index="1-1">Option 1</<%= sysAbb %>-menu-item>
+          <<%= sysAbb %>-menu-item index="1-2">Option 2</<%= sysAbb %>-menu-item>
+        </<%= sysAbb %>-menu-item-group>
+        <<%= sysAbb %>-menu-item-group title="Group 2">
+          <<%= sysAbb %>-menu-item index="1-3">Option 3</<%= sysAbb %>-menu-item>
+        </<%= sysAbb %>-menu-item-group>
+        <<%= sysAbb %>-submenu index="1-4">
           <template slot="title">Option4</template>
-          <sm-menu-item index="1-4-1">Option 4-1</sm-menu-item>
-        </sm-submenu>
-      </sm-submenu>
-      <sm-submenu index="2">
+          <<%= sysAbb %>-menu-item index="1-4-1">Option 4-1</<%= sysAbb %>-menu-item>
+        </<%= sysAbb %>-submenu>
+      </<%= sysAbb %>-submenu>
+      <<%= sysAbb %>-submenu index="2">
         <template slot="title"><i class="el-icon-menu"></i>Navigator Two</template>
-        <sm-menu-item-group>
+        <<%= sysAbb %>-menu-item-group>
           <template slot="title">Group 1</template>
-          <sm-menu-item index="2-1">Option 1</sm-menu-item>
-          <sm-menu-item index="2-2">Option 2</sm-menu-item>
-        </sm-menu-item-group>
-        <sm-menu-item-group title="Group 2">
-          <sm-menu-item index="2-3">Option 3</sm-menu-item>
-        </sm-menu-item-group>
-        <sm-submenu index="2-4">
+          <<%= sysAbb %>-menu-item index="2-1">Option 1</<%= sysAbb %>-menu-item>
+          <<%= sysAbb %>-menu-item index="2-2">Option 2</<%= sysAbb %>-menu-item>
+        </<%= sysAbb %>-menu-item-group>
+        <<%= sysAbb %>-menu-item-group title="Group 2">
+          <<%= sysAbb %>-menu-item index="2-3">Option 3</<%= sysAbb %>-menu-item>
+        </<%= sysAbb %>-menu-item-group>
+        <<%= sysAbb %>-submenu index="2-4">
           <template slot="title">Option 4</template>
-          <sm-menu-item index="2-4-1">Option 4-1</sm-menu-item>
-        </sm-submenu>
-      </sm-submenu>
-      <sm-submenu index="3">
+          <<%= sysAbb %>-menu-item index="2-4-1">Option 4-1</<%= sysAbb %>-menu-item>
+        </<%= sysAbb %>-submenu>
+      </<%= sysAbb %>-submenu>
+      <<%= sysAbb %>-submenu index="3">
         <template slot="title"><i class="el-icon-setting"></i>Navigator Three</template>
-        <sm-menu-item-group>
+        <<%= sysAbb %>-menu-item-group>
           <template slot="title">Group 1</template>
-          <sm-menu-item index="3-1">Option 1</sm-menu-item>
-          <sm-menu-item index="3-2">Option 2</sm-menu-item>
-        </sm-menu-item-group>
-        <sm-menu-item-group title="Group 2">
-          <sm-menu-item index="3-3">Option 3</sm-menu-item>
-        </sm-menu-item-group>
-        <sm-submenu index="3-4">
+          <<%= sysAbb %>-menu-item index="3-1">Option 1</<%= sysAbb %>-menu-item>
+          <<%= sysAbb %>-menu-item index="3-2">Option 2</<%= sysAbb %>-menu-item>
+        </<%= sysAbb %>-menu-item-group>
+        <<%= sysAbb %>-menu-item-group title="Group 2">
+          <<%= sysAbb %>-menu-item index="3-3">Option 3</<%= sysAbb %>-menu-item>
+        </<%= sysAbb %>-menu-item-group>
+        <<%= sysAbb %>-submenu index="3-4">
           <template slot="title">Option 4</template>
-          <sm-menu-item index="3-4-1">Option 4-1</sm-menu-item>
-        </sm-submenu>
-      </sm-submenu>
-    </sm-menu>
-  </sm-aside>
+          <<%= sysAbb %>-menu-item index="3-4-1">Option 4-1</<%= sysAbb %>-menu-item>
+        </<%= sysAbb %>-submenu>
+      </<%= sysAbb %>-submenu>
+    </<%= sysAbb %>-menu>
+  </<%= sysAbb %>-aside>
   
-  <sm-container>
-    <sm-header style="text-align: right; font-size: 12px">
-      <sm-dropdown>
+  <<%= sysAbb %>-container>
+    <<%= sysAbb %>-header style="text-align: right; font-size: 12px">
+      <<%= sysAbb %>-dropdown>
         <i class="el-icon-setting" style="margin-right: 15px"></i>
-        <sm-dropdown-menu slot="dropdown">
-          <sm-dropdown-item>View</sm-dropdown-item>
-          <sm-dropdown-item>Add</sm-dropdown-item>
-          <sm-dropdown-item>Delete</sm-dropdown-item>
-        </sm-dropdown-menu>
-      </sm-dropdown>
+        <<%= sysAbb %>-dropdown-menu slot="dropdown">
+          <<%= sysAbb %>-dropdown-item>View</<%= sysAbb %>-dropdown-item>
+          <<%= sysAbb %>-dropdown-item>Add</<%= sysAbb %>-dropdown-item>
+          <<%= sysAbb %>-dropdown-item>Delete</<%= sysAbb %>-dropdown-item>
+        </<%= sysAbb %>-dropdown-menu>
+      </<%= sysAbb %>-dropdown>
       <span>Tom</span>
-    </sm-header>
+    </<%= sysAbb %>-header>
     
-    <sm-main>
-      <sm-table :data="tableData">
-        <sm-table-column prop="date" label="Date" width="140">
-        </sm-table-column>
-        <sm-table-column prop="name" label="Name" width="120">
-        </sm-table-column>
-        <sm-table-column prop="address" label="Address">
-        </sm-table-column>
-      </sm-table>
-    </sm-main>
-  </sm-container>
-</sm-container>
+    <<%= sysAbb %>-main>
+      <<%= sysAbb %>-table :data="tableData">
+        <<%= sysAbb %>-table-column prop="date" label="Date" width="140">
+        </<%= sysAbb %>-table-column>
+        <<%= sysAbb %>-table-column prop="name" label="Name" width="120">
+        </<%= sysAbb %>-table-column>
+        <<%= sysAbb %>-table-column prop="address" label="Address">
+        </<%= sysAbb %>-table-column>
+      </<%= sysAbb %>-table>
+    </<%= sysAbb %>-main>
+  </<%= sysAbb %>-container>
+</<%= sysAbb %>-container>
 
 <style lang="scss">
   .el-header {

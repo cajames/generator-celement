@@ -120,16 +120,16 @@ Displays a global notification message at a corner of the page.
 
 ```html
 <template>
-  <sm-button
+  <<%= sysAbb %>-button
     plain
     @click="open">
     Closes automatically
-  </sm-button>
-  <sm-button
+  </<%= sysAbb %>-button>
+  <<%= sysAbb %>-button
     plain
     @click="open2">
     Won't close automatically
-    </sm-button>
+    </<%= sysAbb %>-button>
 </template>
 
 <script>
@@ -164,26 +164,26 @@ We provide four types: success, warning, info and error.
 :::demo Element provides four notification types: `success`, `warning`, `info` and `error`. They are set by the `type` field, and other values will be ignored. We also registered methods for these types that can be invoked directly like `open5` and `open6` without passing a `type` field.
 ```html
 <template>
-  <sm-button
+  <<%= sysAbb %>-button
     plain
     @click="open3">
     Success
-  </sm-button>
-  <sm-button
+  </<%= sysAbb %>-button>
+  <<%= sysAbb %>-button
     plain
     @click="open4">
     Warning
-  </sm-button>
-  <sm-button
+  </<%= sysAbb %>-button>
+  <<%= sysAbb %>-button
     plain
     @click="open5">
     Info
-  </sm-button>
-  <sm-button
+  </<%= sysAbb %>-button>
+  <<%= sysAbb %>-button
     plain
     @click="open6">
     Error
-  </sm-button>
+  </<%= sysAbb %>-button>
 </template>
 
 <script>
@@ -231,26 +231,26 @@ Notification can emerge from any corner you like.
 :::demo The `position` attribute defines which corner Notification slides in. It can be `top-right`, `top-left`, `bottom-right` or `bottom-left`. Defaults to `top-right`.
 ```html
 <template>
-  <sm-button
+  <<%= sysAbb %>-button
     plain
     @click="open7">
     Top Right
-  </sm-button>
-  <sm-button
+  </<%= sysAbb %>-button>
+  <<%= sysAbb %>-button
     plain
     @click="open8">
     Bottom Right
-  </sm-button>
-  <sm-button
+  </<%= sysAbb %>-button>
+  <<%= sysAbb %>-button
     plain
     @click="open9">
     Bottom Left
-  </sm-button>
-  <sm-button
+  </<%= sysAbb %>-button>
+  <<%= sysAbb %>-button
     plain
     @click="open10">
     Top Left
-  </sm-button>
+  </<%= sysAbb %>-button>
 </template>
 
 <script>
@@ -299,11 +299,11 @@ Customize Notification's offset from the edge of the screen.
 :::demo Set the `offset` attribute to customize Notification's offset from the edge of the screen. Note that every Notification instance of the same moment should have the same offset.
 ```html
 <template>
-  <sm-button
+  <<%= sysAbb %>-button
     plain
     @click="open11">
     Notification with offset
-  </sm-button>
+  </<%= sysAbb %>-button>
 </template>
 
 <script>
@@ -328,11 +328,11 @@ Customize Notification's offset from the edge of the screen.
 :::demo Set `dangerouslyUseHTMLString` to true and `message` will be treated as an HTML string.
 ```html
 <template>
-  <sm-button
+  <<%= sysAbb %>-button
     plain
     @click="open12">
     Use HTML String
-  </sm-button>
+  </<%= sysAbb %>-button>
 </template>
 
 <script>
@@ -362,11 +362,11 @@ It is possible to hide the close button
 :::demo Set the `showClose` attribute to `false` so the notification cannot be closed by the user.
 ```html
 <template>
-  <sm-button
+  <<%= sysAbb %>-button
     plain
     @click="open13">
     Hide close button
-    </sm-button>
+    </<%= sysAbb %>-button>
 </template>
 
 <script>

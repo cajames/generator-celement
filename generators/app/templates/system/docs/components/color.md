@@ -5,53 +5,53 @@ Element uses a specific set of palettes to specify colors to provide a consisten
 
 The main color of Element is bright and friendly blue.
 
-<sm-row :gutter="12">
-  <sm-col :span="6" :xs="{span: 12}">
-    <div class="demo-color-box bg-blue">Blue<div class="value">#409EFF</div></div>
-  </sm-col>
-</sm-row>
+<<%= sysAbb %>-row :gutter="12">
+  <<%= sysAbb %>-col :span="6" :xs="{span: 12}">
+  <div class="demo-color-box bg-primary">Primary<div class="value"><%= primaryColor %></div></div>
+  </<%= sysAbb %>-col>
+</<%= sysAbb %>-row>
 
 ## Secondary Color
 
 Besides the main color, you need to use different scene colors in different scenarios (for example, dangerous color indicates dangerous operation)
 
-<sm-row :gutter="12">
-  <sm-col :span="6" :xs="{span: 12}">
-    <div class="demo-color-box bg-success">Success<div class="value">#67C23A</div></div>
-  </sm-col>
-  <sm-col :span="6" :xs="{span: 12}">
-    <div class="demo-color-box bg-warning">Warning<div class="value">#E6A23C</div></div>
-  </sm-col>
-  <sm-col :span="6" :xs="{span: 12}">
-    <div class="demo-color-box bg-danger">Danger<div class="value">#F56C6C</div></div>
-  </sm-col>
-  <sm-col :span="6" :xs="{span: 12}">
-    <div class="demo-color-box bg-info">Info<div class="value">#909399</div></div>
-  </sm-col>
-</sm-row>
+<<%= sysAbb %>-row :gutter="12">
+  <<%= sysAbb %>-col :span="6" :xs="{span: 12}">
+  <div class="demo-color-box bg-success">Success<div class="value">#67C23A</div></div>
+  </<%= sysAbb %>-col>
+  <<%= sysAbb %>-col :span="6" :xs="{span: 12}">
+  <div class="demo-color-box bg-warning">Warning<div class="value">#E6A23C</div></div>
+  </<%= sysAbb %>-col>
+  <<%= sysAbb %>-col :span="6" :xs="{span: 12}">
+  <div class="demo-color-box bg-danger">Danger<div class="value">#F56C6C</div></div>
+  </<%= sysAbb %>-col>
+  <<%= sysAbb %>-col :span="6" :xs="{span: 12}">
+  <div class="demo-color-box bg-info">Info<div class="value">#909399</div></div>
+  </<%= sysAbb %>-col>
+</<%= sysAbb %>-row>
 
 ## Neutral Color
 
 Neutral colors are for text, background and border colors. You can use different neutral colors to represent the hierarchical structure.
 
-<sm-row :gutter="12">
-  <sm-col :span="6" :xs="{span: 12}">
+<<%= sysAbb %>-row :gutter="12">
+  <<%= sysAbb %>-col :span="6" :xs="{span: 12}">
     <div class="demo-color-box-group">
-      <div class="demo-color-box bg-text-primary">Primary Text<div class="value">#303133</div></div>
-      <div class="demo-color-box bg-text-regular">Regular Text<div class="value">#606266</div></div>
-      <div class="demo-color-box bg-text-secondary">Secondary Text<div class="value">#909399</div></div>
-      <div class="demo-color-box bg-text-placeholder">Placeholder Text<div class="value">#C0C4CC</div></div>
+    <div class="demo-color-box bg-text-primary">Primary Text<div class="value">#303133</div></div>
+    <div class="demo-color-box bg-text-regular">Regular Text<div class="value">#606266</div></div>
+    <div class="demo-color-box bg-text-secondary">Secondary Text<div class="value">#909399</div></div>
+    <div class="demo-color-box bg-text-placeholder">Placeholder Text<div class="value">#C0C4CC</div></div>
     </div>
-  </sm-col>
-  <sm-col :span="6" :xs="{span: 12}">
+  </<%= sysAbb %>-col>
+  <<%= sysAbb %>-col :span="6" :xs="{span: 12}">
     <div class="demo-color-box-group">
-      <div class="demo-color-box bg-border-base">Base Border<div class="value">#DCDFE6</div></div>
-      <div class="demo-color-box bg-border-light">Light Border<div class="value">#E4E7ED</div></div>
-      <div class="demo-color-box bg-border-lighter">Lighter Border<div class="value">#EBEEF5</div></div>
-      <div class="demo-color-box bg-border-extra-light">Extra Light Border<div class="value">#F2F6FC</div></div>
+    <div class="demo-color-box bg-border-base">Base Border<div class="value">#DCDFE6</div></div>
+    <div class="demo-color-box bg-border-light">Light Border<div class="value">#E4E7ED</div></div>
+    <div class="demo-color-box bg-border-lighter">Lighter Border<div class="value">#EBEEF5</div></div>
+    <div class="demo-color-box bg-border-extra-light">Extra Light Border<div class="value">#F2F6FC</div></div>
     </div>
-  </sm-col>
-</sm-row>
+  </<%= sysAbb %>-col>
+</<%= sysAbb %>-row>
 
 <style lang="scss">
   .demo-color-box {
@@ -81,8 +81,8 @@ Neutral colors are for text, background and border colors. You can use different
       border-radius: 0 0 4px 4px;
     }
   }
-  .bg-blue {
-    background-color: #409EFF;
+  .bg-primary {
+    background-color: <%= primaryColor %>;
   }
 
   .bg-success {

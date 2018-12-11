@@ -16,7 +16,7 @@
     "vuepress": "^0.14.8"
   },
   "dependencies": {
-    "@company/baller": "^0.0.0",
-    "@company/baller-theme": "^0.0.0"
+    "<%= libNpmName %>": "^0.0.0",
+    "<%= themeNpmName %>": "^0.0.0"
   }
 }

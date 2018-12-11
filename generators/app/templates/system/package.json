@@ -1,5 +1,5 @@
 {
-  "name": "celement",
+  "name": "<%= libNpmName %>",
   "private": true,
   "workspaces": [
     "packages/library",

@@ -1,5 +1,5 @@
-import Library from "@company/baller";
-import "@company/baller-theme/src/index.scss";
+import Library from "<%= libNpmName %>";
+import "<%= themeNpmName %>/src/index.scss";
 
 export default ({
   Vue, // the version of Vue being used in the VuePress app

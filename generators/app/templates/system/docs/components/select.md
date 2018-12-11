@@ -143,14 +143,14 @@ When there are plenty of options, use a drop-down menu to display and select des
 
 ```html
 <template>
-  <sm-select v-model="value" placeholder="Select">
-    <sm-option
+  <<%= sysAbb %>-select v-model="value" placeholder="Select">
+    <<%= sysAbb %>-option
       v-for="item in options"
       :key="item.value"
       :label="item.label"
       :value="item.value">
-    </sm-option>
-  </sm-select>
+    </<%= sysAbb %>-option>
+  </<%= sysAbb %>-select>
 </template>
 
 <script>
@@ -187,15 +187,15 @@ When there are plenty of options, use a drop-down menu to display and select des
 
 ```html
 <template>
-  <sm-select v-model="value2" placeholder="Select">
-    <sm-option
+  <<%= sysAbb %>-select v-model="value2" placeholder="Select">
+    <<%= sysAbb %>-option
       v-for="item in options2"
       :key="item.value"
       :label="item.label"
       :value="item.value"
       :disabled="item.disabled">
-    </sm-option>
-  </sm-select>
+    </<%= sysAbb %>-option>
+  </<%= sysAbb %>-select>
 </template>
 
 <script>
@@ -234,14 +234,14 @@ Disable the whole component.
 :::demo Set `disabled` of `el-select` to make it disabled.
 ```html
 <template>
-  <sm-select v-model="value3" disabled placeholder="Select">
-    <sm-option
+  <<%= sysAbb %>-select v-model="value3" disabled placeholder="Select">
+    <<%= sysAbb %>-option
       v-for="item in options"
       :key="item.value"
       :label="item.label"
       :value="item.value">
-    </sm-option>
-  </sm-select>
+    </<%= sysAbb %>-option>
+  </<%= sysAbb %>-select>
 </template>
 
 <script>
@@ -279,14 +279,14 @@ You can clear Select using a clear icon.
 :::demo Set `clearable` attribute for `el-select` and a clear icon will appear. Note that `clearable` is only for single select.
 ```html
 <template>
-  <sm-select v-model="value4" clearable placeholder="Select">
-    <sm-option
+  <<%= sysAbb %>-select v-model="value4" clearable placeholder="Select">
+    <<%= sysAbb %>-option
       v-for="item in options"
       :key="item.value"
       :label="item.label"
       :value="item.value">
-    </sm-option>
-  </sm-select>
+    </<%= sysAbb %>-option>
+  </<%= sysAbb %>-select>
 </template>
 
 <script>
@@ -324,28 +324,28 @@ Multiple select uses tags to display selected options.
 :::demo Set `multiple` attribute for `el-select` to enable multiple mode. In this case, the value of `v-model` will be an array of selected options. By default the selected options will be displayed as Tags. You can collapse them to a text by using `collapse-tags` attribute.
 ```html
 <template>
-  <sm-select v-model="value5" multiple placeholder="Select">
-    <sm-option
+  <<%= sysAbb %>-select v-model="value5" multiple placeholder="Select">
+    <<%= sysAbb %>-option
       v-for="item in options"
       :key="item.value"
       :label="item.label"
       :value="item.value">
-    </sm-option>
-  </sm-select>
+    </<%= sysAbb %>-option>
+  </<%= sysAbb %>-select>
   
-  <sm-select
+  <<%= sysAbb %>-select
     v-model="value11"
     multiple
     collapse-tags
     style="margin-left: 20px;"
     placeholder="Select">
-    <sm-option
+    <<%= sysAbb %>-option
       v-for="item in options"
       :key="item.value"
       :label="item.label"
       :value="item.value">
-    </sm-option>
-  </sm-select>
+    </<%= sysAbb %>-option>
+  </<%= sysAbb %>-select>
 </template>
 
 <script>
@@ -385,16 +385,16 @@ You can customize HTML templates for options.
 
 ```html
 <template>
-  <sm-select v-model="value6" placeholder="Select">
-    <sm-option
+  <<%= sysAbb %>-select v-model="value6" placeholder="Select">
+    <<%= sysAbb %>-option
       v-for="item in cities"
       :key="item.value"
       :label="item.label"
       :value="item.value">
       <span style="float: left">{{ item.label }}</span>
       <span style="float: right; color: #8492a6; font-size: 13px">{{ item.value }}</span>
-    </sm-option>
-  </sm-select>
+    </<%= sysAbb %>-option>
+  </<%= sysAbb %>-select>
 </template>
 
 <script>
@@ -436,19 +436,19 @@ Display options in groups.
 
 ```html
 <template>
-  <sm-select v-model="value7" placeholder="Select">
-    <sm-option-group
+  <<%= sysAbb %>-select v-model="value7" placeholder="Select">
+    <<%= sysAbb %>-option-group
       v-for="group in options3"
       :key="group.label"
       :label="group.label">
-      <sm-option
+      <<%= sysAbb %>-option
         v-for="item in group.options"
         :key="item.value"
         :label="item.label"
         :value="item.value">
-      </sm-option>
-    </sm-option-group>
-  </sm-select>
+      </<%= sysAbb %>-option>
+    </<%= sysAbb %>-option-group>
+  </<%= sysAbb %>-select>
 </template>
 
 <script>
@@ -495,14 +495,14 @@ You can filter options for your desired ones.
 :::demo Adding `filterable` to `el-select` enables filtering. By default, Select will find all the options whose `label` attribute contains the input value. If you prefer other filtering strategies, you can pass the `filter-method`. `filter-method` is a `Function` that gets called when the input value changes, and its parameter is the current input value.
 ```html
 <template>
-  <sm-select v-model="value8" filterable placeholder="Select">
-    <sm-option
+  <<%= sysAbb %>-select v-model="value8" filterable placeholder="Select">
+    <<%= sysAbb %>-option
       v-for="item in options"
       :key="item.value"
       :label="item.label"
       :value="item.value">
-    </sm-option>
-  </sm-select>
+    </<%= sysAbb %>-option>
+  </<%= sysAbb %>-select>
 </template>
 
 <script>
@@ -541,7 +541,7 @@ Enter keywords and search data from server.
 
 ```html
 <template>
-  <sm-select
+  <<%= sysAbb %>-select
     v-model="value9"
     multiple
     filterable
@@ -550,13 +550,13 @@ Enter keywords and search data from server.
     placeholder="Please enter a keyword"
     :remote-method="remoteMethod"
     :loading="loading">
-    <sm-option
+    <<%= sysAbb %>-option
       v-for="item in options4"
       :key="item.value"
       :label="item.label"
       :value="item.value">
-    </sm-option>
-  </sm-select>
+    </<%= sysAbb %>-option>
+  </<%= sysAbb %>-select>
 </template>
 
 <script>
@@ -617,20 +617,20 @@ Create and select new items that are not included in select options
 :::demo By using the `allow-create` attribute, users can create new items by typing in the input box. Note that for `allow-create` to work, `filterable` must be `true`. This example also demonstrates `default-first-option`. When this attribute is set to `true`, you can select the first option in the current option list by hitting enter without having to navigate with mouse or arrow keys.
 ```html
 <template>
-  <sm-select
+  <<%= sysAbb %>-select
     v-model="value10"
     multiple
     filterable
     allow-create
     default-first-option
     placeholder="Choose tags for your article">
-    <sm-option
+    <<%= sysAbb %>-option
       v-for="item in options5"
       :key="item.value"
       :label="item.label"
       :value="item.value">
-    </sm-option>
-  </sm-select>
+    </<%= sysAbb %>-option>
+  </<%= sysAbb %>-select>
 </template>
 
 <script>

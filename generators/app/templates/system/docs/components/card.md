@@ -7,15 +7,15 @@ Card includes title, content and operations.
 
 :::demo Card is made up of `header` and `body`. `header` is optional, and its content distribution depends on a named slot.
 ```html
-<sm-card class="box-card">
+<<%= sysAbb %>-card class="box-card">
   <div slot="header" class="clearfix">
     <span>Card name</span>
-    <sm-button style="float: right; padding: 3px 0" type="text">Operation button</sm-button>
+    <<%= sysAbb %>-button style="float: right; padding: 3px 0" type="text">Operation button</<%= sysAbb %>-button>
   </div>
   <div v-for="o in 4" :key="o" class="text item">
     {{'List item ' + o }}
   </div>
-</sm-card>
+</<%= sysAbb %>-card>
 
 <style lang="scss">
   .text {
@@ -48,11 +48,11 @@ The header part can be omitted.
 
 :::demo
 ```html
-<sm-card class="box-card">
+<<%= sysAbb %>-card class="box-card">
   <div v-for="o in 4" :key="o" class="text item">
     {{'List item ' + o }}
   </div>
-</sm-card>
+</<%= sysAbb %>-card>
 
 <style lang="scss">
   .text {
@@ -76,20 +76,20 @@ Display richer content by adding some configs.
 
 :::demo The `body-style` attribute defines CSS style of custom `body`. This example also uses `el-col` for layout.
 ```html
-<sm-row>
-  <sm-col :span="8" v-for="(o, index) in 2" :key="o" :offset="index > 0 ? 2 : 0">
-    <sm-card :body-style="{ padding: '0px' }">
+<<%= sysAbb %>-row>
+  <<%= sysAbb %>-col :span="8" v-for="(o, index) in 2" :key="o" :offset="index > 0 ? 2 : 0">
+    <<%= sysAbb %>-card :body-style="{ padding: '0px' }">
       <img src="https://via.placeholder.com/150" class="image">
       <div style="padding: 14px;">
         <span>Yummy hamburger</span>
         <div class="bottom clearfix">
           <time class="time">{{ currentDate }}</time>
-          <sm-button type="text" class="button">Operating button</sm-button>
+          <<%= sysAbb %>-button type="text" class="button">Operating button</<%= sysAbb %>-button>
         </div>
       </div>
-    </sm-card>
-  </sm-col>
-</sm-row>
+    </<%= sysAbb %>-card>
+  </<%= sysAbb %>-col>
+</<%= sysAbb %>-row>
 
 <style lang="scss">
   .time {
@@ -141,23 +141,23 @@ You can define when to show the card shadows
 
 :::demo The `shadow` attribute determines when the card shadows are displayed. It can be `always`, `hover` or `never`.
 ```html
-<sm-row :gutter="12">
-  <sm-col :span="8">
-    <sm-card shadow="always">
+<<%= sysAbb %>-row :gutter="12">
+  <<%= sysAbb %>-col :span="8">
+    <<%= sysAbb %>-card shadow="always">
       Always
-    </sm-card>
-  </sm-col>
-  <sm-col :span="8">
-    <sm-card shadow="hover">
+    </<%= sysAbb %>-card>
+  </<%= sysAbb %>-col>
+  <<%= sysAbb %>-col :span="8">
+    <<%= sysAbb %>-card shadow="hover">
       Hover
-    </sm-card>
-  </sm-col>
-  <sm-col :span="8">
-    <sm-card shadow="never">
+    </<%= sysAbb %>-card>
+  </<%= sysAbb %>-col>
+  <<%= sysAbb %>-col :span="8">
+    <<%= sysAbb %>-card shadow="never">
       Never
-    </sm-card>
-  </sm-col>
-</sm-row>
+    </<%= sysAbb %>-card>
+  </<%= sysAbb %>-col>
+</<%= sysAbb %>-row>
 ```
 :::
 

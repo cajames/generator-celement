@@ -30,13 +30,13 @@ Switch is used for switching between two opposing states.
 :::demo Bind `v-model` to a `Boolean` typed variable. The `active-color` and `inactive-color` attribute decides the background color in two states.
 
 ```html
-<sm-switch v-model="value1">
-</sm-switch>
-<sm-switch
+<<%= sysAbb %>-switch v-model="value1">
+</<%= sysAbb %>-switch>
+<<%= sysAbb %>-switch
   v-model="value2"
   active-color="#13ce66"
   inactive-color="#ff4949">
-</sm-switch>
+</<%= sysAbb %>-switch>
 
 <script>
   export default {
@@ -55,19 +55,19 @@ Switch is used for switching between two opposing states.
 :::demo You can add `active-text` and `inactive-text` attribute to show texts.
 
 ```html
-<sm-switch
+<<%= sysAbb %>-switch
   v-model="value3"
   active-text="Pay by month"
   inactive-text="Pay by year">
-</sm-switch>
-<sm-switch
+</<%= sysAbb %>-switch>
+<<%= sysAbb %>-switch
   style="display: block"
   v-model="value4"
   active-color="#13ce66"
   inactive-color="#ff4949"
   active-text="Pay by month"
   inactive-text="Pay by year">
-</sm-switch>
+</<%= sysAbb %>-switch>
 
 <script>
   export default {
@@ -87,15 +87,15 @@ Switch is used for switching between two opposing states.
 :::demo You can set `active-value` and `inactive-value` attributes. They both receive a `Boolean`, `String` or `Number` typed value.
 
 ```html
-<sm-tooltip :content="'Switch value: ' + value5" placement="top">
-  <sm-switch
+<<%= sysAbb %>-tooltip :content="'Switch value: ' + value5" placement="top">
+  <<%= sysAbb %>-switch
     v-model="value5"
     active-color="#13ce66"
     inactive-color="#ff4949"
     active-value="100"
     inactive-value="0">
-  </sm-switch>
-</sm-tooltip>
+  </<%= sysAbb %>-switch>
+</<%= sysAbb %>-tooltip>
 
 <script>
   export default {
@@ -115,14 +115,14 @@ Switch is used for switching between two opposing states.
 :::demo Adding the `disabled` attribute disables Switch.
 
 ```html
-<sm-switch
+<<%= sysAbb %>-switch
   v-model="value6"
   disabled>
-</sm-switch>
-<sm-switch
+</<%= sysAbb %>-switch>
+<<%= sysAbb %>-switch
   v-model="value7"
   disabled>
-</sm-switch>
+</<%= sysAbb %>-switch>
 
 <script>
   export default {

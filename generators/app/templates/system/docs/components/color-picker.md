@@ -8,11 +8,11 @@ ColorPicker is a color selector supporting multiple color formats.
 ```html
 <div class="block">
   <span class="demonstration">With default value</span>
-  <sm-color-picker v-model="color1"></sm-color-picker>
+  <<%= sysAbb %>-color-picker v-model="color1"></<%= sysAbb %>-color-picker>
 </div>
 <div class="block">
   <span class="demonstration">With no default value</span>
-  <sm-color-picker v-model="color2"></sm-color-picker>
+  <<%= sysAbb %>-color-picker v-model="color2"></<%= sysAbb %>-color-picker>
 </div>
 
 <script>
@@ -32,7 +32,7 @@ ColorPicker is a color selector supporting multiple color formats.
 
 :::demo ColorPicker supports alpha channel selecting. To activate alpha selecting, just add the `show-alpha` attribute.
 ```html
-<sm-color-picker v-model="color3" show-alpha></sm-color-picker>
+<<%= sysAbb %>-color-picker v-model="color3" show-alpha></<%= sysAbb %>-color-picker>
 
 <script>
   export default {
@@ -50,11 +50,11 @@ ColorPicker is a color selector supporting multiple color formats.
 
 :::demo ColorPicker supports predefined color options
 ```html
-<sm-color-picker
+<<%= sysAbb %>-color-picker
   v-model="color5"
   show-alpha
   :predefine="predefineColors">
-</sm-color-picker>
+</<%= sysAbb %>-color-picker>
 
 <script>
   export default {
@@ -89,10 +89,10 @@ ColorPicker is a color selector supporting multiple color formats.
 
 :::demo
 ```html
-<sm-color-picker v-model="color4"></sm-color-picker>
-<sm-color-picker v-model="color4" size="medium"></sm-color-picker>
-<sm-color-picker v-model="color4" size="small"></sm-color-picker>
-<sm-color-picker v-model="color4" size="mini"></sm-color-picker>
+<<%= sysAbb %>-color-picker v-model="color4"></<%= sysAbb %>-color-picker>
+<<%= sysAbb %>-color-picker v-model="color4" size="medium"></<%= sysAbb %>-color-picker>
+<<%= sysAbb %>-color-picker v-model="color4" size="small"></<%= sysAbb %>-color-picker>
+<<%= sysAbb %>-color-picker v-model="color4" size="mini"></<%= sysAbb %>-color-picker>
 
 <script>
   export default {

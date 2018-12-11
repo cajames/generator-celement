@@ -58,17 +58,17 @@ If you have too much data to display in one page, use pagination.
 ```html
 <div class="block">
   <span class="demonstration">When you have few pages</span>
-  <sm-pagination
+  <<%= sysAbb %>-pagination
     layout="prev, pager, next"
     :total="50">
-  </sm-pagination>
+  </<%= sysAbb %>-pagination>
 </div>
 <div class="block">
   <span class="demonstration">When you have more than 7 pages</span>
-  <sm-pagination
+  <<%= sysAbb %>-pagination
     layout="prev, pager, next"
     :total="1000">
-  </sm-pagination>
+  </<%= sysAbb %>-pagination>
 </div>
 ```
 :::
@@ -77,12 +77,12 @@ If you have too much data to display in one page, use pagination.
 
 :::demo By default, Pagination collapses extra pager buttons when it has more than 7 pages. This can be configured with the `pager-count` attribute.
 ```html
-<sm-pagination
+<<%= sysAbb %>-pagination
   :page-size="20"
   :pager-count="11"
   layout="prev, pager, next"
   :total="1000">
-</sm-pagination>
+</<%= sysAbb %>-pagination>
 ```
 :::
 
@@ -90,11 +90,11 @@ If you have too much data to display in one page, use pagination.
 
 :::demo Set the `background` attribute and the buttons will have a background color.
 ```html
-<sm-pagination
+<<%= sysAbb %>-pagination
   background
   layout="prev, pager, next"
   :total="1000">
-</sm-pagination>
+</<%= sysAbb %>-pagination>
 ```
 :::
 
@@ -104,11 +104,11 @@ Use small pagination in the case of limited space.
 
 :::demo Just set the `small` attribute to `true` and the Pagination becomes smaller.
 ```html
-<sm-pagination
+<<%= sysAbb %>-pagination
   small
   layout="prev, pager, next"
   :total="50">
-</sm-pagination>
+</<%= sysAbb %>-pagination>
 ```
 :::
 
@@ -122,18 +122,18 @@ Add more modules based on your scenario.
 <template>
   <div class="block">
     <span class="demonstration">Total item count</span>
-    <sm-pagination
+    <<%= sysAbb %>-pagination
       @size-change="handleSizeChange"
       @current-change="handleCurrentChange"
       :current-page.sync="currentPage1"
       :page-size="100"
       layout="total, prev, pager, next"
       :total="1000">
-    </sm-pagination>
+    </<%= sysAbb %>-pagination>
   </div>
   <div class="block">
     <span class="demonstration">Change page size</span>
-    <sm-pagination
+    <<%= sysAbb %>-pagination
       @size-change="handleSizeChange"
       @current-change="handleCurrentChange"
       :current-page.sync="currentPage2"
@@ -141,22 +141,22 @@ Add more modules based on your scenario.
       :page-size="100"
       layout="sizes, prev, pager, next"
       :total="1000">
-    </sm-pagination>
+    </<%= sysAbb %>-pagination>
   </div>
   <div class="block">
     <span class="demonstration">Jump to</span>
-    <sm-pagination
+    <<%= sysAbb %>-pagination
       @size-change="handleSizeChange"
       @current-change="handleCurrentChange"
       :current-page.sync="currentPage3"
       :page-size="100"
       layout="prev, pager, next, jumper"
       :total="1000">
-    </sm-pagination>
+    </<%= sysAbb %>-pagination>
   </div>
   <div class="block">
     <span class="demonstration">All combined</span>
-    <sm-pagination
+    <<%= sysAbb %>-pagination
       @size-change="handleSizeChange"
       @current-change="handleCurrentChange"
       :current-page.sync="currentPage4"
@@ -164,7 +164,7 @@ Add more modules based on your scenario.
       :page-size="100"
       layout="total, sizes, prev, pager, next, jumper"
       :total="400">
-    </sm-pagination>
+    </<%= sysAbb %>-pagination>
   </div>
 </template>
 <script>

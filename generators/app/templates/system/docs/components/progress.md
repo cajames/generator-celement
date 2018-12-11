@@ -17,11 +17,11 @@ Progress is used to show the progress of current operation, and inform the user 
 
 :::demo Use `percentage` attribute to set the percentage. It's **required** and must be between `0-100`.
 ```html
-<sm-progress :percentage="0"></sm-progress>
-<sm-progress :percentage="70"></sm-progress>
-<sm-progress :percentage="80" color="#8e71c7"></sm-progress>
-<sm-progress :percentage="100" status="success"></sm-progress>
-<sm-progress :percentage="50" status="exception"></sm-progress>
+<<%= sysAbb %>-progress :percentage="0"></<%= sysAbb %>-progress>
+<<%= sysAbb %>-progress :percentage="70"></<%= sysAbb %>-progress>
+<<%= sysAbb %>-progress :percentage="80" color="#8e71c7"></<%= sysAbb %>-progress>
+<<%= sysAbb %>-progress :percentage="100" status="success"></<%= sysAbb %>-progress>
+<<%= sysAbb %>-progress :percentage="50" status="exception"></<%= sysAbb %>-progress>
 ```
 :::
 
@@ -31,11 +31,11 @@ In this case the percentage takes no additional space.
 
 :::demo `stroke-width` attribute decides the `width` of progress bar, and use `text-inside` attribute to put description inside the progress bar.
 ```html
-<sm-progress :text-inside="true" :stroke-width="18" :percentage="0"></sm-progress>
-<sm-progress :text-inside="true" :stroke-width="18" :percentage="70"></sm-progress>
-<sm-progress :text-inside="true" :stroke-width="18" :percentage="80" color="rgba(142, 113, 199, 0.7)"></sm-progress>
-<sm-progress :text-inside="true" :stroke-width="18" :percentage="100" status="success"></sm-progress>
-<sm-progress :text-inside="true" :stroke-width="18" :percentage="50" status="exception"></sm-progress>
+<<%= sysAbb %>-progress :text-inside="true" :stroke-width="18" :percentage="0"></<%= sysAbb %>-progress>
+<<%= sysAbb %>-progress :text-inside="true" :stroke-width="18" :percentage="70"></<%= sysAbb %>-progress>
+<<%= sysAbb %>-progress :text-inside="true" :stroke-width="18" :percentage="80" color="rgba(142, 113, 199, 0.7)"></<%= sysAbb %>-progress>
+<<%= sysAbb %>-progress :text-inside="true" :stroke-width="18" :percentage="100" status="success"></<%= sysAbb %>-progress>
+<<%= sysAbb %>-progress :text-inside="true" :stroke-width="18" :percentage="50" status="exception"></<%= sysAbb %>-progress>
 ```
 :::
 
@@ -43,12 +43,12 @@ In this case the percentage takes no additional space.
 
 :::demo You can specify `type` attribute to `circle` to use circular progress bar, and use `width` attribute to change the size of circle.
 ```html
-<sm-progress type="circle" :percentage="0"></sm-progress>
-<sm-progress type="circle" :percentage="25"></sm-progress>
-<sm-progress type="circle" :percentage="80" color="#8e71c7"></sm-progress>
-<sm-progress type="circle" :percentage="100" status="success"></sm-progress>
-<sm-progress type="circle" :percentage="50" status="exception"></sm-progress>
-<sm-progress type="circle" :percentage="100" status="text">Done</sm-progress>
+<<%= sysAbb %>-progress type="circle" :percentage="0"></<%= sysAbb %>-progress>
+<<%= sysAbb %>-progress type="circle" :percentage="25"></<%= sysAbb %>-progress>
+<<%= sysAbb %>-progress type="circle" :percentage="80" color="#8e71c7"></<%= sysAbb %>-progress>
+<<%= sysAbb %>-progress type="circle" :percentage="100" status="success"></<%= sysAbb %>-progress>
+<<%= sysAbb %>-progress type="circle" :percentage="50" status="exception"></<%= sysAbb %>-progress>
+<<%= sysAbb %>-progress type="circle" :percentage="100" status="text">Done</<%= sysAbb %>-progress>
 ```
 :::
 

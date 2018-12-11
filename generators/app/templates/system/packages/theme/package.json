@@ -1,5 +1,5 @@
 {
-  "name": "@company/baller-theme",
+  "name": "<%= themeNpmName %>",
   "version": "0.0.0",
   "description": "",
   "main": "lib/index.css",

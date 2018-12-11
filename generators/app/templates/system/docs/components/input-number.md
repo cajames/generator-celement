@@ -34,11 +34,11 @@ Input numerical values with a customizable range.
 
 ### Basic usage
 
-:::demo Bind a variable to `v-model` in `<sm-input-number>` element and you are set.
+:::demo Bind a variable to `v-model` in `<<%= sysAbb %>-input-number>` element and you are set.
 
 ```html
 <template>
-  <sm-input-number v-model="num1" @change="handleChange" :min="1" :max="10"></sm-input-number>
+  <<%= sysAbb %>-input-number v-model="num1" @change="handleChange" :min="1" :max="10"></<%= sysAbb %>-input-number>
 </template>
 <script>
   export default {
@@ -63,7 +63,7 @@ Input numerical values with a customizable range.
 
 ```html
 <template>
-  <sm-input-number v-model="num2" :disabled="true"></sm-input-number>
+  <<%= sysAbb %>-input-number v-model="num2" :disabled="true"></<%= sysAbb %>-input-number>
 </template>
 <script>
   export default {
@@ -85,7 +85,7 @@ Allows you to define incremental steps.
 
 ```html
 <template>
-  <sm-input-number v-model="num3" :step="2"></sm-input-number>
+  <<%= sysAbb %>-input-number v-model="num3" :step="2"></<%= sysAbb %>-input-number>
 </template>
 <script>
   export default {
@@ -105,7 +105,7 @@ Allows you to define incremental steps.
 
 ```html
 <template>
-  <sm-input-number v-model="num9" :precision="2" :step="0.1" :max="10"></sm-input-number>
+  <<%= sysAbb %>-input-number v-model="num9" :precision="2" :step="0.1" :max="10"></<%= sysAbb %>-input-number>
 </template>
 <script>
   export default {
@@ -132,10 +132,10 @@ Use attribute `size` to set additional sizes with `medium`, `small` or `mini`.
 
 ```html
 <template>
-  <sm-input-number v-model="num4"></sm-input-number>
-    <sm-input-number size="medium" v-model="num5"></sm-input-number>
-    <sm-input-number size="small" v-model="num6"></sm-input-number>
-    <sm-input-number size="mini" v-model="num7"></sm-input-number>
+  <<%= sysAbb %>-input-number v-model="num4"></<%= sysAbb %>-input-number>
+    <<%= sysAbb %>-input-number size="medium" v-model="num5"></<%= sysAbb %>-input-number>
+    <<%= sysAbb %>-input-number size="small" v-model="num6"></<%= sysAbb %>-input-number>
+    <<%= sysAbb %>-input-number size="mini" v-model="num7"></<%= sysAbb %>-input-number>
 </template>
 <script>
   export default {
@@ -157,7 +157,7 @@ Use attribute `size` to set additional sizes with `medium`, `small` or `mini`.
 :::demo Set `controls-position` to decide the position of control buttons.
 ```html
 <template>
-  <sm-input-number v-model="num8" controls-position="right" @change="handleChange" :min="1" :max="10"></sm-input-number>
+  <<%= sysAbb %>-input-number v-model="num8" controls-position="right" @change="handleChange" :min="1" :max="10"></<%= sysAbb %>-input-number>
 </template>
 <script>
   export default {

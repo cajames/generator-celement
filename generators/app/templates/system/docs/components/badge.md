@@ -9,34 +9,34 @@ Displays the amount of new messages.
 :::demo The amount is defined with `value` which accepts `Number` or `String`.
 
 ```html
-<sm-badge :value="12" class="item">
-  <sm-button size="small">comments</sm-button>
-</sm-badge>
-<sm-badge :value="3" class="item">
-  <sm-button size="small">replies</sm-button>
-</sm-badge>
-<sm-badge :value="1" class="item" type="primary">
-  <sm-button size="small">comments</sm-button>
-</sm-badge>
-<sm-badge :value="2" class="item" type="warning">
-  <sm-button size="small">replies</sm-button>
-</sm-badge>
+<<%= sysAbb %>-badge :value="12" class="item">
+  <<%= sysAbb %>-button size="small">comments</<%= sysAbb %>-button>
+</<%= sysAbb %>-badge>
+<<%= sysAbb %>-badge :value="3" class="item">
+  <<%= sysAbb %>-button size="small">replies</<%= sysAbb %>-button>
+</<%= sysAbb %>-badge>
+<<%= sysAbb %>-badge :value="1" class="item" type="primary">
+  <<%= sysAbb %>-button size="small">comments</<%= sysAbb %>-button>
+</<%= sysAbb %>-badge>
+<<%= sysAbb %>-badge :value="2" class="item" type="warning">
+  <<%= sysAbb %>-button size="small">replies</<%= sysAbb %>-button>
+</<%= sysAbb %>-badge>
 
-<sm-dropdown trigger="click">
+<<%= sysAbb %>-dropdown trigger="click">
   <span class="el-dropdown-link">
     Click Me<i class="el-icon-caret-bottom el-icon--right"></i>
   </span>
-  <sm-dropdown-menu slot="dropdown">
-    <sm-dropdown-item class="clearfix">
+  <<%= sysAbb %>-dropdown-menu slot="dropdown">
+    <<%= sysAbb %>-dropdown-item class="clearfix">
       comments
-      <sm-badge class="mark" :value="12" />
-    </sm-dropdown-item>
-    <sm-dropdown-item class="clearfix">
+      <<%= sysAbb %>-badge class="mark" :value="12" />
+    </<%= sysAbb %>-dropdown-item>
+    <<%= sysAbb %>-dropdown-item class="clearfix">
       replies
-      <sm-badge class="mark" :value="3" />
-    </sm-dropdown-item>
-  </sm-dropdown-menu>
-</sm-dropdown>
+      <<%= sysAbb %>-badge class="mark" :value="3" />
+    </<%= sysAbb %>-dropdown-item>
+  </<%= sysAbb %>-dropdown-menu>
+</<%= sysAbb %>-dropdown>
 
 <style lang="scss">
 .item {
@@ -54,12 +54,12 @@ You can customize the max value.
 :::demo The max value is defined by property `max` which is a `Number`. Note that it only works when `value` is also a `Number`.
 
 ```html
-<sm-badge :value="200" :max="99" class="item">
-  <sm-button size="small">comments</sm-button>
-</sm-badge>
-<sm-badge :value="100" :max="10" class="item">
-  <sm-button size="small">replies</sm-button>
-</sm-badge>
+<<%= sysAbb %>-badge :value="200" :max="99" class="item">
+  <<%= sysAbb %>-button size="small">comments</<%= sysAbb %>-button>
+</<%= sysAbb %>-badge>
+<<%= sysAbb %>-badge :value="100" :max="10" class="item">
+  <<%= sysAbb %>-button size="small">replies</<%= sysAbb %>-button>
+</<%= sysAbb %>-badge>
 
 <style lang="scss">
 .item {
@@ -77,12 +77,12 @@ Displays text content other than numbers.
 :::demo When `value` is a `String`, it can display customized text.
 
 ```html
-<sm-badge value="new" class="item">
-  <sm-button size="small">comments</sm-button>
-</sm-badge>
-<sm-badge value="hot" class="item">
-  <sm-button size="small">replies</sm-button>
-</sm-badge>
+<<%= sysAbb %>-badge value="new" class="item">
+  <<%= sysAbb %>-button size="small">comments</<%= sysAbb %>-button>
+</<%= sysAbb %>-badge>
+<<%= sysAbb %>-badge value="hot" class="item">
+  <<%= sysAbb %>-button size="small">replies</<%= sysAbb %>-button>
+</<%= sysAbb %>-badge>
 
 <style lang="scss">
 .item {
@@ -100,10 +100,10 @@ Use a red dot to mark content that needs to be noticed.
 :::demo Use the attribute `is-dot`. It is a `Boolean`.
 
 ```html
-<sm-badge is-dot class="item">query</sm-badge>
-<sm-badge is-dot class="item">
-  <sm-button class="share-button" icon="el-icon-share" type="primary"></sm-button>
-</sm-badge>
+<<%= sysAbb %>-badge is-dot class="item">query</<%= sysAbb %>-badge>
+<<%= sysAbb %>-badge is-dot class="item">
+  <<%= sysAbb %>-button class="share-button" icon="el-icon-share" type="primary"></<%= sysAbb %>-button>
+</<%= sysAbb %>-badge>
 
 <style lang="scss">
 .item {
