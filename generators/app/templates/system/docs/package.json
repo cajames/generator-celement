@@ -1,0 +1,22 @@
+{
+  "name": "docs",
+  "version": "0.0.0",
+  "private": true,
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "dev": "vuepress dev",
+    "build": "vuepress build"
+  },
+  "devDependencies": {
+    "@babel/plugin-syntax-dynamic-import": "^7.2.0",
+    "cheerio": "^1.0.0-rc.2",
+    "markdown-it": "^8.4.2",
+    "markdown-it-container": "^2.0.0",
+    "vuepress": "^0.14.8"
+  },
+  "dependencies": {
+    "@company/baller": "^0.0.0",
+    "@company/baller-theme": "^0.0.0"
+  }
+}

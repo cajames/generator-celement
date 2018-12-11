@@ -1,0 +1,42 @@
+{
+  "name": "@company/baller",
+  "version": "0.0.0",
+  "main": "./lib/index.cjs.js",
+  "license": "MIT",
+  "scripts": {
+    "new": "node ./bin/new",
+    "start": "yarn dev",
+    "clean": "rm -rf dist lib build",
+    "build:entry": "node ./bin/build-entry.js",
+    "build:src": "node ./bin/build-src.js",
+    "build:dev": "yarn clean && yarn build:entry && yarn build:src",
+    "build": "yarn clean && yarn build:entry && yarn build:src && cross-env NODE_ENV=production webpack --display-error-details",
+    "dev": "yarn build:entry && yarn build:src && cross-env NODE_ENV=production webpack --watch --display-error-details"
+  },
+  "dependencies": {
+    "@company/baller-theme": "^0.0.0",
+    "element-ui": "^2.4.11",
+    "vue": "^2.5.19"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.2.0",
+    "babel-loader": "^8.0.4",
+    "cross-env": "^5.2.0",
+    "css-loader": "^2.0.0",
+    "file-loader": "^2.0.0",
+    "json-templater": "^1.2.0",
+    "mini-css-extract-plugin": "^0.5.0",
+    "optimize-css-assets-webpack-plugin": "^5.0.1",
+    "postcss-loader": "^3.0.0",
+    "progress-bar-webpack-plugin": "^1.11.0",
+    "sass-loader": "^7.1.0",
+    "terser-webpack-plugin": "^1.1.0",
+    "tsconfig-paths-webpack-plugin": "^3.2.0",
+    "uppercamelcase": "^3.0.0",
+    "url-loader": "^1.1.2",
+    "vue-loader": "^15.4.2",
+    "webpack": "^4.27.1",
+    "webpack-cli": "^3.1.2",
+    "webpack-node-externals": "^1.7.2"
+  }
+}
